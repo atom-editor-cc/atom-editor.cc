@@ -1,0 +1,18 @@
+{
+  "name": "atom-editor.cc",
+  "private": true,
+  "homepage": "https://github.com/atom-editor-cc/atom-editor.cc",
+  "bugs": "https://github.com/atom-editor-cc/atom-editor.cc/issues",
+  "author": "Jason Garber <jason@sixtwothree.org> (https://sixtwothree.org)",
+  "repository": "github:atom-editor-cc/atom-editor.cc",
+  "scripts": {
+    "build": "eleventy --quiet",
+    "clean": "rm -rf public",
+    "prebuild": "npm run clean",
+    "prestart": "npm run clean",
+    "start": "eleventy --quiet --serve"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.1"
+  }
+}
