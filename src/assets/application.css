@@ -3737,7 +3737,7 @@ body.menu-active .modal-backdrop {
   display: inline-block;
   height: 32px;
   width: 32px;
-  background-image: url(/web/20221214224504im_/https://atom.io/assets/button-sprites-8c98d3585e81ec86b72d55d2b0eb3952357c8607a4ebce843f676e9200261f81.png);
+  background-image: url(/assets/button-sprites.png);
   position: absolute;
   top: 4px;
   left: 4px;
@@ -3745,7 +3745,7 @@ body.menu-active .modal-backdrop {
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
   /* line 104, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/shared/buttons.scss */
   .button-image-down {
-    background-image: url(/web/20221214224504im_/https://atom.io/assets/button-sprites@2x-51a6061d94aa2ab3da1947ef7410639424818cd7244c736bc8580e43347d1b21.png);
+    background-image: url(/assets/button-sprites@2x.png);
     -webkit-background-size: 64px 32px;
     -moz-background-size: 64px 32px;
     -o-background-size: 64px 32px;
@@ -3758,7 +3758,7 @@ body.menu-active .modal-backdrop {
   display: inline-block;
   height: 32px;
   width: 32px;
-  background-image: url(/web/20221214224504im_/https://atom.io/assets/button-sprites-8c98d3585e81ec86b72d55d2b0eb3952357c8607a4ebce843f676e9200261f81.png);
+  background-image: url(/assets/button-sprites.png);
   position: absolute;
   background-position: -32px 0;
   top: 4px;
@@ -3767,7 +3767,7 @@ body.menu-active .modal-backdrop {
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
   /* line 114, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/shared/buttons.scss */
   .button-image-github {
-    background-image: url(/web/20221214224504im_/https://atom.io/assets/button-sprites@2x-51a6061d94aa2ab3da1947ef7410639424818cd7244c736bc8580e43347d1b21.png);
+    background-image: url(/assets/button-sprites@2x.png);
     -webkit-background-size: 64px 32px;
     -moz-background-size: 64px 32px;
     -o-background-size: 64px 32px;
@@ -4249,12 +4249,12 @@ form.contact-form input[type="submit"] {
   position: relative;
   height: 470px;
   width: 410px;
-  background-image: url(/web/20221214224504im_/https://atom.io/assets/contact-9d1b6cdb25146e496d21105863ba63b3972de3f7188fe50cd4b823e3dfb5d0a8.gif);
+  background-image: url(/assets/contact.gif);
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
   /* line 54, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/contact.scss */
   .illustration-contact {
-    background-image: url(/web/20221214224504im_/https://atom.io/assets/contact@2x-a8728ac460764d1a4b7fda3c3140e97b42c33edc9b62dfe1f4b6dcce2775e102.gif);
+    background-image: url(/assets/contact@2x.gif);
     -webkit-background-size: 410px 470px;
     -moz-background-size: 410px 470px;
     -o-background-size: 410px 470px;
@@ -4367,12 +4367,12 @@ form.contact-form input[type="submit"] {
   display: block;
   width: 470px;
   height: 448px;
-  background-image: url(/web/20221214224504im_/https://atom.io/assets/inspectocat-ea9c25ba1895ee5f5cf41fec6b77a8c6086f6b07f0b286c2ceb265ab9518b5ee.png);
+  background-image: url(/assets/inspectocat.png);
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
   /* line 99, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/documents.scss */
   .inspectocat {
-    background-image: url(/web/20221214224504im_/https://atom.io/assets/inspectocat@2x-989c53753f7310fd1ffccd1a69b3a40e9b0a8741b8a734cd5c9b556c002cd407.png);
+    background-image: url(/assets/inspectocat@2x.png);
     -webkit-background-size: 470px 448px;
     -moz-background-size: 470px 448px;
     -o-background-size: 470px 448px;
@@ -5502,12 +5502,12 @@ hr {
   width: 114px;
   height: 24px;
   margin: 4px 8px 4px 0;
-  background-image: url(/web/20221214224504im_/https://atom.io/assets/logo-small-d5c157accc541ade5c6ee158addb33d55e5095aeeb7b8029a50d6d7519d7d2f6.png);
+  background-image: url(/assets/logo-small.png);
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
   /* line 147, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/main.scss */
   .logo-small {
-    background-image: url(/web/20221214224504im_/https://atom.io/assets/logo-small@2x-d405dec6f35448988d8f4e6ea17535679eaab25487e320c0d6acc4d2d25a277c.png);
+    background-image: url(/assets/logo-small@2x.png);
     -webkit-background-size: 114px 24px;
     -moz-background-size: 114px 24px;
     -o-background-size: 114px 24px;
@@ -5542,12 +5542,12 @@ hr {
   text-indent: 230px;
   white-space: nowrap;
   overflow: hidden;
-  background-image: url(/web/20221214224504im_/https://atom.io/assets/logo-2e973d170e9b53b56217b520bbcbb2fae7592fab58822513d63b788b25c394fd.png);
+  background-image: url(/assets/logo.png);
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
   /* line 171, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/main.scss */
   .header .logo {
-    background-image: url(/web/20221214224504im_/https://atom.io/assets/logo@2x-a5016e18b0182a194d422d0970b4837b514ae006311d35e86f905008d079871d.png);
+    background-image: url(/assets/logo@2x.png);
     -webkit-background-size: 290px 60px;
     -moz-background-size: 290px 60px;
     -o-background-size: 290px 60px;
@@ -5865,7 +5865,7 @@ hr {
   position: absolute;
   width: 256px;
   height: 86px;
-  background-image: url(/web/20221214224504im_/https://atom.io/assets/soon-86fa6b907b62dac4215a12cf83d8c497d0ff2cc28c2d726083b55eeb85a13e0a.gif);
+  background-image: url(/assets/soon.gif);
   top: 50%;
   left: 50%;
   margin-top: -85px;
@@ -5875,7 +5875,7 @@ hr {
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
   /* line 462, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/main.scss */
   .nope {
-    background-image: url(/web/20221214224504im_/https://atom.io/assets/soon@2x-4e4b4a7e7772ade6490c8cdac8960838c385b05fc20d2e8afe03f4143bcf2167.gif);
+    background-image: url(/assets/soon@2x.gif);
     -webkit-background-size: 256px 86px;
     -moz-background-size: 256px 86px;
     -o-background-size: 256px 86px;
@@ -5950,7 +5950,7 @@ hr {
   position: absolute;
   width: 980px;
   height: 456px;
-  background-image: url(/web/20221214224504im_/https://atom.io/assets/octocat-spinner-64-f4c980250033ceb8052bb542cf947750f8c73ebe69b0b0b66b415b4a40f8bd6e.gif);
+  background-image: url(/assets/octocat-spinner-64.gif);
   background-repeat: no-repeat;
   background-position: center;
   display: none;
@@ -5958,7 +5958,7 @@ hr {
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
   /* line 13, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/packages.scss */
   .package-list .loading-overlay {
-    background-image: url(/web/20221214224504im_/https://atom.io/assets/octocat-spinner-64@2x-338974454bb5c32803e82f601beb051d373744b024fe8742a76009700fd7e033.gif);
+    background-image: url(/assets/octocat-spinner-64@2x.gif);
     -webkit-background-size: 64px 64px;
     -moz-background-size: 64px 64px;
     -o-background-size: 64px 64px;
@@ -6607,7 +6607,7 @@ input.search-input {
 /* line 635, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/packages.scss */
 #crop-modal .spinner {
   background-color: rgba(255, 255, 255, 0.7);
-  background-image: url(/web/20221214224504im_/https://atom.io/assets/octocat-spinner-64-f4c980250033ceb8052bb542cf947750f8c73ebe69b0b0b66b415b4a40f8bd6e.gif);
+  background-image: url(/assets/octocat-spinner-64.gif);
   position: absolute;
   background-repeat: no-repeat;
   background-position: center;
@@ -6621,7 +6621,7 @@ input.search-input {
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
   /* line 635, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/packages.scss */
   #crop-modal .spinner {
-    background-image: url(/web/20221214224504im_/https://atom.io/assets/octocat-spinner-64@2x-338974454bb5c32803e82f601beb051d373744b024fe8742a76009700fd7e033.gif);
+    background-image: url(/assets/octocat-spinner-64@2x.gif);
     -webkit-background-size: 64px 64px;
     -moz-background-size: 64px 64px;
     -o-background-size: 64px 64px;
