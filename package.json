@@ -10,7 +10,9 @@
     "clean": "rm -rf public",
     "prebuild": "npm run clean",
     "prestart": "npm run clean",
-    "start": "eleventy --quiet --serve"
+    "pretest": "npm run build",
+    "start": "eleventy --quiet --serve",
+    "test": "test -f ./_site/index.html"
   },
   "devDependencies": {
     "@11ty/eleventy": "^2.0.1"
