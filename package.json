@@ -3,6 +3,7 @@
   "private": true,
   "homepage": "https://github.com/atom-editor-cc/atom-editor.cc",
   "bugs": "https://github.com/atom-editor-cc/atom-editor.cc/issues",
+  "license": "CC-BY-SA-4.0",
   "author": "Jason Garber <jason@sixtwothree.org> (https://sixtwothree.org)",
   "repository": "github:atom-editor-cc/atom-editor.cc",
   "scripts": {
