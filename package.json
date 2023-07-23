@@ -8,6 +8,7 @@
   "scripts": {
     "build": "eleventy --quiet",
     "clean": "rm -rf public",
+    "lint": "eslint .",
     "prebuild": "npm run clean",
     "prestart": "npm run clean",
     "pretest": "npm run build",
@@ -15,6 +16,7 @@
     "test": "test -f ./_site/index.html"
   },
   "devDependencies": {
-    "@11ty/eleventy": "^2.0.1"
+    "@11ty/eleventy": "^2.0.1",
+    "@jgarber/eslint-config": "^1.1.0"
   }
 }
