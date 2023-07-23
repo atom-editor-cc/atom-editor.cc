@@ -2,7 +2,8 @@
 <html lang="en" prefix="og: http://ogp.me/ns#">
 <head>
   <meta charset="UTF-8">
-  <title>Documentation</title>
+  <title>{{ title | default: "Atom" }}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" media="all" href="/assets/application.css">
   <script src="/assets/application.js"></script>
 
@@ -31,24 +32,21 @@
   <link rel="shortcut icon" href="/favicon.ico">
   <link rel="alternate" type="application/atom+xml" title="Atom Packages and Themes" href="/packages.atom">
 </head>
-<body class="">
+<body class="is-responsive">
 
   <div class="footer-push">
     <nav class="top-bar" aria-label="Primary">
       <div class="wrapper no-pad">
         <ul class="navigation">
-          <li>
-            <h1><a href="/" class="logo-small" title="Atom: A hackable text editor for the 21st Century"></a></h1>
-          </li>
           <li><a class="" href="/packages">Packages</a></li>
           <li><a class="" href="/themes">Themes</a></li>
-          <li><a class="is-selected" href="h/docs">Documentation</a></li>
+          <li><a class="" href="/docs">Documentation</a></li>
           <li><a href="https://blog.atom.io/">Blog</a></li>
           <li><a href="https://github.com/atom/atom/discussions">Discussions</a></li>
         </ul>
 
         <div class="top-bar-right">
-          <a href="/login?last_url=%2Fdocs">
+          <a href="/login?last_url={{ page.url | url_encode }}">
             <span class="octicon octicon-log-in"></span> Sign in
           </a>
         </div>
@@ -56,86 +54,7 @@
     </nav>
 
     <div id="js-pjax-container">
-      <div id="docs-pjax-container">
-        <div class="wrapper documents content-push wide atom-doc-index">
-          <h2 class="center index-title">Atom Documentation</h2>
-          <h3 class="center subheader">Current Version: v1.60.0</h3>
-
-          <div class="training-video-cta">
-            New to Atom? Check out the getting started video.
-
-            <span class="training-video-link">
-              <a href="https://www.youtube.com/watch?v=U5POoGSrtGg" target="_blank">
-                <span class="training-video-play">
-                  <span class="octicon octicon-playback-play"></span>
-                </span>
-                Play video
-              </a>
-            </span>
-          </div>
-
-          <table>
-            <tr>
-              <td valign="top" width="33%">
-                <div class="doc-section">
-                  <h3>
-                    <span class="octicon octicon-book"></span>
-                     Atom Flight Manual
-                  </h3>
-                  <p>
-
-                                  The
-                      <a data-skip-pjax="yeahokiguess" href="https://flight-manual.atom.io/">Atom Flight Manual</a>
-
-                                  covers everything from getting off the ground to replacing the engine.
-
-                      <a href="https://flight-manual.atom.io/">Go here to read the one and only book on everything Atom.</a>
-                  </p>
-                  <p>
-                    <a href="https://flight-manual.atom.io/">
-                      <img style="width: 200px;" src="/assets/flight-manual-cover.png">
-                    </a>
-                  </p>
-                </div>
-              </td>
-              <td valign="top" width="33%">
-                <div class="doc-section">
-                  <h3>
-                    <span class="octicon octicon-gear"></span>
-                     API Reference
-                  </h3>
-                  <p>
-
-                                  The
-                      <a href="https://flight-manual.atom.io/api">Atom API reference documentation</a>
-
-                                  is automatically generated from the Atom source code.
-                                  Go here to see what tools you can use to build your own plugins.
-
-                  </p>
-                  <a href="https://flight-manual.atom.io/api">View all API docs</a>
-                </div>
-              </td>
-              <td valign="top" width="33%">
-                <div class="doc-section">
-                  <h3>
-                    <span class="octicon octicon-comment-discussion"></span>
-                     Atom Discussions
-                  </h3>
-                  <p>
-
-                                  The
-                      <a href="https://github.com/atom/atom/discussions">Atom Discussions</a>
-                       is the place to discuss anything and everything
-                                  Atom related with the entire Atom community. If you have problems or are looking for help, this is your place.
-
-                  </p>
-                </div>
-              </td>
-            </tr>
-          </table>
-        </div>
-      </div>
+      {{ content }}
     </div>
 
     <div class="footer-pad"></div>

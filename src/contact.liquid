@@ -1,0 +1,68 @@
+---
+layout: "base.liquid"
+title: "Contact"
+---
+<div class="contact content-push">
+  <a name="contact"></a>
+  <div class="wrapper">
+    <div class="columns">
+      <div class="column main-column">
+        <h3 class="contact-title">Get in touch</h3>
+        <form class="contact-form" action="/contact" accept-charset="UTF-8" method="post">
+          <input name="utf8" type="hidden" value="✓">
+          <input type="hidden" name="authenticity_token" value="eag0u5h6mMKxuGmgxOKmeZw6B6VQryyJ5vRrJS2OBzlUquUM9DmIKZfuNZdHlQeNmgQw9BEdSZQcV4k76OybVQ==">
+          <dl class="form">
+              <dt>
+                <label for="name">Name</label>
+              </dt>
+              <dd>
+                <input type="text" name="name" id="name">
+              </dd>
+              <dt>
+                <label for="email">Email</label>
+              </dt>
+              <dd>
+                <input type="text" name="email" id="email">
+              </dd>
+              <dt>
+                <label for="subject">Subject</label>
+              </dt>
+              <dd>
+                <input type="text" name="subject" id="subject">
+              </dd>
+              <dt>
+                <label for="Message">Message</label>
+              </dt>
+              <dd>
+                <textarea name="body" id="body" rows="10"></textarea>
+              </dd>
+              <input type="submit" name="commit" value="Send request" class="button primary" data-disable-with="Send request">
+          </dl>
+        </form>
+      </div>
+      <div class="column sidebar">
+        <h3 class="">Join the community</h3>
+        <table class="contact-list">
+          <tr>
+            <td>GitHub</td>
+            <td>
+              <a href="https://github.com/atom">@atom</a>
+            </td>
+          </tr>
+          <tr>
+            <td>Twitter</td>
+            <td>
+              <a href="https://twitter.com/atomeditor">@AtomEditor</a>
+            </td>
+          </tr>
+          <tr>
+            <td>Github Discussions</td>
+            <td>
+              <a href="https://github.com/atom/atom/discussions">Github Discussions</a>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
