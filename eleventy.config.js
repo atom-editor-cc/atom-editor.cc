@@ -3,8 +3,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig
     .addPassthroughCopy('./src/*.{ico,txt}')
     .addPassthroughCopy('./src/addressfield.min.json')
-    .addPassthroughCopy('./src/assets')
-    .addPassthroughCopy('./src/videos');
+    .addPassthroughCopy('./src/assets');
 
   return {
     dir: {
