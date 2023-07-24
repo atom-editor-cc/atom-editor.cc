@@ -3737,7 +3737,7 @@ body.menu-active .modal-backdrop {
   display: inline-block;
   height: 32px;
   width: 32px;
-  background-image: url(/assets/button-sprites.png);
+  background-image: url(/assets/images/button-sprites.png);
   position: absolute;
   top: 4px;
   left: 4px;
@@ -3745,7 +3745,7 @@ body.menu-active .modal-backdrop {
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
   /* line 104, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/shared/buttons.scss */
   .button-image-down {
-    background-image: url(/assets/button-sprites@2x.png);
+    background-image: url(/assets/images/button-sprites@2x.png);
     -webkit-background-size: 64px 32px;
     -moz-background-size: 64px 32px;
     -o-background-size: 64px 32px;
@@ -3758,7 +3758,7 @@ body.menu-active .modal-backdrop {
   display: inline-block;
   height: 32px;
   width: 32px;
-  background-image: url(/assets/button-sprites.png);
+  background-image: url(/assets/images/button-sprites.png);
   position: absolute;
   background-position: -32px 0;
   top: 4px;
@@ -3767,7 +3767,7 @@ body.menu-active .modal-backdrop {
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
   /* line 114, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/shared/buttons.scss */
   .button-image-github {
-    background-image: url(/assets/button-sprites@2x.png);
+    background-image: url(/assets/images/button-sprites@2x.png);
     -webkit-background-size: 64px 32px;
     -moz-background-size: 64px 32px;
     -o-background-size: 64px 32px;
@@ -4249,12 +4249,12 @@ form.contact-form input[type="submit"] {
   position: relative;
   height: 470px;
   width: 410px;
-  background-image: url(/assets/contact.gif);
+  background-image: url(/assets/images/contact.gif);
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
   /* line 54, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/contact.scss */
   .illustration-contact {
-    background-image: url(/assets/contact@2x.gif);
+    background-image: url(/assets/images/contact@2x.gif);
     -webkit-background-size: 410px 470px;
     -moz-background-size: 410px 470px;
     -o-background-size: 410px 470px;
@@ -4367,12 +4367,12 @@ form.contact-form input[type="submit"] {
   display: block;
   width: 470px;
   height: 448px;
-  background-image: url(/assets/inspectocat.png);
+  background-image: url(/assets/images/inspectocat.png);
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
   /* line 99, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/documents.scss */
   .inspectocat {
-    background-image: url(/assets/inspectocat@2x.png);
+    background-image: url(/assets/images/inspectocat@2x.png);
     -webkit-background-size: 470px 448px;
     -moz-background-size: 470px 448px;
     -o-background-size: 470px 448px;
@@ -5502,12 +5502,12 @@ hr {
   width: 114px;
   height: 24px;
   margin: 4px 8px 4px 0;
-  background-image: url(/assets/logo-small.png);
+  background-image: url(/assets/images/logo-small.png);
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
   /* line 147, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/main.scss */
   .logo-small {
-    background-image: url(/assets/logo-small@2x.png);
+    background-image: url(/assets/images/logo-small@2x.png);
     -webkit-background-size: 114px 24px;
     -moz-background-size: 114px 24px;
     -o-background-size: 114px 24px;
@@ -5542,12 +5542,12 @@ hr {
   text-indent: 230px;
   white-space: nowrap;
   overflow: hidden;
-  background-image: url(/assets/logo.png);
+  background-image: url(/assets/images/logo.png);
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
   /* line 171, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/main.scss */
   .header .logo {
-    background-image: url(/assets/logo@2x.png);
+    background-image: url(/assets/images/logo@2x.png);
     -webkit-background-size: 290px 60px;
     -moz-background-size: 290px 60px;
     -o-background-size: 290px 60px;
@@ -5865,7 +5865,7 @@ hr {
   position: absolute;
   width: 256px;
   height: 86px;
-  background-image: url(/assets/soon.gif);
+  background-image: url(/assets/images/soon.gif);
   top: 50%;
   left: 50%;
   margin-top: -85px;
@@ -5875,7 +5875,7 @@ hr {
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
   /* line 462, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/main.scss */
   .nope {
-    background-image: url(/assets/soon@2x.gif);
+    background-image: url(/assets/images/soon@2x.gif);
     -webkit-background-size: 256px 86px;
     -moz-background-size: 256px 86px;
     -o-background-size: 256px 86px;
@@ -5950,7 +5950,7 @@ hr {
   position: absolute;
   width: 980px;
   height: 456px;
-  background-image: url(/assets/octocat-spinner-64.gif);
+  background-image: url(/assets/images/octocat-spinner-64.gif);
   background-repeat: no-repeat;
   background-position: center;
   display: none;
@@ -5958,7 +5958,7 @@ hr {
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
   /* line 13, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/packages.scss */
   .package-list .loading-overlay {
-    background-image: url(/assets/octocat-spinner-64@2x.gif);
+    background-image: url(/assets/images/octocat-spinner-64@2x.gif);
     -webkit-background-size: 64px 64px;
     -moz-background-size: 64px 64px;
     -o-background-size: 64px 64px;
@@ -6607,7 +6607,7 @@ input.search-input {
 /* line 635, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/packages.scss */
 #crop-modal .spinner {
   background-color: rgba(255, 255, 255, 0.7);
-  background-image: url(/assets/octocat-spinner-64.gif);
+  background-image: url(/assets/images/octocat-spinner-64.gif);
   position: absolute;
   background-repeat: no-repeat;
   background-position: center;
@@ -6621,7 +6621,7 @@ input.search-input {
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
   /* line 635, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/packages.scss */
   #crop-modal .spinner {
-    background-image: url(/assets/octocat-spinner-64@2x.gif);
+    background-image: url(/assets/images/octocat-spinner-64@2x.gif);
     -webkit-background-size: 64px 64px;
     -moz-background-size: 64px 64px;
     -o-background-size: 64px 64px;
@@ -7569,7 +7569,7 @@ body.menu-active .modal-backdrop {
   flex: 0 0 500px;
   height: 366px;
   background-repeat: no-repeat;
-  background-image: url(/assets/index-logo.svg), url(/assets/index-portal-sides.svg);
+  background-image: url(/assets/images/index-logo.svg), url(/assets/images/index-portal-sides.svg);
   background-position: center;
   -webkit-user-select: none;
   user-select: none;
@@ -7755,7 +7755,7 @@ body.menu-active .modal-backdrop {
 /* line 324, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/welcome.scss */
 .section--realtime {
   background-repeat: no-repeat;
-  background-image: url(/assets/index-teletype-graphic.svg);
+  background-image: url(/assets/images/index-teletype-graphic.svg);
   background-position: calc(50% - 1140px) center;
 }
 /* line 329, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/welcome.scss */
@@ -7772,7 +7772,7 @@ body.menu-active .modal-backdrop {
 /* line 343, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/welcome.scss */
 .section--github {
   background-repeat: no-repeat;
-  background-image: url(/assets/index-github-graphic.svg);
+  background-image: url(/assets/images/index-github-graphic.svg);
   background-position: calc(50% + 550px) center;
 }
 /* line 348, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/welcome.scss */
@@ -7834,7 +7834,7 @@ body.menu-active .modal-backdrop {
   border-top: 1px solid #1a191a;
   background-color: #2c2a2b;
   background-repeat: no-repeat;
-  background-image: url(/assets/index-rocket.svg);
+  background-image: url(/assets/images/index-rocket.svg);
   background-position: calc(50% + 380px) 60px;
 }
 /* line 415, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/welcome.scss */
