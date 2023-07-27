@@ -1,11 +1,3 @@
-/*
-
-
-
- *
-
-
-**/
 /* line 26, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/teletype.scss */
 html {
   font: 14px/1.5 normal normal;
@@ -87,17 +79,6 @@ p > img {
 /* line 88, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/teletype.scss */
 p:last-child > img {
   margin-bottom: 0;
-}
-
-/* line 92, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/teletype.scss */
-code {
-  padding: .2em .4em;
-  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
-  font-weight: 600;
-  font-size: 85%;
-  color: #f6ebda;
-  background-color: #494647;
-  border-radius: 3px;
 }
 
 /* line 102, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/teletype.scss */
@@ -368,6 +349,7 @@ body {
     background-size: auto;
   }
 }
+
 /* Large */
 @media (min-width: 1000px) {
   /* line 359, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/teletype.scss */
@@ -406,26 +388,6 @@ body {
     background-position: calc(100% + 1140px) calc(100% - 60px), -420px calc(100% - -360px);
   }
 }
-/* ------------------------------------------------------------------------------ */
-/* Login -------------------------- */
-/* line 396, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/teletype.scss */
-.section.hero--login .wrapper.intro h2 {
-  font-size: 2.4em;
-}
-/* line 399, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/teletype.scss */
-.section.hero--login .wrapper.intro h2 sup {
-  font-size: 0.4em;
-}
-
-/* line 405, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/teletype.scss */
-.section.login .wrapper {
-  padding-top: 0px;
-  text-align: center;
-}
-/* line 409, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/teletype.scss */
-.section.login .wrapper h3 {
-  margin-top: 0px;
-}
 
 /* line 414, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/teletype.scss */
 .hero .wrapper {
@@ -435,87 +397,6 @@ body {
 /* line 418, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/teletype.scss */
 .wrapper.intro {
   padding-bottom: 0;
-}
-
-/* line 422, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/teletype.scss */
-.account-token {
-  margin-top: 4em;
-}
-
-/* line 426, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/teletype.scss */
-.account-token h3 {
-  font-size: 1.1em;
-}
-
-/* line 430, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/teletype.scss */
-.account-token-form {
-  background: #fff;
-  border-radius: 3px;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  margin: 0 auto;
-  max-width: 350px;
-  padding: 1em;
-}
-/* line 440, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/teletype.scss */
-.account-token-form label {
-  color: #333;
-  text-align: left;
-  font-weight: 600;
-}
-
-/* line 447, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/teletype.scss */
-.account-token-form input {
-  margin: 1em 0;
-}
-
-/* line 451, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/teletype.scss */
-.account-token-form input,
-.account-token-form button {
-  font-family: inherit;
-  font-size: inherit;
-  line-height: inherit;
-  padding: .5em 1em;
-  border-radius: 3px;
-  box-sizing: border-box;
-  flex: 1;
-}
-
-/* line 462, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/teletype.scss */
-.show-token {
-  flex: 1;
-  text-align: center;
-  border: 1px solid #d1d1d2;
-}
-
-/* line 468, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/teletype.scss */
-.copy-token {
-  border: none;
-  color: #ffffff;
-  border: 1px solid transparent;
-  background-color: #dda131;
-  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
-  cursor: pointer;
-  outline: none;
-}
-
-/* line 477, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/teletype.scss */
-.copy-token:focus,
-.copy-token:hover {
-  background-color: #e5b55d;
-}
-
-/* line 481, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/teletype.scss */
-.copy-token:active {
-  background-color: #d39522;
-}
-
-/* sign-in-explanation */
-/* line 487, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/teletype.scss */
-.note {
-  color: #939395;
-  margin: 0 0 3em;
 }
 
 @import "octicons/octicons/sprockets-octicons";
