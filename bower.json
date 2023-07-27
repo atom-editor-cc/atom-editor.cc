@@ -1,3 +1,6 @@
 {
-  "name": "atom-editor.cc"
+  "name": "atom-editor.cc",
+  "dependencies": {
+    "octicons": "primer/octicons#2.0.1"
+  }
 }
