@@ -1,17 +1,11 @@
-var video;
-var videoHud;
-var videoButton;
-
 document.addEventListener('DOMContentLoaded', function() {
-  video = document.querySelector('#video');
-  videoHud = document.querySelector('#video-hud');
-  videoButton = document.querySelector('#video-button');
+  const video = document.querySelector('#video');
+  const videoHud = document.querySelector('#video-hud');
+  const videoButton = document.querySelector('#video-button');
 
-  videoButton.addEventListener('click', function(){ playVideo() }, false );
-})
-
-function playVideo() {
-  video.play();
-  video.controls = true; // enable controls
-  videoHud.classList.add('is-hidden');
-};
+  videoButton.addEventListener('click', function() {
+    video.play();
+    video.controls = true;
+    videoHud.classList.add('is-hidden');
+  }, false);
+});
