@@ -1,0 +1,87 @@
+/* line 6, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/admin.scss */
+.admin .spinnin {
+  opacity: 0.5;
+}
+/* line 10, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/admin.scss */
+.admin .explanation {
+  font-size: 80%;
+  color: #a29f99;
+  margin-top: 6px;
+}
+/* line 16, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/admin.scss */
+.admin h3, .admin h4 {
+  margin-bottom: 0px;
+}
+/* line 21, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/admin.scss */
+.admin .admin-package-search input[type=text] {
+  width: 100%;
+}
+/* line 26, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/admin.scss */
+.admin .admin-package-search-results {
+  padding-left: 40px;
+  padding-right: 40px;
+  margin-bottom: 20px;
+}
+/* line 31, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/admin.scss */
+.admin .admin-package-search-results ul.package-list li {
+  padding: 4px;
+}
+/* line 34, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/admin.scss */
+.admin .admin-package-search-results ul.package-list li:nth-child(odd) {
+  background-color: #f8f6f2;
+}
+/* line 41, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/admin.scss */
+.admin ul.package-list {
+  padding: 0px;
+  border-top: 1px solid #d3d1ce;
+  border-left: 1px solid #d3d1ce;
+  border-right: 1px solid #a29f99;
+}
+/* line 47, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/admin.scss */
+.admin ul.package-list li {
+  width: 100%;
+  list-style-type: none;
+  padding: 6px;
+  border-bottom: 1px solid #a29f99;
+}
+/* line 53, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/admin.scss */
+.admin ul.package-list li .delete-button {
+  color: #cc0000;
+}
+/* line 57, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/admin.scss */
+.admin ul.package-list li .add-button {
+  color: #3b9b6d;
+}
+/* line 61, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/admin.scss */
+.admin ul.package-list li .octicon {
+  float: right;
+  margin: 6px;
+}
+/* line 66, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/admin.scss */
+.admin ul.package-list li:nth-child(odd) {
+  background-color: #efeae1;
+}
+/* line 73, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/admin.scss */
+.admin .flags-list thead {
+  background-color: #eee;
+}
+/* line 78, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/admin.scss */
+.admin .flags-list tbody tr:nth-child(2n) {
+  background-color: #eee;
+}
+/* line 85, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/admin.scss */
+.admin .flag-details.unresolved {
+  background-color: #ffa5a5;
+}
+/* line 89, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/admin.scss */
+.admin .flag-details.resolved {
+  background-color: #e6ffcb;
+}
+/* line 92, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/admin.scss */
+.admin .flag-details.resolved h3 {
+  text-decoration: line-through;
+}
+/* line 98, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/admin.scss */
+.admin .blacklisting-details {
+  background-color: #ffa5a5;
+}

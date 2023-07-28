@@ -1,0 +1,32 @@
+/* line 1, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/search.scss */
+.search-unavailable {
+  position: relative;
+  list-style-type: none;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  width: 100%;
+  overflow: hidden;
+  padding: 7px 13px;
+}
+/* line 10, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/search.scss */
+.search-unavailable img {
+  display: inline-block;
+  vertical-align: middle;
+  height: 24px;
+  width: 24px;
+}
+/* line 17, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/search.scss */
+.search-unavailable h4 {
+  font-weight: 300;
+  font-size: 28px;
+  margin: 0;
+  line-height: 1.4;
+  margin-bottom: 10px;
+}
+/* line 25, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/search.scss */
+.search-unavailable p {
+  font-size: 15px;
+  margin: 0;
+  margin-left: 40px;
+  margin-bottom: 20px;
+}

@@ -1,0 +1,77 @@
+/* line 5, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/users.scss */
+.user-show .search-sort-select {
+  margin-bottom: 4px;
+}
+/* line 9, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/users.scss */
+.user-show .package-card {
+  width: 100%;
+}
+/* line 13, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/users.scss */
+.user-show .user-meta {
+  margin-bottom: 40px;
+}
+/* line 16, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/users.scss */
+.user-show .user-meta .main {
+  padding-left: 0;
+}
+/* line 20, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/users.scss */
+.user-show .user-meta img {
+  display: inline-block;
+  width: 64px;
+  height: 64px;
+  vertical-align: -15px;
+  margin-right: 5px;
+  border-radius: 3px;
+}
+/* line 30, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/users.scss */
+.user-show .username {
+  font-weight: 300;
+  font-size: 36px;
+  margin: 0;
+}
+/* line 36, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/users.scss */
+.user-show .count {
+  position: relative;
+  color: #a29f99;
+  font-size: 18px;
+  font-weight: normal;
+  background-color: #eee;
+  border-radius: 3px;
+  padding: 2px 5px;
+  vertical-align: 4px;
+}
+
+/* line 49, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/users.scss */
+.user-card .user-login {
+  font-weight: 300;
+  font-size: 28px;
+  margin: 0;
+  line-height: 1.4;
+  padding: 6px 0;
+}
+/* line 57, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/users.scss */
+.user-card .body {
+  padding: 7px 13px;
+}
+/* line 60, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/users.scss */
+.user-card .body .gravatar {
+  float: left;
+}
+/* line 64, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/users.scss */
+.user-card .body h4 {
+  color: #3b9b6d;
+}
+/* line 69, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/users.scss */
+.user-card p {
+  margin: 0;
+}
+/* line 71, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/users.scss */
+.user-card img {
+  height: 40px;
+  width: 40px;
+  margin-right: 12px;
+}
+/* line 77, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/users.scss */
+.user-card .css-truncate-target {
+  min-width: 360px;
+}

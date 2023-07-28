@@ -1,0 +1,48 @@
+/* line 2, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/flag.scss */
+#lean_overlay {
+  position: fixed;
+  z-index: 100;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  background: #000;
+  display: none;
+}
+
+/* line 13, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/flag.scss */
+#flag-modal, .blacklist-modal, .delete-modal {
+  background: #efeae1;
+  padding: 24px;
+  border-radius: 3px;
+  text-align: center;
+}
+/* line 19, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/flag.scss */
+#flag-modal .octicon, .blacklist-modal .octicon, .delete-modal .octicon {
+  font-size: 1.5em;
+}
+/* line 23, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/flag.scss */
+#flag-modal h2, .blacklist-modal h2, .delete-modal h2 {
+  margin: 0;
+  font-weight: 300;
+  font-size: 40px;
+  line-height: 1.4;
+}
+/* line 30, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/flag.scss */
+#flag-modal p, .blacklist-modal p, .delete-modal p {
+  margin-top: 0;
+}
+/* line 34, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/flag.scss */
+#flag-modal textarea, #flag-modal input[type=text], .blacklist-modal textarea, .blacklist-modal input[type=text], .delete-modal textarea, .delete-modal input[type=text] {
+  width: 100%;
+  margin-bottom: 24px;
+}
+/* line 39, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/flag.scss */
+#flag-modal .flag-button, .blacklist-modal .flag-button, .delete-modal .flag-button {
+  float: right;
+  font-size: 14px;
+  margin: 0;
+  height: 34px;
+  margin-left: 10px;
+  line-height: 0;
+}

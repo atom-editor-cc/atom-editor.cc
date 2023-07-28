@@ -1,0 +1,545 @@
+/* line 12, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/main.scss */
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 18, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/main.scss */
+html {
+  height: 100%;
+}
+
+/* line 22, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/main.scss */
+body {
+  height: 100%;
+  min-width: 1060px;
+  margin: 0;
+  color: #574c4f;
+  font: 16px/1.7 normal normal;
+  font-family: "Helvetica Neue", Helvetica, arial, freesans, clean, sans-serif;
+}
+
+/* line 31, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/main.scss */
+.wrapper {
+  width: 860px;
+  margin: 0 auto;
+  padding-left: 40px;
+  padding-right: 40px;
+  overflow: hidden;
+}
+/* line 38, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/main.scss */
+.wrapper.wide {
+  width: 1060px;
+}
+/* line 42, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/main.scss */
+.wrapper.no-pad {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/* line 50, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/main.scss */
+.content-push {
+  margin-top: 40px;
+  height: 100%;
+}
+
+/* line 55, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/main.scss */
+.footer-push {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin-bottom: -55px;
+}
+
+/* line 62, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/main.scss */
+.footer-pad {
+  height: 95px;
+}
+
+/* line 66, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/main.scss */
+a {
+  color: #3b9b6d;
+  text-decoration: none;
+}
+/* line 70, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/main.scss */
+a:hover {
+  text-decoration: underline;
+}
+
+/* line 73, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/main.scss */
+h1, h2, h3, h4, h5, h6 {
+  color: #4c4245;
+}
+/* line 74, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/main.scss */
+h1.center, h2.center, h3.center, h4.center, h5.center, h6.center {
+  text-align: center;
+}
+
+/* line 78, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/main.scss */
+hr {
+  border: 0;
+  height: 1px;
+  background-color: #efeae1;
+  display: block;
+  width: 100%;
+  clear: both;
+}
+
+/* line 87, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/main.scss */
+.top-bar {
+  text-align: left;
+  padding: 5px 0;
+  background-color: #584b4f;
+  color: #efeae1;
+  font-size: 14px;
+  height: 43px;
+}
+/* line 95, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/main.scss */
+.top-bar h1 {
+  font-size: inherit;
+  display: inline-block;
+  line-height: 0;
+  margin: 0;
+}
+/* line 102, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/main.scss */
+.top-bar a {
+  color: #efeae1;
+}
+/* line 105, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/main.scss */
+.top-bar a:hover {
+  color: #81c08b;
+  text-decoration: none;
+}
+/* line 110, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/main.scss */
+.top-bar a.is-selected {
+  color: #a29f99;
+}
+/* line 115, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/main.scss */
+.top-bar .navigation {
+  display: inline-block;
+}
+/* line 119, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/main.scss */
+.top-bar .top-bar-right {
+  float: right;
+  line-height: 33px;
+}
+/* line 123, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/main.scss */
+.top-bar .top-bar-right .octicon {
+  position: relative;
+  top: 1px;
+  padding: 5px;
+}
+/* line 129, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/main.scss */
+.top-bar .top-bar-right .tooltipped {
+  padding-bottom: 2px;
+  margin-left: 10px;
+}
+/* line 134, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/main.scss */
+.top-bar .top-bar-right .gravatar {
+  height: 22px;
+  width: 22px;
+  vertical-align: -7px;
+  margin-right: 5px;
+}
+/* line 142, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/main.scss */
+.top-bar .minibutton {
+  margin: 4px 0;
+}
+
+/* line 147, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/main.scss */
+.logo-small {
+  width: 114px;
+  height: 24px;
+  margin: 4px 8px 4px 0;
+  background-image: url(/assets/images/logo-small.png);
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
+  /* line 147, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/main.scss */
+  .logo-small {
+    background-image: url(/assets/images/logo-small@2x.png);
+    -webkit-background-size: 114px 24px;
+    -moz-background-size: 114px 24px;
+    -o-background-size: 114px 24px;
+    background-size: 114px 24px;
+  }
+}
+
+/* line 155, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/main.scss */
+.header {
+  width: 100%;
+  text-align: center;
+}
+/* line 160, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/main.scss */
+.header .wrapper {
+  overflow: hidden;
+  padding: 50px 0 40px;
+  line-height: 0;
+}
+/* line 166, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/main.scss */
+.header h1 {
+  margin: 0;
+  display: inline-block;
+}
+/* line 171, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/main.scss */
+.header .logo {
+  display: block;
+  width: 290px;
+  height: 60px;
+  line-height: 0;
+  color: #574c4f;
+  text-decoration: none;
+  text-indent: 230px;
+  white-space: nowrap;
+  overflow: hidden;
+  background-image: url(/assets/images/logo.png);
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
+  /* line 171, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/main.scss */
+  .header .logo {
+    background-image: url(/assets/images/logo@2x.png);
+    -webkit-background-size: 290px 60px;
+    -moz-background-size: 290px 60px;
+    -o-background-size: 290px 60px;
+    background-size: 290px 60px;
+  }
+}
+/* line 185, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/main.scss */
+.header .github-log-in-button {
+  float: right;
+  margin-top: 18px;
+  margin-left: 20px;
+  padding: 5px 10px;
+  font-size: 14px;
+}
+
+/* line 194, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/main.scss */
+.navigation {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+/* line 199, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/main.scss */
+.navigation li {
+  display: inline-block;
+  padding-right: 5px;
+  height: 33px;
+  vertical-align: top;
+}
+/* line 205, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/main.scss */
+.navigation li:last-child {
+  padding-right: 0;
+}
+/* line 208, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/main.scss */
+.navigation a {
+  padding: 5px;
+  display: inline-block;
+  transition: color 0.2s;
+  -o-transform: color 0.2s;
+  -moz-transform: color 0.2s;
+  -webkit-transition: color 0.2s;
+}
+/* line 213, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/main.scss */
+.navigation a:hover {
+  text-decoration: none;
+}
+
+/* line 219, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/main.scss */
+.footer {
+  background-color: #efeae1;
+  height: 55px;
+  padding: 15px;
+}
+/* line 224, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/main.scss */
+.footer a {
+  color: #574c4f;
+}
+/* line 227, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/main.scss */
+.footer a:hover {
+  text-decoration: none;
+}
+/* line 230, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/main.scss */
+.footer span {
+  color: #574c4f;
+}
+/* line 232, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/main.scss */
+.footer .footer-right {
+  float: right;
+}
+/* line 234, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/main.scss */
+.footer .footer-left {
+  float: left;
+  margin: 0;
+  padding: 0;
+}
+/* line 239, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/main.scss */
+.footer .footer-left li {
+  display: inline-block;
+  list-style-type: none;
+  margin-right: 15px;
+}
+/* line 246, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/main.scss */
+.footer .octicon {
+  position: relative;
+  font-size: 20px;
+  top: 1px;
+}
+/* line 252, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/main.scss */
+.footer .octicon-logo-github {
+  top: 2px;
+}
+
+/* line 257, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/main.scss */
+.tabs {
+  display: inline-block;
+}
+/* line 260, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/main.scss */
+.tabs ul {
+  display: table;
+  padding: 0;
+  margin: 0;
+}
+/* line 266, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/main.scss */
+.tabs li {
+  display: table-cell;
+  list-style-type: none;
+}
+/* line 271, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/main.scss */
+.tabs .button {
+  width: 100%;
+  padding: 10px 16px;
+  font-size: 18px;
+}
+
+/* line 278, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/main.scss */
+.columns {
+  overflow: hidden;
+  width: 100%;
+}
+/* line 282, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/main.scss */
+.columns .column {
+  float: left;
+  padding-left: 20px;
+  padding-right: 20px;
+  vertical-align: top;
+}
+/* line 288, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/main.scss */
+.columns .column:first-child {
+  padding-left: 0;
+  padding-right: 20px;
+}
+/* line 293, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/main.scss */
+.columns .column:last-child {
+  padding-left: 20px;
+  padding-right: 0;
+}
+/* line 299, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/main.scss */
+.columns .left, .columns .right {
+  width: 50%;
+}
+/* line 301, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/main.scss */
+.columns .sidebar {
+  width: 33.3%;
+}
+/* line 302, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/main.scss */
+.columns .main-column {
+  width: 66.6%;
+}
+/* line 304, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/main.scss */
+.columns.middle-align .column {
+  vertical-align: middle;
+}
+/* line 307, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/main.scss */
+.columns.middle-align .column h2 {
+  font-weight: 300;
+  font-size: 36px;
+}
+
+/* line 316, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/main.scss */
+.search-page .search-results {
+  padding-left: 0;
+}
+/* line 320, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/main.scss */
+.search-page .search-results-header {
+  margin-top: 3px;
+  margin-bottom: 2px;
+  font-size: 18px;
+  font-weight: normal;
+  color: #999;
+  display: inline-block;
+}
+/* line 328, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/main.scss */
+.search-page .search-results-header em {
+  color: #66595c;
+  font-weight: bold;
+}
+/* line 334, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/main.scss */
+.search-page .try-other-search-message {
+  color: #999;
+}
+/* line 339, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/main.scss */
+.search-page .markdown h1, .search-page .markdown h2, .search-page .markdown h3, .search-page .markdown h4, .search-page .markdown h5, .search-page .markdown h6 {
+  font-size: 16px;
+  font-weight: bold;
+  border-bottom: 0;
+}
+/* line 345, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/main.scss */
+.search-page .markdown .anchor {
+  display: none;
+}
+/* line 347, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/main.scss */
+.search-page .markdown a {
+  color: #574c4f;
+}
+
+/* line 352, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/main.scss */
+.docs-search-results h3 {
+  margin: 0;
+  font-size: 18px;
+}
+/* line 357, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/main.scss */
+.docs-search-results li {
+  list-style-type: none;
+  border-top: 1px solid #eee;
+  padding: 20px 0;
+}
+/* line 362, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/main.scss */
+.docs-search-results li:first-child {
+  border-top-color: #ddd;
+}
+
+/* line 368, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/main.scss */
+.docs-search-results-header {
+  margin: 0;
+  line-height: 18px;
+}
+
+/* line 373, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/main.scss */
+.sidebar-search-field {
+  width: 100%;
+  font-size: 14px;
+  padding: 5px;
+}
+
+/* line 379, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/main.scss */
+.octicon:hover {
+  text-decoration: none;
+}
+
+/* line 383, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/main.scss */
+.flash {
+  text-align: left;
+  padding: 5px;
+}
+/* line 387, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/main.scss */
+.flash .flash-inner {
+  width: 1060px;
+  margin: 0 auto;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+/* line 394, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/main.scss */
+.flash.notice {
+  color: #3b9b6d;
+  border-top: 1px solid #c8e3cc;
+  background-color: #d8f5dd;
+}
+/* line 399, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/main.scss */
+.flash.alert {
+  color: #bf8f80;
+  border-top: 1px solid #edddd8;
+  background-color: #ffede7;
+}
+
+/* line 406, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/main.scss */
+.gravatar {
+  border-radius: 3px;
+  border: 0;
+}
+
+/* line 413, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/main.scss */
+.hero .flash.notice, .hero .flash.alert, .invite .flash.notice, .invite .flash.alert {
+  background-color: transparent;
+  border-top: 0;
+}
+
+/* line 420, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/main.scss */
+.card {
+  list-style-type: none;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  margin: 0 20px 20px 0;
+  width: 480px;
+}
+/* line 427, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/main.scss */
+.card img {
+  display: inline-block;
+  vertical-align: middle;
+}
+/* line 432, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/main.scss */
+.card .meta {
+  padding: 13px;
+  background-color: #fafafa;
+  line-height: 1;
+}
+
+/* line 439, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/main.scss */
+.index-title {
+  font-size: 32px;
+  font-weight: 400;
+}
+
+/* line 444, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/main.scss */
+.thirds, .halves {
+  overflow: hidden;
+  margin-right: -20px;
+}
+/* line 448, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/main.scss */
+.thirds .grid-cell, .halves .grid-cell {
+  float: left;
+  padding-right: 20px;
+}
+
+/* line 454, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/main.scss */
+.halves .grid-cell {
+  width: 50%;
+}
+
+/* line 458, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/main.scss */
+.thirds .grid-cell {
+  width: 33.3%;
+}
+
+/* line 462, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/main.scss */
+.nope {
+  position: absolute;
+  width: 256px;
+  height: 86px;
+  background-image: url(/assets/images/soon.gif);
+  top: 50%;
+  left: 50%;
+  margin-top: -85px;
+  margin-left: -128px;
+  line-height: 0;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
+  /* line 462, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/main.scss */
+  .nope {
+    background-image: url(/assets/images/soon@2x.gif);
+    -webkit-background-size: 256px 86px;
+    -moz-background-size: 256px 86px;
+    -o-background-size: 256px 86px;
+    background-size: 256px 86px;
+  }
+}
+
+/* line 474, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/main.scss */
+.sunset-text-color {
+  color: #ffd152;
+}
+
+/* line 478, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/main.scss */
+.sunset-banner {
+  padding: 10px;
+  font-style: bold !important;
+}
