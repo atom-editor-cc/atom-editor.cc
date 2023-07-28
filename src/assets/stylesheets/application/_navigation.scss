@@ -3,9 +3,9 @@
   border-radius: 3px;
 
   ul {
+    margin-top: 0;
     padding-bottom: 15px;
     padding-left: 0;
-    margin-top: 0;
   }
 
   .side-nav-item {
@@ -16,25 +16,25 @@
       padding: 2px 15px;
 
       &:hover {
-        text-decoration: none;
         background-color: #efeae1;
+        text-decoration: none;
       }
     }
 
     &.active a {
-      color: #fff;
       background-color: #3b9b6d;
+      color: #fff;
     }
   }
 
   .side-nav-header {
-    padding-right: 15px;
-    padding-left: 15px;
     margin-bottom: 6px;
+    padding-left: 15px;
+    padding-right: 15px;
 
     &:first-child {
-      padding-top: 10px;
       margin-top: 0;
+      padding-top: 10px;
     }
   }
 }
