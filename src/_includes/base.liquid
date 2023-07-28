@@ -37,6 +37,11 @@
     <nav class="top-bar" aria-label="Primary">
       <div class="wrapper no-pad">
         <ul class="navigation">
+          {% unless page.url == "/" -%}
+            <li>
+              <h1><a href="/" class="logo-small" title="Atom: A hackable text editor for the 21st Century"></a></h1>
+            </li>
+          {% endunless -%}
           <li><a class="" href="/packages">Packages</a></li>
           <li><a class="" href="/themes">Themes</a></li>
           <li><a class="" href="/docs">Documentation</a></li>
