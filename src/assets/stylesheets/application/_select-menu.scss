@@ -1,92 +1,94 @@
-/* line 9, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/select-menu.scss */
 .select-menu-button {
   padding-right: 25px;
-}
-/* line 12, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/select-menu.scss */
-.select-menu-button .octicon {
-  margin-right: 1px;
-}
-/* line 15, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/select-menu.scss */
-.select-menu-button:before {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  display: block;
-  width: 0;
-  height: 0;
-  content: "";
-  border: 4px solid;
-  border-right-color: transparent;
-  border-left-color: transparent;
-  border-bottom-color: transparent;
-}
-/* line 30, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/select-menu.scss */
-.select-menu-button.with-gravatar:before {
-  top: 13px;
-}
-/* line 32, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/select-menu.scss */
-.select-menu-button.icon-only {
-  padding-right: 18px;
-  padding-left: 7px;
-}
-/* line 35, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/select-menu.scss */
-.select-menu-button.icon-only:before {
-  right: 8px;
+
+  .octicon {
+    margin-right: 1px;
+  }
+
+  &:before {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: block;
+    width: 0;
+    height: 0;
+    content: "";
+    border: 4px solid;
+    border-right-color: transparent;
+    border-left-color: transparent;
+    border-bottom-color: transparent;
+  }
+
+  &.with-gravatar:before {
+    top: 13px;
+  }
+
+  &.icon-only {
+    padding-right: 18px;
+    padding-left: 7px;
+
+    &:before {
+      right: 8px;
+    }
+  }
+
+  &.primary {
+    &:before {
+      border-top-color: #fff;
+    }
+
+    &:hover:active {
+      background-color: #4a993e;
+    }
+  }
 }
 
-/* line 40, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/select-menu.scss */
-.select-menu-button.primary:before {
-  border-top-color: #fff;
-}
-/* line 44, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/select-menu.scss */
-.select-menu-button.primary:hover:active {
-  background-color: #4a993e;
+.select-menu {
+  .spinner {
+    float: left;
+    margin: 4px 0 0 -24px;
+  }
+
+  &.active .select-menu-modal-holder {
+    display: block;
+  }
+
+  &.right-aligned {
+    float: right;
+    position: relative;
+
+    .select-menu-modal-holder {
+      right: 0;
+    }
+  }
+
+  &.is-showing-clear-item .select-menu-clear-item {
+    display: block;
+
+    .octicon {
+      color: inherit;
+    }
+
+    + .select-menu-no-results {
+      display: none;
+    }
+  }
+
+  &.is-loading {
+    .select-menu-loading-overlay {
+      display: block;
+    }
+
+    .select-menu-modal {
+      min-height: 200px;
+    }
+  }
+
+  &.has-error .select-menu-error-shell {
+    display: block;
+  }
 }
 
-/* line 61, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/select-menu.scss */
-.select-menu .spinner {
-  float: left;
-  margin: 4px 0 0 -24px;
-}
-/* line 67, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/select-menu.scss */
-.select-menu.active .select-menu-modal-holder {
-  display: block;
-}
-/* line 72, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/select-menu.scss */
-.select-menu.right-aligned {
-  float: right;
-  position: relative;
-}
-/* line 76, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/select-menu.scss */
-.select-menu.right-aligned .select-menu-modal-holder {
-  right: 0;
-}
-/* line 81, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/select-menu.scss */
-.select-menu.is-showing-clear-item .select-menu-clear-item {
-  display: block;
-}
-/* line 84, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/select-menu.scss */
-.select-menu.is-showing-clear-item .select-menu-clear-item .octicon {
-  color: inherit;
-}
-/* line 86, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/select-menu.scss */
-.select-menu.is-showing-clear-item .select-menu-clear-item + .select-menu-no-results {
-  display: none;
-}
-/* line 89, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/select-menu.scss */
-.select-menu.is-loading .select-menu-loading-overlay {
-  display: block;
-}
-/* line 91, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/select-menu.scss */
-.select-menu.is-loading .select-menu-modal {
-  min-height: 200px;
-}
-/* line 93, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/select-menu.scss */
-.select-menu.has-error .select-menu-error-shell {
-  display: block;
-}
-
-/* line 100, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/select-menu.scss */
 .select-menu-loading-overlay {
   display: none;
   text-indent: 100%;
@@ -101,20 +103,20 @@
   animation: pulse 2s infinite linear;
   -webkit-animation: pulse 2s infinite linear;
   -moz-animation: pulse 2s infinite linear;
-}
-/* line 115, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/select-menu.scss */
-.select-menu-loading-overlay:before {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  margin: -16px 0 0 -16px;
-  width: 32px;
-  content: "\f008";
-  font: normal normal 32px/1 "octicons";
-  display: inline-block;
-  text-decoration: none;
-  -webkit-font-smoothing: antialiased;
-  text-indent: 0;
+
+  &:before {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -16px 0 0 -16px;
+    width: 32px;
+    content: "\f008";
+    font: normal normal 32px/1 "octicons";
+    display: inline-block;
+    text-decoration: none;
+    -webkit-font-smoothing: antialiased;
+    text-indent: 0;
+  }
 }
 
 @keyframes pulse {
@@ -128,6 +130,7 @@
     color: rgba(170, 170, 170, 0.1);
   }
 }
+
 @-webkit-keyframes pulse {
   0% {
     color: rgba(170, 170, 170, 0.1);
@@ -139,6 +142,7 @@
     color: rgba(170, 170, 170, 0.1);
   }
 }
+
 @-moz-keyframes pulse {
   0% {
     color: rgba(170, 170, 170, 0.1);
@@ -150,6 +154,7 @@
     color: rgba(170, 170, 170, 0.1);
   }
 }
+
 @-o-keyframes pulse {
   0% {
     color: rgba(170, 170, 170, 0.1);
@@ -161,30 +166,28 @@
     color: rgba(170, 170, 170, 0.1);
   }
 }
-/* line 141, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/select-menu.scss */
+
 .select-menu-error-shell {
   padding: 5px;
   border-bottom: 1px solid #eee;
   display: none;
-}
-/* line 146, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/select-menu.scss */
-.select-menu-error-shell .select-menu-error {
-  display: block;
-  padding: 5px 10px;
-  font-weight: bold;
-  color: #900;
-  background-color: #FFEAEA;
-  border: 1px solid #E2A0A0;
+
+  .select-menu-error {
+    display: block;
+    padding: 5px 10px;
+    font-weight: bold;
+    color: #900;
+    background-color: #FFEAEA;
+    border: 1px solid #E2A0A0;
+  }
 }
 
-/* line 161, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/select-menu.scss */
 .select-menu-modal-holder {
   position: absolute;
   display: none;
   z-index: 21;
 }
 
-/* line 170, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/select-menu.scss */
 .select-menu-modal {
   position: relative;
   width: 300px;
@@ -201,7 +204,6 @@
   box-shadow: 0 3px 12px rgba(0, 0, 0, 0.25);
 }
 
-/* line 189, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/select-menu.scss */
 .select-menu-header {
   padding: 8px 10px;
   background-color: #eee;
@@ -210,108 +212,104 @@
   background-image: linear-gradient(#fafafa, #eee);
   background-repeat: repeat-x;
   border-bottom: 1px solid #ddd;
-}
-/* line 194, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/select-menu.scss */
-.select-menu-header .select-menu-title {
-  font-weight: bold;
-  color: #333;
-  text-shadow: 0 1px 0 #fff;
-}
-/* line 200, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/select-menu.scss */
-.select-menu-header .octicon {
-  display: block;
-  float: right;
-  color: #ccc;
-  cursor: pointer;
-}
-/* line 206, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/select-menu.scss */
-.select-menu-header .octicon:hover {
-  color: #555;
+
+  .select-menu-title {
+    font-weight: bold;
+    color: #333;
+    text-shadow: 0 1px 0 #fff;
+  }
+
+  .octicon {
+    display: block;
+    float: right;
+    color: #ccc;
+    cursor: pointer;
+
+    &:hover {
+      color: #555;
+    }
+  }
 }
 
-/* line 213, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/select-menu.scss */
 .select-menu-filters {
   background-color: #f8f8f8;
 }
 
-/* line 220, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/select-menu.scss */
 .select-menu-text-filter {
   padding: 10px 10px 0;
-}
-/* line 223, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/select-menu.scss */
-.select-menu-text-filter:first-child:last-child {
-  padding-bottom: 10px;
-  border-bottom: 1px solid #DDD;
-}
-/* line 228, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/select-menu.scss */
-.select-menu-text-filter input {
-  display: block;
-  width: 100%;
-  max-width: 100%;
-  padding: 5px;
-  border: 1px solid #DDD;
-  border-radius: 3px;
-}
-/* line 236, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/select-menu.scss */
-.select-menu-text-filter input::-webkit-input-placeholder, .select-menu-text-filter input:-moz-placeholder {
-  color: #aaa;
+
+  &:first-child:last-child {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #DDD;
+  }
+
+  input {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    padding: 5px;
+    border: 1px solid #DDD;
+    border-radius: 3px;
+
+    &::-webkit-input-placeholder,
+    &:-moz-placeholder {
+      color: #aaa;
+    }
+  }
 }
 
-/* line 244, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/select-menu.scss */
 .select-menu-tabs {
   height: 33px;
   border-bottom: 1px solid #ddd;
-}
-/* line 248, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/select-menu.scss */
-.select-menu-tabs ul {
-  overflow: hidden;
-  padding: 14px 10px 0 10px;
-}
-/* line 253, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/select-menu.scss */
-.select-menu-tabs .select-menu-tab {
-  display: inline-block;
-}
-/* line 257, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/select-menu.scss */
-.select-menu-tabs a {
-  height: 20px;
-  padding: 5px 8px;
-  font-size: 11px;
-  font-weight: bold;
-  color: #888;
-  text-decoration: none;
-  line-height: 20px;
-  border-radius: 3px 3px 0 0;
-  cursor: pointer;
-}
-/* line 268, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/select-menu.scss */
-.select-menu-tabs a:hover {
-  color: #333;
-}
-/* line 272, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/select-menu.scss */
-.select-menu-tabs a.selected {
-  padding: 4px 5px;
-  border: 1px solid #ddd;
-  border-bottom: 1px solid #fff;
-  background-color: #fff;
-  color: #333;
+
+  ul {
+    overflow: hidden;
+    padding: 14px 10px 0 10px;
+  }
+
+  .select-menu-tab {
+    display: inline-block;
+  }
+
+  a {
+    height: 20px;
+    padding: 5px 8px;
+    font-size: 11px;
+    font-weight: bold;
+    color: #888;
+    text-decoration: none;
+    line-height: 20px;
+    border-radius: 3px 3px 0 0;
+    cursor: pointer;
+
+    &:hover {
+      color: #333;
+    }
+
+    &.selected {
+      padding: 4px 5px;
+      border: 1px solid #ddd;
+      border-bottom: 1px solid #fff;
+      background-color: #fff;
+      color: #333;
+    }
+  }
 }
 
-/* line 289, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/select-menu.scss */
 .select-menu-list {
   max-height: 400px;
   overflow: auto;
   position: relative;
-}
-/* line 294, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/select-menu.scss */
-.select-menu-list.select-menu-tab-bucket {
-  display: none;
-}
-/* line 297, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/select-menu.scss */
-.select-menu-list.select-menu-tab-bucket.selected {
-  display: block;
+
+  &.select-menu-tab-bucket {
+    display: none;
+
+    &.selected {
+      display: block;
+    }
+  }
 }
 
-/* line 304, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/select-menu.scss */
 .select-menu-item {
   cursor: pointer;
   border-bottom: 1px solid #eee;
@@ -320,166 +318,176 @@
   width: 100%;
   overflow: hidden;
   color: inherit;
-}
-/* line 313, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/select-menu.scss */
-.select-menu-item:hover {
-  text-decoration: none;
-}
-/* line 315, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/select-menu.scss */
-.select-menu-item.select-menu-item-template {
-  display: none;
-}
-/* line 317, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/select-menu.scss */
-.select-menu-item.select-menu-clear-item {
-  display: none;
-}
-/* line 319, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/select-menu.scss */
-.select-menu-item.disabled, .select-menu-item.disabled.selected {
-  color: #999;
-}
-/* line 323, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/select-menu.scss */
-.select-menu-item.disabled .select-menu-item-gravatar, .select-menu-item.disabled.selected .select-menu-item-gravatar {
-  opacity: .5;
-}
-/* line 326, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/select-menu.scss */
-.select-menu-item .octicon {
-  vertical-align: middle;
-}
-/* line 330, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/select-menu.scss */
-.select-menu-item input[type="radio"] {
-  display: none;
-}
-/* line 332, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/select-menu.scss */
-.select-menu-item .select-menu-item-icon {
-  display: table-cell;
-  color: transparent;
-  vertical-align: top;
-  padding: 8px 0 8px 8px;
-  width: 24px;
-  text-align: center;
-}
-/* line 340, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/select-menu.scss */
-.select-menu-item .select-menu-item-icon.is-shown {
-  color: inherit;
-}
-/* line 343, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/select-menu.scss */
-.select-menu-item.navigation-focus, .select-menu-item.navigation-focus.selected, .select-menu-item.navigation-focus.select-menu-action {
-  background-color: #4183c4;
-  color: #fff;
-}
-/* line 349, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/select-menu.scss */
-.select-menu-item.navigation-focus > .octicon, .select-menu-item.navigation-focus.selected > .octicon, .select-menu-item.navigation-focus.select-menu-action > .octicon {
-  color: #fff;
-}
-/* line 351, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/select-menu.scss */
-.select-menu-item.navigation-focus .text-danger,
-.select-menu-item.navigation-focus .description, .select-menu-item.navigation-focus.selected .text-danger,
-.select-menu-item.navigation-focus.selected .description, .select-menu-item.navigation-focus.select-menu-action .text-danger,
-.select-menu-item.navigation-focus.select-menu-action .description {
-  color: #fff;
-}
-/* line 355, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/select-menu.scss */
-.select-menu-item > .octicon-dash {
-  display: none;
-}
-/* line 359, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/select-menu.scss */
-.select-menu-item.indeterminate > .octicon-check {
-  display: none;
-}
-/* line 360, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/select-menu.scss */
-.select-menu-item.indeterminate > .octicon-dash {
-  display: table-cell;
-}
-/* line 363, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/select-menu.scss */
-.select-menu-item.select-menu-action, .select-menu-item.selected {
-  color: #333;
-}
-/* line 367, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/select-menu.scss */
-.select-menu-item.select-menu-action .description, .select-menu-item.selected .description {
-  color: #666;
-}
-/* line 369, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/select-menu.scss */
-.select-menu-item.select-menu-action > .octicon, .select-menu-item.selected > .octicon {
-  color: #333;
-}
-/* line 371, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/select-menu.scss */
-.select-menu-item.select-menu-action .select-menu-item-text {
-  font-weight: bold;
-}
-/* line 375, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/select-menu.scss */
-.select-menu[data-multiple] .select-menu-item:active {
-  background-color: transparent !important;
-}
-/* line 377, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/select-menu.scss */
-.select-menu-item a {
-  color: inherit;
-  text-decoration: none;
-}
-/* line 382, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/select-menu.scss */
-.select-menu-item .hidden-select-button-text {
-  display: none;
-}
-/* line 384, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/select-menu.scss */
-.select-menu-item .css-truncate-target {
-  display: table-cell;
-  max-width: 100%;
+
+  &:hover {
+    text-decoration: none;
+  }
+
+  &.select-menu-item-template {
+    display: none;
+  }
+
+  &.select-menu-clear-item {
+    display: none;
+  }
+
+  &.disabled {
+    &,
+    &.selected {
+      color: #999;
+
+      .select-menu-item-gravatar {
+        opacity: .5;
+      }
+    }
+  }
+
+  .octicon {
+    vertical-align: middle;
+  }
+
+  input[type="radio"] {
+    display: none;
+  }
+
+  .select-menu-item-icon {
+    display: table-cell;
+    color: transparent;
+    vertical-align: top;
+    padding: 8px 0 8px 8px;
+    width: 24px;
+    text-align: center;
+
+    &.is-shown {
+      color: inherit;
+    }
+  }
+
+  &.navigation-focus {
+    &,
+    &.selected,
+    &.select-menu-action {
+      background-color: #4183c4;
+      color: #fff;
+
+      > .octicon {
+        color: #fff;
+      }
+
+      .text-danger,
+      .description {
+        color: #fff;
+      }
+    }
+  }
+
+  > .octicon-dash {
+    display: none;
+  }
+
+  &.indeterminate {
+    > .octicon-check {
+      display: none;
+    }
+
+    > .octicon-dash {
+      display: table-cell;
+    }
+  }
+
+  &.select-menu-action,
+  &.selected {
+    color: #333;
+  }
+
+  &.select-menu-action,
+  &.selected {
+    .description {
+      color: #666;
+    }
+  }
+
+  &.select-menu-action,
+  &.selected {
+    > .octicon {
+      color: #333;
+    }
+  }
+
+  &.select-menu-action .select-menu-item-text {
+    font-weight: bold;
+  }
+
+  .select-menu[data-multiple] &:active {
+    background-color: transparent !important;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  .hidden-select-button-text {
+    display: none;
+  }
+
+  .css-truncate-target {
+    display: table-cell;
+    max-width: 100%;
+  }
 }
 
-/* line 389, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/select-menu.scss */
-form.select-menu-item > div:first-child {
-  display: none !important;
+form.select-menu-item {
+  > div:first-child {
+    display: none !important;
+  }
+
+  &.last-visible,
+  .select-menu-list:last-child &:last-child {
+    border-bottom: 0;
+    border-radius: 0 0 3px 3px;
+  }
 }
 
-/* line 393, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/select-menu.scss */
-.select-menu-item.last-visible,
-.select-menu-list:last-child .select-menu-item:last-child {
-  border-bottom: 0;
-  border-radius: 0 0 3px 3px;
-}
-
-/* line 401, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/select-menu.scss */
 .select-menu-actions .select-menu-item:hover {
   background-color: #4183c4;
   color: #fff;
-}
-/* line 405, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/select-menu.scss */
-.select-menu-actions .select-menu-item:hover > .octicon {
-  color: #fff;
-}
-/* line 407, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/select-menu.scss */
-.select-menu-actions .select-menu-item:hover .description {
-  color: #fff;
+
+  > .octicon {
+    color: #fff;
+  }
+
+  .description {
+    color: #fff;
+  }
 }
 
-/* line 415, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/select-menu.scss */
 .select-menu-no-results {
   padding: 9px;
   display: none;
   cursor: auto;
   color: #999;
-}
-/* line 421, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/select-menu.scss */
-.select-menu-list.filterable-empty .select-menu-no-results, .select-menu-no-results:only-child {
-  display: block;
+
+  .select-menu-list.filterable-empty &,
+  &:only-child {
+    display: block;
+  }
 }
 
-/* line 432, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/select-menu.scss */
 .select-menu-button-gravatar,
 .select-menu-item-gravatar {
   overflow: hidden;
   line-height: 0;
   width: 20px;
-}
-/* line 438, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/select-menu.scss */
-.select-menu-button-gravatar img,
-.select-menu-item-gravatar img {
-  height: 20px;
-  width: 20px;
-  display: inline-block;
-  border-radius: 3px;
+
+  img {
+    height: 20px;
+    width: 20px;
+    display: inline-block;
+    border-radius: 3px;
+  }
 }
 
-/* line 446, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/select-menu.scss */
 .select-menu-item-gravatar {
   display: table-cell;
   padding: 6px 0 6px 8px;
@@ -487,7 +495,6 @@ form.select-menu-item > div:first-child {
   width: 28px;
 }
 
-/* line 453, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/select-menu.scss */
 .select-menu-button-gravatar {
   display: inline-block;
   margin: 6px 3px 6px 0;
@@ -495,73 +502,70 @@ form.select-menu-item > div:first-child {
   vertical-align: middle;
 }
 
-/* line 463, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/select-menu.scss */
 .select-menu-item-text {
   display: table-cell;
   vertical-align: top;
   padding: 8px 0 8px 8px;
   text-align: left;
-}
-/* line 469, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/select-menu.scss */
-.select-menu-item-text:first-child {
-  margin-left: 5px;
-}
-/* line 471, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/select-menu.scss */
-.select-menu-item-text .description {
-  color: #999;
-  font-size: 12px;
-  max-width: 265px;
-  display: block;
-  margin-top: 3px;
-}
-/* line 479, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/select-menu.scss */
-.select-menu-item-text h4 {
-  margin-top: 0;
-  margin-bottom: 0;
-}
-/* line 484, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/select-menu.scss */
-.select-menu-item-text h4 .description {
-  font-weight: normal;
-  display: inline;
+
+  &:first-child {
+    margin-left: 5px;
+  }
+
+  .description {
+    color: #999;
+    font-size: 12px;
+    max-width: 265px;
+    display: block;
+    margin-top: 3px;
+  }
+
+  h4 {
+    margin-top: 0;
+    margin-bottom: 0;
+
+    .description {
+      font-weight: normal;
+      display: inline;
+    }
+  }
 }
 
-/* line 493, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/select-menu.scss */
 .select-menu-footer {
   padding: 8px;
   font-weight: bold;
   border-top: 1px solid #eee;
-}
-/* line 498, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/select-menu.scss */
-.select-menu-footer a {
-  display: inline-block;
-  margin-top: 1px;
-  vertical-align: top;
-}
-/* line 504, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/select-menu.scss */
-.select-menu-footer .octicon {
-  color: #666;
+
+  a {
+    display: inline-block;
+    margin-top: 1px;
+    vertical-align: top;
+  }
+
+  .octicon {
+    color: #666;
+  }
 }
 
-/* line 511, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/select-menu.scss */
 .select-menu-new-item-form {
   display: none;
-}
-/* line 514, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/select-menu.scss */
-.select-menu-new-item-form .octicon {
-  color: #4183c4;
+
+  .octicon {
+    color: #4183c4;
+  }
 }
 
-/* line 517, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/select-menu.scss */
-.select-menu-list.is-showing-new-item-form .select-menu-new-item-form {
-  display: table;
-}
-/* line 518, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/select-menu.scss */
-.select-menu-list.is-showing-new-item-form .select-menu-no-results,
-.select-menu-list.is-showing-new-item-form .select-menu-clear-item {
-  display: none;
+.select-menu-list.is-showing-new-item-form {
+  .select-menu-new-item-form {
+    display: table;
+  }
+
+  .select-menu-no-results,
+  .select-menu-clear-item {
+    display: none;
+  }
 }
 
-/* line 525, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/select-menu.scss */
 .modal-backdrop {
   display: none;
   -webkit-touch-callout: none;
@@ -570,14 +574,14 @@ form.select-menu-item > div:first-child {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-}
-/* line 529, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/select-menu.scss */
-body.menu-active .modal-backdrop {
-  display: block;
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  z-index: 20;
+
+  body.menu-active & {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 20;
+  }
 }

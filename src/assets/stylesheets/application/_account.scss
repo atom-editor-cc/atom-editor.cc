@@ -1,14 +1,15 @@
 /* line 5, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/account.scss */
-.account-show h3 {
-  margin-bottom: 0;
-}
-/* line 9, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/account.scss */
-.account-show section {
-  margin-bottom: 64px;
-  border-bottom: 1px #efeae1;
+.account-show {
+  h3 {
+    margin-bottom: 0;
+  }
+
+  section {
+    margin-bottom: 64px;
+    border-bottom: 1px #efeae1;
+  }
 }
 
-/* line 14, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/account.scss */
 .account-invites {
   text-align: center;
   background-color: #efeae1;
@@ -16,80 +17,81 @@
   padding-bottom: 20px;
 }
 
-/* line 21, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/account.scss */
 .account-token {
   padding-right: 90px;
-}
-/* line 24, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/account.scss */
-.account-token h3 {
-  margin-top: 0;
-}
-/* line 28, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/account.scss */
-.account-token .show-token {
-  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
-  width: 280px;
-  text-align: center;
-}
-/* line 34, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/account.scss */
-.account-token input[type=submit] {
-  height: 34px;
-  font-size: 14px;
+
+  h3 {
+    margin-top: 0;
+  }
+
+  .show-token {
+    font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+    width: 280px;
+    text-align: center;
+  }
+
+  input[type="submit"] {
+    height: 34px;
+    font-size: 14px;
+  }
 }
 
-/* line 40, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/account.scss */
-.address-form.loading {
-  opacity: 0.7;
-}
-
-/* line 44, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/account.scss */
 .address-block p {
   padding-right: 90px;
 }
 
-/* line 48, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/account.scss */
 .address-form {
   margin: 0 auto;
-}
-/* line 51, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/account.scss */
-.address-form .hidden {
-  display: none;
-}
-/* line 55, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/account.scss */
-.address-form label, .address-form input, .address-form select {
-  display: inline-block;
-}
-/* line 59, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/account.scss */
-.address-form label {
-  width: 20%;
-  text-align: right;
-}
-/* line 64, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/account.scss */
-.address-form label + input {
-  width: 55%;
-  margin: 16px 10% 0 4%;
-}
-/* line 69, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/account.scss */
-.address-form label + select {
-  width: 55%;
-  margin: 16px 10% 0 4%;
-}
-/* line 74, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/account.scss */
-.address-form input + input {
-  float: right;
-}
-/* line 78, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/account.scss */
-.address-form input + select {
-  float: right;
-}
-/* line 82, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/account.scss */
-.address-form input[disabled] {
-  opacity: 0.8;
-}
-/* line 86, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/account.scss */
-.address-form input[type="submit"], .address-form .button {
-  margin: 16px 20% 0 4%;
-  width: 27.5%;
-  float: right;
-  text-align: center;
-  line-height: normal;
+
+  &.loading {
+    opacity: 0.7;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  label,
+  input,
+  select {
+    display: inline-block;
+  }
+
+  label {
+    width: 20%;
+    text-align: right;
+
+    + input {
+      width: 55%;
+      margin: 16px 10% 0 4%;
+    }
+
+    + select {
+      width: 55%;
+      margin: 16px 10% 0 4%;
+    }
+  }
+
+  input {
+    + input {
+      float: right;
+    }
+
+    + select {
+      float: right;
+    }
+
+    &[disabled] {
+      opacity: 0.8;
+    }
+  }
+
+  input[type="submit"],
+  .button {
+    margin: 16px 20% 0 4%;
+    width: 27.5%;
+    float: right;
+    text-align: center;
+    line-height: normal;
+  }
 }

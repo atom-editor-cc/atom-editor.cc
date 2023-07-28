@@ -1,15 +1,17 @@
 /* line 5, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/feedback.scss */
-.survey-landing .survey-button .octicon {
-  margin-right: 6px;
-}
-/* line 10, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/feedback.scss */
-.survey-landing input.survey-link {
-  background-color: transparent;
-  text-decoration: underline;
-  border: none;
-  cursor: pointer;
-  display: block;
-  font-size: 14px;
-  margin-top: 10px;
-  color: #a29f99;
+.survey-landing {
+  .survey-button .octicon {
+    margin-right: 6px;
+  }
+
+  input.survey-link {
+    background-color: transparent;
+    text-decoration: underline;
+    border: none;
+    cursor: pointer;
+    display: block;
+    font-size: 14px;
+    margin-top: 10px;
+    color: #a29f99;
+  }
 }

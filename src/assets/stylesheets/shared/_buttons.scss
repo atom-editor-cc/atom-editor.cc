@@ -1,139 +1,133 @@
-/* line 8, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/shared/buttons.scss */
-.button.primary {
-  background-color: #68a672;
-  background-image: -moz-linear-gradient(#75bb80, #68a672);
-  background-image: -webkit-linear-gradient(#75bb80, #68a672);
-  background-image: linear-gradient(#75bb80, #68a672);
-  background-repeat: repeat-x;
-  border-color: #62a26c;
-}
-/* line 12, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/shared/buttons.scss */
-.button.primary:hover {
-  background-color: #5b9a65;
-  background-image: -moz-linear-gradient(#64b370, #5b9a65);
-  background-image: -webkit-linear-gradient(#64b370, #5b9a65);
-  background-image: linear-gradient(#64b370, #5b9a65);
-  background-repeat: repeat-x;
-  border-color: #5b9a65;
+.button {
+  .primary {
+    background-color: #68a672;
+    background-image: -moz-linear-gradient(#75bb80, #68a672);
+    background-image: -webkit-linear-gradient(#75bb80, #68a672);
+    background-image: linear-gradient(#75bb80, #68a672);
+    background-repeat: repeat-x;
+    border-color: #62a26c;
+
+    &:hover {
+      background-color: #5b9a65;
+      background-image: -moz-linear-gradient(#64b370, #5b9a65);
+      background-image: -webkit-linear-gradient(#64b370, #5b9a65);
+      background-image: linear-gradient(#64b370, #5b9a65);
+      background-repeat: repeat-x;
+      border-color: #5b9a65;
+    }
+  }
 }
 
-/* line 20, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/shared/buttons.scss */
-.minibutton.flash-warn {
-  color: #fff;
-  background-color: #b34947;
-  background-image: -moz-linear-gradient(#e75e5b, #b34947);
-  background-image: -webkit-linear-gradient(#e75e5b, #b34947);
-  background-image: linear-gradient(#e75e5b, #b34947);
-  background-repeat: repeat-x;
-  border-color: #b74a48;
-  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
-}
-/* line 26, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/shared/buttons.scss */
-.minibutton.flash-warn:hover {
-  color: #fff;
-  background-color: #a14240;
-  background-image: -moz-linear-gradient(#e44845, #a14240);
-  background-image: -webkit-linear-gradient(#e44845, #a14240);
-  background-image: linear-gradient(#e44845, #a14240);
-  background-repeat: repeat-x;
-  border-color: #a54341;
-}
-/* line 33, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/shared/buttons.scss */
-.minibutton.primary {
-  background-color: #68a672;
-  background-image: -moz-linear-gradient(#75bb80, #68a672);
-  background-image: -webkit-linear-gradient(#75bb80, #68a672);
-  background-image: linear-gradient(#75bb80, #68a672);
-  background-repeat: repeat-x;
-  border-color: #62a26c;
-}
-/* line 37, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/shared/buttons.scss */
-.minibutton.primary:hover {
-  background-color: #5b9a65;
-  background-image: -moz-linear-gradient(#64b370, #5b9a65);
-  background-image: -webkit-linear-gradient(#64b370, #5b9a65);
-  background-image: linear-gradient(#64b370, #5b9a65);
-  background-repeat: repeat-x;
-  border-color: #5b9a65;
-}
-/* line 43, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/shared/buttons.scss */
-.minibutton .octicon {
-  vertical-align: baseline;
+.minibutton {
+  &.flash-warn {
+    color: #fff;
+    background-color: #b34947;
+    background-image: -moz-linear-gradient(#e75e5b, #b34947);
+    background-image: -webkit-linear-gradient(#e75e5b, #b34947);
+    background-image: linear-gradient(#e75e5b, #b34947);
+    background-repeat: repeat-x;
+    border-color: #b74a48;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+
+    &:hover {
+      color: #fff;
+      background-color: #a14240;
+      background-image: -moz-linear-gradient(#e44845, #a14240);
+      background-image: -webkit-linear-gradient(#e44845, #a14240);
+      background-image: linear-gradient(#e44845, #a14240);
+      background-repeat: repeat-x;
+      border-color: #a54341;
+    }
+  }
+
+  &.primary {
+    background-color: #68a672;
+    background-image: -moz-linear-gradient(#75bb80, #68a672);
+    background-image: -webkit-linear-gradient(#75bb80, #68a672);
+    background-image: linear-gradient(#75bb80, #68a672);
+    background-repeat: repeat-x;
+    border-color: #62a26c;
+
+    &:hover {
+      background-color: #5b9a65;
+      background-image: -moz-linear-gradient(#64b370, #5b9a65);
+      background-image: -webkit-linear-gradient(#64b370, #5b9a65);
+      background-image: linear-gradient(#64b370, #5b9a65);
+      background-repeat: repeat-x;
+      border-color: #5b9a65;
+    }
+  }
+
+  .octicon {
+    vertical-align: baseline;
+  }
 }
 
-/* line 49, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/shared/buttons.scss */
-.button-group .button.button-outline.selected {
-  box-shadow: none;
-}
-/* line 52, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/shared/buttons.scss */
+.button-group .button.button-outline.selected,
 .button-group .button.button-outline:active {
   box-shadow: none;
 }
 
-/* line 57, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/shared/buttons.scss */
-.button.button-outline {
-  color: #8e6965;
-  border-color: #efeae1;
-  text-shadow: none;
-}
-/* line 62, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/shared/buttons.scss */
-.button.button-outline:hover {
-  background: #f8f6f2;
-  box-shadow: none;
-  z-index: auto;
-}
-/* line 68, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/shared/buttons.scss */
-.button.button-outline.selected {
-  color: white;
-  background: #81c08b;
-  border-color: #70b87b;
-  box-shadow: none;
-}
-/* line 74, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/shared/buttons.scss */
-.button.button-outline.selected:hover {
-  z-index: 2;
-  background: #70b87b;
-}
-/* line 80, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/shared/buttons.scss */
-.button.button-outline:active {
-  box-shadow: none;
+.button {
+  &.button-outline {
+    color: #8e6965;
+    border-color: #efeae1;
+    text-shadow: none;
+
+    &:hover {
+      background: #f8f6f2;
+      box-shadow: none;
+      z-index: auto;
+    }
+
+    &.selected {
+      color: white;
+      background: #81c08b;
+      border-color: #70b87b;
+      box-shadow: none;
+
+      &:hover {
+        z-index: 2;
+        background: #70b87b;
+      }
+    }
+
+    &:active {
+      box-shadow: none;
+    }
+  }
+
+  &.button-large {
+    padding: 0.4em 0.8em;
+    font-size: 1.2em;
+    font-weight: 500;
+    color: white;
+    border: none;
+    border-radius: .2em;
+    background: #3b9b6d;
+    text-shadow: none;
+  }
+
+  .mega-octicon {
+    color: rgba(0, 0, 0, 0.05);
+    line-height: 0;
+    vertical-align: middle;
+    margin-top: -3px;
+    margin-right: 10px;
+  }
 }
 
-/* line 85, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/shared/buttons.scss */
-.button.button-large {
-  padding: 0.4em 0.8em;
-  font-size: 1.2em;
-  font-weight: 500;
-  color: white;
-  border: none;
-  border-radius: .2em;
-  background: #3b9b6d;
-  text-shadow: none;
-}
-
-/* line 96, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/shared/buttons.scss */
-.button .mega-octicon {
-  color: rgba(0, 0, 0, 0.05);
-  line-height: 0;
-  vertical-align: middle;
-  margin-top: -3px;
-  margin-right: 10px;
-}
-
-/* line 104, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/shared/buttons.scss */
 .button-image-down {
   display: inline-block;
   height: 32px;
   width: 32px;
-  background-image: url(/assets/images/button-sprites.png);
+  background-image: url("/assets/images/button-sprites.png");
   position: absolute;
   top: 4px;
   left: 4px;
-}
-@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
-  /* line 104, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/shared/buttons.scss */
-  .button-image-down {
-    background-image: url(/assets/images/button-sprites@2x.png);
+
+  @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
+    background-image: url("/assets/images/button-sprites@2x.png");
     -webkit-background-size: 64px 32px;
     -moz-background-size: 64px 32px;
     -o-background-size: 64px 32px;
@@ -141,21 +135,18 @@
   }
 }
 
-/* line 114, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/shared/buttons.scss */
 .button-image-github {
   display: inline-block;
   height: 32px;
   width: 32px;
-  background-image: url(/assets/images/button-sprites.png);
+  background-image: url("/assets/images/button-sprites.png");
   position: absolute;
   background-position: -32px 0;
   top: 4px;
   left: 4px;
-}
-@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
-  /* line 114, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/shared/buttons.scss */
-  .button-image-github {
-    background-image: url(/assets/images/button-sprites@2x.png);
+
+  @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
+    background-image: url("/assets/images/button-sprites@2x.png");
     -webkit-background-size: 64px 32px;
     -moz-background-size: 64px 32px;
     -o-background-size: 64px 32px;
@@ -163,7 +154,6 @@
   }
 }
 
-/* line 125, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/shared/buttons.scss */
 .hidden {
   display: none;
 }
