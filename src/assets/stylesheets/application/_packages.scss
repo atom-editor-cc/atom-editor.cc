@@ -62,7 +62,7 @@
       padding-left: 16px;
 
       .active {
-        padding-left: 0px;
+        padding-left: 0;
       }
 
       a {
@@ -337,7 +337,7 @@ input.search-input {
 
 .manual-install {
   margin-top: 2px;
-  padding: 0px 5px 2px 18px;
+  padding: 0 5px 2px 18px;
   border: 1px solid #a29f99;
   background-color: #efeae1;
   border-radius: 3px;
@@ -365,7 +365,7 @@ input.search-input {
     padding: 0 6px;
 
     .octicon {
-      margin-right: 0px;
+      margin-right: 0;
     }
   }
 }
@@ -579,7 +579,7 @@ input.search-input {
 
 .theme-card {
   .upload-image.button {
-    margin: 0px;
+    margin: 0;
   }
 
   .gravatar {

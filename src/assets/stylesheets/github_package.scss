@@ -190,7 +190,7 @@ video {
   border-radius: 4px;
   background-image: url(/assets/images/github-atom.png);
   background-repeat: no-repeat;
-  box-shadow: 0px 30px 20px -20px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 30px 20px -20px rgba(0, 0, 0, 0.15);
 }
 
 // Hide play button on iOS
@@ -413,7 +413,7 @@ video::-webkit-media-controls-start-playback-button {
     right: 52vw;
     width: 500px;
     transform: rotate(5deg);
-    clip-path: inset(0px 0px 700px 0px);
+    clip-path: inset(0 0 700px 0);
   }
 }
 @media (max-width: 700px) {
@@ -457,7 +457,7 @@ video::-webkit-media-controls-start-playback-button {
     right: 46vw;
     width: 430px;
     transform: rotate(5deg);
-    clip-path: inset(0px 0px 500px 0px);
+    clip-path: inset(0 0 500px 0);
   }
 }
 
