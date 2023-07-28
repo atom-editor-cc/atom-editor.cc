@@ -1,31 +1,31 @@
 .search-unavailable {
-  position: relative;
-  list-style-type: none;
-  border: 1px solid #ddd;
   border-radius: 3px;
-  width: 100%;
+  border: 1px solid #ddd;
+  list-style-type: none;
   overflow: hidden;
   padding: 7px 13px;
+  position: relative;
+  width: 100%;
 
   img {
     display: inline-block;
-    vertical-align: middle;
     height: 24px;
+    vertical-align: middle;
     width: 24px;
   }
 
   h4 {
-    font-weight: 300;
     font-size: 28px;
-    margin: 0;
+    font-weight: 300;
     line-height: 1.4;
     margin-bottom: 10px;
+    margin: 0;
   }
 
   p {
     font-size: 15px;
-    margin: 0;
-    margin-left: 40px;
     margin-bottom: 20px;
+    margin-left: 40px;
+    margin: 0;
   }
 }
