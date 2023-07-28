@@ -1,4 +1,4 @@
-/* line 26, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/teletype.scss */
+// line 26, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/teletype.scss
 html {
   font: 14px/1.5 normal normal;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
@@ -7,12 +7,12 @@ html {
   -webkit-font-smoothing: antialiased;
 }
 
-/* line 34, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/teletype.scss */
+// line 34, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/teletype.scss
 body {
   margin: 0;
 }
 
-/* line 38, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/teletype.scss */
+// line 38, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/teletype.scss
 h2 {
   margin: 0 0 2rem 0;
   font-weight: 300;
@@ -20,7 +20,7 @@ h2 {
   letter-spacing: 0.05em;
 }
 
-/* line 44, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/teletype.scss */
+// line 44, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/teletype.scss
 h3 {
   margin: 3rem 0 1rem 0;
   font-weight: 300;
@@ -28,90 +28,90 @@ h3 {
   letter-spacing: 0.05em;
 }
 
-/* line 51, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/teletype.scss */
+// line 51, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/teletype.scss
 h4 {
   margin: 2rem 0 1rem 0;
   font-weight: 600;
   font-size: 1.1em;
 }
 
-/* line 57, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/teletype.scss */
+// line 57, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/teletype.scss
 a {
   color: #e2ad4b;
   font-weight: 500;
   text-decoration: none;
 }
 
-/* line 62, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/teletype.scss */
+// line 62, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/teletype.scss
 a:hover {
   text-decoration: underline;
 }
 
-/* line 66, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/teletype.scss */
+// line 66, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/teletype.scss
 hr {
   margin: 4rem 6rem;
   border: none;
   border-top: 1px solid #635c55;
 }
 
-/* line 72, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/teletype.scss */
+// line 72, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/teletype.scss
 strong {
   color: #8bbbae;
 }
 
-/* line 76, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/teletype.scss */
+// line 76, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/teletype.scss
 li {
   padding: .5rem;
   line-height: 1.4;
 }
 
-/* line 81, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/teletype.scss */
+// line 81, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/teletype.scss
 img {
   max-width: 100%;
 }
 
-/* line 84, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/teletype.scss */
+// line 84, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/teletype.scss
 p > img {
   margin-top: 2rem;
   margin-bottom: 2rem;
 }
 
-/* line 88, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/teletype.scss */
+// line 88, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/teletype.scss
 p:last-child > img {
   margin-bottom: 0;
 }
 
-/* line 102, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/teletype.scss */
+// line 102, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/teletype.scss
 .is-centered {
   text-align: center;
 }
 
-/* Wrapper -------------------------- */
-/* line 110, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/teletype.scss */
+// Wrapper --------------------------
+// line 110, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/teletype.scss
 .wrapper {
   margin: 0 auto;
   padding: 2rem;
 }
 
-/* line 115, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/teletype.scss */
+// line 115, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/teletype.scss
 .wrapper + .wrapper {
   padding-top: 0;
 }
 
-/* line 119, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/teletype.scss */
+// line 119, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/teletype.scss
 .wrapper--full {
   text-align: center;
 }
 
-/* Video -------------------------- */
-/* line 134, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/teletype.scss */
+// Video --------------------------
+// line 134, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/teletype.scss
 .video-container {
   display: flex;
   position: relative;
   padding-top: 56.25%;
 }
 
-/* line 139, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/teletype.scss */
+// line 139, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/teletype.scss
 .video {
   position: absolute;
   top: 0;
@@ -122,7 +122,7 @@ p:last-child > img {
   box-shadow: 0px 15px 20px 4px rgba(0, 0, 0, 0.15);
 }
 
-/* line 149, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/teletype.scss */
+// line 149, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/teletype.scss
 .video-hud {
   position: absolute;
   top: 0;
@@ -132,12 +132,12 @@ p:last-child > img {
   display: flex;
 }
 
-/* line 157, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/teletype.scss */
+// line 157, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/teletype.scss
 .video-hud.is-hidden {
   display: none;
 }
 
-/* line 161, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/teletype.scss */
+// line 161, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/teletype.scss
 .video-play-button.mega-octicon {
   margin: auto;
   padding: 0;
@@ -152,92 +152,95 @@ p:last-child > img {
   cursor: pointer;
   outline: none;
 }
-/* line 175, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/teletype.scss */
+
+// line 175, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/teletype.scss
 .video-play-button.mega-octicon:before {
   left: 0.05em;
   position: relative;
 }
 
-/* line 181, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/teletype.scss */
+// line 181, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/teletype.scss
 .video-play-button:focus {
   border-style: dashed;
 }
 
-/* line 184, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/teletype.scss */
+// line 184, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/teletype.scss
 .video-play-button:hover {
   background-color: #e5b55d;
 }
 
-/* line 187, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/teletype.scss */
+// line 187, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/teletype.scss
 .video-play-button:active {
   transform: scale(0.96);
   background-color: #d39522;
 }
 
-/* Hide play button on iOS */
-/* Content -------------------------- */
-/* line 202, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/teletype.scss */
+// Hide play button on iOS
+// Content --------------------------
+// line 202, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/teletype.scss
 .logo {
   margin-top: 1rem;
   height: 60px;
 }
 
-/* line 207, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/teletype.scss */
+// line 207, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/teletype.scss
 .intro {
   text-align: center;
 }
 
-/* line 211, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/teletype.scss */
+// line 211, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/teletype.scss
 .intro h2 {
   font-size: 2.2em;
 }
 
-/* line 215, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/teletype.scss */
+// line 215, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/teletype.scss
 .intro p {
   font-size: 1.3em;
 }
-/* line 218, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/teletype.scss */
+
+// line 218, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/teletype.scss
 .intro p sup {
   font-size: 60%;
 }
 
-/* line 223, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/teletype.scss */
+// line 223, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/teletype.scss
 .privacy-img {
   margin: 0;
 }
 
-/* line 227, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/teletype.scss */
+// line 227, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/teletype.scss
 .privacy-list {
   padding-left: 0;
   list-style: none;
 }
-/* line 231, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/teletype.scss */
+
+// line 231, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/teletype.scss
 .privacy-list li {
   padding: 0;
   margin-top: 3em;
 }
 
-/* Love -------------------------- */
-/* line 240, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/teletype.scss */
+// Love --------------------------
+// line 240, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/teletype.scss
 .love {
   text-decoration: none;
   text-align: center;
 }
 
-/* line 245, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/teletype.scss */
+// line 245, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/teletype.scss
 .love .octicon-logo-github {
   position: relative;
   top: 0.11em;
 }
 
-/* line 250, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/teletype.scss */
+// line 250, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/teletype.scss
 .love a {
   color: inherit;
   text-decoration: none;
 }
 
-/* Background lines -------------------------- */
-/* line 257, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/teletype.scss */
+// Background lines --------------------------
+// line 257, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/teletype.scss
 .hero {
   padding-top: 100px;
   background-image: url(/assets/images/real-time-lines.svg), url(/assets/images/real-time-bg.svg);
@@ -246,7 +249,7 @@ p:last-child > img {
   background-size: auto 68px, auto 340px;
 }
 
-/* line 265, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/teletype.scss */
+// line 265, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/teletype.scss
 .wrapper--video {
   background-image: url(/assets/images/real-time-lines.svg);
   background-repeat: no-repeat;
@@ -254,7 +257,7 @@ p:last-child > img {
   background-size: auto 68px;
 }
 
-/* line 272, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/teletype.scss */
+// line 272, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/teletype.scss
 body {
   padding-bottom: 200px;
   background-image: url(/assets/images/real-time-lines.svg), url(/assets/images/real-time-bg.svg);
@@ -263,51 +266,54 @@ body {
   background-size: auto 68px, auto 340px;
 }
 
-/* Responsive -------------------------- */
-/* Medium */
+// Responsive --------------------------
+// Medium
 @media (min-width: 600px) {
-  /* line 285, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/teletype.scss */
+  // line 285, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/teletype.scss
   html {
     font-size: 15px;
   }
 
-  /* line 288, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/teletype.scss */
+  // line 288, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/teletype.scss
   .wrapper {
     max-width: 560px;
     padding: 4rem 2rem;
   }
 
-  /* line 292, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/teletype.scss */
+  // line 292, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/teletype.scss
   .wrapper--full {
     max-width: none;
   }
 
-  /* line 295, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/teletype.scss */
+  // line 295, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/teletype.scss
   .wrapper--video {
     margin-bottom: 4rem;
   }
 
-  /* line 298, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/teletype.scss */
+  // line 298, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/teletype.scss
   .logo {
     width: 116px;
     height: 106px;
   }
 
-  /* line 302, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/teletype.scss */
+  // line 302, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/teletype.scss
   .privacy-list {
     display: flex;
     margin: 2rem 0;
   }
-  /* line 306, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/teletype.scss */
+
+  // line 306, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/teletype.scss
   .privacy-list li {
     flex: 1;
     margin: 0;
   }
-  /* line 311, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/teletype.scss */
+
+  // line 311, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/teletype.scss
   .privacy-list p {
     margin: 0;
   }
-  /* line 315, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/teletype.scss */
+
+  // line 315, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/teletype.scss
   .privacy-list p:last-child {
     margin-top: 1rem;
     padding: 1rem;
@@ -316,25 +322,26 @@ body {
     border: 1px solid #494647;
     background-color: #393738;
   }
-  /* line 324, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/teletype.scss */
+
+  // line 324, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/teletype.scss
   .privacy-list li + li {
     margin-left: 1rem;
   }
 
-  /* line 329, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/teletype.scss */
+  // line 329, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/teletype.scss
   .privacy-img-wrapper {
     text-align: center;
   }
 
-  /* Background lines -------------------------- */
-  /* line 335, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/teletype.scss */
+  // Background lines --------------------------
+  // line 335, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/teletype.scss
   .hero {
     padding-top: 0;
     background-position: -1340px 50px, calc(100% + 550px) -490px;
     background-size: auto;
   }
 
-  /* line 341, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/teletype.scss */
+  // line 341, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/teletype.scss
   .wrapper--video {
     background-image: url(/assets/images/real-time-lines.svg), url(/assets/images/real-time-bg.svg);
     background-position: center;
@@ -342,7 +349,7 @@ body {
     margin-bottom: 5rem;
   }
 
-  /* line 348, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/teletype.scss */
+  // line 348, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/teletype.scss
   body {
     background-image: url(/assets/images/real-time-lines.svg), url(/assets/images/real-time-bg.svg);
     background-position: calc(100% + 1140px) calc(100% - 60px), -420px calc(100% - -500px);
@@ -350,24 +357,24 @@ body {
   }
 }
 
-/* Large */
+// Large
 @media (min-width: 1000px) {
-  /* line 359, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/teletype.scss */
+  // line 359, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/teletype.scss
   html {
     font-size: 16px;
   }
 
-  /* line 363, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/teletype.scss */
+  // line 363, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/teletype.scss
   .wrapper {
     padding: 5rem 0;
   }
 
-  /* line 367, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/teletype.scss */
+  // line 367, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/teletype.scss
   .video-container {
     padding-top: 0;
   }
 
-  /* line 371, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/teletype.scss */
+  // line 371, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/teletype.scss
   .video {
     position: relative;
     margin: auto;
@@ -377,24 +384,24 @@ body {
     height: 540px;
   }
 
-  /* Background lines -------------------------- */
-  /* line 383, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/teletype.scss */
+  // Background lines --------------------------
+  // line 383, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/teletype.scss
   .hero {
     background-position: -1200px 80px, calc(100% + 470px) -420px;
   }
 
-  /* line 386, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/teletype.scss */
+  // line 386, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/teletype.scss
   body {
     background-position: calc(100% + 1140px) calc(100% - 60px), -420px calc(100% - -360px);
   }
 }
 
-/* line 414, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/teletype.scss */
+// line 414, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/teletype.scss
 .hero .wrapper {
   padding-bottom: 2rem;
 }
 
-/* line 418, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/teletype.scss */
+// line 418, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/teletype.scss
 .wrapper.intro {
   padding-bottom: 0;
 }

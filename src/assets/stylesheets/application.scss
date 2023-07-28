@@ -1,16 +1,22 @@
+// Vendor'ed Primer component
 @import "./primer/components/forms";
 
+// Primer components
 @import "primer/components/buttons";
 @import "primer/components/behavior";
 @import "primer/components/tooltips";
 
+// primer-user-content components
 @import "primer-user-content/components/markdown";
 
+// Octicons
 @import "octicons/octicons/sprockets-octicons";
 
+// Shared
 @import "shared/buttons";
 @import "shared/markdown";
 
+// "Application" stylesheets
 @import "application/account";
 @import "application/admin";
 @import "application/contact";
