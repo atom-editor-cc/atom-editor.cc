@@ -16,11 +16,8 @@
     background-position: center;
     display: none;
 
-    @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
+    @media only screen and (resolution >= 2dppx) {
       background-image: url("/assets/images/octocat-spinner-64@2x.gif");
-      -webkit-background-size: 64px 64px;
-      -moz-background-size: 64px 64px;
-      -o-background-size: 64px 64px;
       background-size: 64px 64px;
     }
   }
@@ -551,8 +548,6 @@ input.search-input {
   margin-bottom: 40px;
   padding: 15px 15px 15px 57px;
   background-color: #ffa2a2;
-  background-image: -moz-linear-gradient(#ffb8b8, #ffa2a2);
-  background-image: -webkit-linear-gradient(#ffb8b8, #ffa2a2);
   background-image: linear-gradient(#ffb8b8, #ffa2a2);
   background-repeat: repeat-x;
   border-radius: 5px;
@@ -673,11 +668,8 @@ input.search-input {
     margin-top: -24px;
     z-index: 9999999;
 
-    @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
+    @media only screen and (resolution >= 2dppx) {
       background-image: url("/assets/images/octocat-spinner-64@2x.gif");
-      -webkit-background-size: 64px 64px;
-      -moz-background-size: 64px 64px;
-      -o-background-size: 64px 64px;
       background-size: 64px 64px;
     }
   }

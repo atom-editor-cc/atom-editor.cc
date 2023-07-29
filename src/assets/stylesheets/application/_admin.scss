@@ -4,8 +4,8 @@
   }
 
   .explanation {
-    font-size: 80%;
     color: #a29f99;
+    font-size: 80%;
     margin-top: 6px;
   }
 
@@ -14,38 +14,24 @@
     margin-bottom: 0;
   }
 
-  .admin-package-search input[type=text] {
+  .admin-package-search input[type="text"] {
     width: 100%;
   }
 
-  .admin-package-search-results {
-    padding-left: 40px;
-    padding-right: 40px;
-    margin-bottom: 20px;
-
-    ul.package-list li {
-      padding: 4px;
-
-      &:nth-child(odd) {
-        background-color: #f8f6f2;
-      }
-    }
-  }
-
   ul.package-list {
-    padding: 0;
-    border-top: 1px solid #d3d1ce;
     border-left: 1px solid #d3d1ce;
     border-right: 1px solid #a29f99;
+    border-top: 1px solid #d3d1ce;
+    padding: 0;
 
     li {
-      width: 100%;
+      border-bottom: 1px solid #a29f99;
       list-style-type: none;
       padding: 6px;
-      border-bottom: 1px solid #a29f99;
+      width: 100%;
 
       .delete-button {
-        color: #cc0000;
+        color: #c00;
       }
 
       .add-button {
@@ -59,6 +45,20 @@
 
       &:nth-child(odd) {
         background-color: #efeae1;
+      }
+    }
+  }
+
+  .admin-package-search-results {
+    margin-bottom: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+
+    ul.package-list li {
+      padding: 4px;
+
+      &:nth-child(odd) {
+        background-color: #f8f6f2;
       }
     }
   }

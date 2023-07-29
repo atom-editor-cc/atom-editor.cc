@@ -1,20 +1,21 @@
+// stylelint-disable-next-line selector-id-pattern
 #lean_overlay {
-  position: fixed;
-  z-index: 100;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
   background: #000;
   display: none;
+  height: 100%;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
 }
 
-#flag-modal,
 .blacklist-modal,
-.delete-modal {
+.delete-modal,
+#flag-modal {
   background: #efeae1;
-  padding: 24px;
   border-radius: 3px;
+  padding: 24px;
   text-align: center;
 
   .octicon {
@@ -22,10 +23,10 @@
   }
 
   h2 {
-    margin: 0;
-    font-weight: 300;
     font-size: 40px;
+    font-weight: 300;
     line-height: 1.4;
+    margin: 0;
   }
 
   p {
@@ -34,16 +35,16 @@
 
   textarea,
   input[type="text"] {
-    width: 100%;
     margin-bottom: 24px;
+    width: 100%;
   }
 
   .flag-button {
     float: right;
     font-size: 14px;
-    margin: 0;
     height: 34px;
-    margin-left: 10px;
     line-height: 0;
+    margin: 0;
+    margin-left: 10px;
   }
 }

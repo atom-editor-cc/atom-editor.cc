@@ -1,53 +1,9 @@
-.user-show {
-  .search-sort-select {
-    margin-bottom: 4px;
-  }
-
-  .package-card {
-    width: 100%;
-  }
-
-  .user-meta {
-    margin-bottom: 40px;
-
-    .main {
-      padding-left: 0;
-    }
-
-    img {
-      display: inline-block;
-      width: 64px;
-      height: 64px;
-      vertical-align: -15px;
-      margin-right: 5px;
-      border-radius: 3px;
-    }
-  }
-
-  .username {
-    font-weight: 300;
-    font-size: 36px;
-    margin: 0;
-  }
-
-  .count {
-    position: relative;
-    color: #a29f99;
-    font-size: 18px;
-    font-weight: normal;
-    background-color: #eee;
-    border-radius: 3px;
-    padding: 2px 5px;
-    vertical-align: 4px;
-  }
-}
-
 .user-card {
   .user-login {
-    font-weight: 300;
     font-size: 28px;
-    margin: 0;
+    font-weight: 300;
     line-height: 1.4;
+    margin: 0;
     padding: 6px 0;
   }
 
@@ -69,11 +25,55 @@
 
   img {
     height: 40px;
-    width: 40px;
     margin-right: 12px;
+    width: 40px;
   }
 
   .css-truncate-target {
     min-width: 360px;
+  }
+}
+
+.user-show {
+  .search-sort-select {
+    margin-bottom: 4px;
+  }
+
+  .package-card {
+    width: 100%;
+  }
+
+  .user-meta {
+    margin-bottom: 40px;
+
+    .main {
+      padding-left: 0;
+    }
+
+    img {
+      border-radius: 3px;
+      display: inline-block;
+      height: 64px;
+      margin-right: 5px;
+      vertical-align: -15px;
+      width: 64px;
+    }
+  }
+
+  .username {
+    font-size: 36px;
+    font-weight: 300;
+    margin: 0;
+  }
+
+  .count {
+    background-color: #eee;
+    border-radius: 3px;
+    color: #a29f99;
+    font-size: 18px;
+    font-weight: normal;
+    padding: 2px 5px;
+    position: relative;
+    vertical-align: 4px;
   }
 }

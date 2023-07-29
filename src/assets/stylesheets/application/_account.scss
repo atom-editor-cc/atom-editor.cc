@@ -4,16 +4,16 @@
   }
 
   section {
-    margin-bottom: 64px;
     border-bottom: 1px #efeae1;
+    margin-bottom: 64px;
   }
 }
 
 .account-invites {
-  text-align: center;
   background-color: #efeae1;
-  padding-top: 20px;
   padding-bottom: 20px;
+  padding-top: 20px;
+  text-align: center;
 }
 
 .account-token {
@@ -25,13 +25,13 @@
 
   .show-token {
     font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
-    width: 280px;
     text-align: center;
+    width: 280px;
   }
 
   input[type="submit"] {
-    height: 34px;
     font-size: 14px;
+    height: 34px;
   }
 }
 
@@ -56,21 +56,6 @@
     display: inline-block;
   }
 
-  label {
-    width: 20%;
-    text-align: right;
-
-    + input {
-      width: 55%;
-      margin: 16px 10% 0 4%;
-    }
-
-    + select {
-      width: 55%;
-      margin: 16px 10% 0 4%;
-    }
-  }
-
   input {
     + input {
       float: right;
@@ -85,12 +70,27 @@
     }
   }
 
+  label {
+    text-align: right;
+    width: 20%;
+
+    + input {
+      margin: 16px 10% 0 4%;
+      width: 55%;
+    }
+
+    + select {
+      margin: 16px 10% 0 4%;
+      width: 55%;
+    }
+  }
+
   input[type="submit"],
   .button {
-    margin: 16px 20% 0 4%;
-    width: 27.5%;
     float: right;
-    text-align: center;
     line-height: normal;
+    margin: 16px 20% 0 4%;
+    text-align: center;
+    width: 27.5%;
   }
 }
