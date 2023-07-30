@@ -1,168 +1,194 @@
-// line 12, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/github_package.scss
+@import "octicons/octicons/sprockets-octicons";
+
 html {
   color: #24292e;
   font: 16px/1.5 normal normal;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family:
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Helvetica,
+    Arial,
+    sans-serif,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol";
 }
 
-// line 18, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/github_package.scss
 body {
   margin: 0;
 }
 
-// line 22, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/github_package.scss
 h1 {
   font-size: 2em;
   font-weight: 300;
 }
 
-// line 26, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/github_package.scss
 h2 {
   font-size: 1.75em;
   font-weight: 300;
-  margin: 0 0 2em 0;
+  margin: 0 0 2em;
 }
 
-// line 32, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/github_package.scss
 a {
   color: #546de8;
   text-decoration: none;
 }
 
 // Sections --------------------------
-// line 39, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/github_package.scss
 .section-content {
-  max-width: 40em;
   margin: 0 auto;
+  max-width: 40em;
   padding: 6em 4em;
 }
 
-// line 45, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/github_package.scss
-.section.hero,
-.section.footer {
-  color: white;
-  background-color: #1f2533;
-  -webkit-font-smoothing: antialiased;
-  transition: background 1s;
-}
+.section {
+  &.hero,
+  &.footer {
+    background-color: #1f2533;
+    color: white;
+    -webkit-font-smoothing: antialiased;
+    transition: background 1s;
+  }
 
-// line 52, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/github_package.scss
-.section.hero {
-  background-image: radial-gradient(#303a50, #1f2533);
-}
+  &.hero {
+    background-image: radial-gradient(#303a50, #1f2533);
+  }
 
-// line 54, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/github_package.scss
-.section.footer a {
-  color: #99aaff;
-}
+  &.footer {
+    a {
+      color: #9af;
+    }
 
-// line 58, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/github_package.scss
-.section.footer .love a {
-  color: inherit;
-}
+    .love a {
+      color: inherit;
+    }
 
-// line 62, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/github_package.scss
-.section.footer .section-content + .section-content {
-  padding-top: 0;
+    .section-content + .section-content {
+      padding-top: 0;
+    }
+  }
 }
 
 // Hero --------------------------
-// line 69, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/github_package.scss
-.hero {
-  position: relative;
-  text-align: center;
-}
-
 // Logos
-// line 76, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/github_package.scss
 .logos {
   font-size: 4em;
   line-height: 0;
+
+  .icon-atom {
+    height: 1em;
+    vertical-align: middle;
+    width: 1em;
+  }
+
+  .octicon-mark-github {
+    font-size: 1em;
+    height: 1em;
+    line-height: 1;
+    vertical-align: middle;
+    width: 1em;
+  }
 }
 
-// line 81, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/github_package.scss
-.logos .icon-atom {
-  width: 1em;
-  height: 1em;
-  vertical-align: middle;
-}
-
-// line 87, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/github_package.scss
-.logos .octicon-mark-github {
-  font-size: 1em;
-  width: 1em;
-  height: 1em;
-  line-height: 1;
-  vertical-align: middle;
-}
-
-// line 95, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/github_package.scss
 .logos-plus {
   font-size: 0.5em;
   font-weight: 300;
-  margin: 0 .5em;
+  margin: 0 0.5em;
   vertical-align: middle;
 }
 
-// line 102, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/github_package.scss
 .tagline {
   font-size: 2.5em;
 }
 
 // BG
-// line 109, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/github_package.scss
 .bg {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  inset: 0;
   overflow: hidden;
   pointer-events: none;
-}
-
-// line 116, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/github_package.scss
-.hero .bg {
-  opacity: .15;
-  transition: opacity 2s;
-}
-
-// line 122, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/github_package.scss
-.hero:active .bg {
-  opacity: 1;
-  transition-delay: .2s;
-}
-
-// line 127, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/github_package.scss
-.bg-item {
   position: absolute;
+}
+
+.bg-item {
+  display: none;
+  position: absolute;
+}
+
+// Features --------------------------
+.features {
+  margin: 4em 0;
+  position: relative;
+}
+
+video {
+  background-image: url("/assets/images/github-atom.png");
+  background-repeat: no-repeat;
+  border-radius: 4px;
+  box-shadow: 0 30px 20px -20px rgb(0 0 0 / 15%);
+
+  // Hide play button on iOS
+  &::-webkit-media-controls-start-playback-button {
+    -webkit-appearance: none;
+    display: none;
+  }
+}
+
+.features-description {
+  font-size: 1.25em;
+  margin-top: 2em;
+  padding: 0 4em;
+  text-align: left;
+
+  strong {
+    background-color: rgb(120 140 237 / 15%);
+    padding: 0 0.2em;
+  }
+}
+
+.features-button {
+  color: #91a3fd;
+  font-weight: bold;
+  text-decoration: underline;
+
+  &:hover {
+    color: #a5b4fd;
+  }
+
+  &:active {
+    color: #738afc;
+  }
 }
 
 // Intro animation
-// line 134, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/github_package.scss
 .hero {
   overflow: hidden;
-}
+  position: relative;
+  text-align: center;
 
-// line 137, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/github_package.scss
-.hero .header,
-.hero .features {
-  animation: animate-content .64s ease-out backwards;
-}
+  .header,
+  .features {
+    animation: animate-content 0.64s ease-out backwards;
+  }
 
-// line 141, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/github_package.scss
-.hero .header {
-  animation-delay: 1s;
-}
+  .header {
+    animation-delay: 1s;
+  }
 
-// line 142, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/github_package.scss
-.hero .features {
-  animation-delay: 1.3s;
-}
+  .features {
+    animation-delay: 1.3s;
+  }
 
-// line 144, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/github_package.scss
-.hero .bg {
-  animation: animate-bg 5s 1.6s ease-in-out backwards;
+  .bg {
+    animation: animate-bg 5s 1.6s ease-in-out backwards;
+    opacity: 0.15;
+    transition: opacity 2s;
+  }
+
+  &:active .bg {
+    opacity: 1;
+    transition-delay: 0.2s;
+  }
 }
 
 @keyframes animate-content {
@@ -171,6 +197,7 @@ a {
     transform: scale(1.04);
   }
 }
+
 @keyframes animate-bg {
   0% {
     opacity: 0;
@@ -178,445 +205,338 @@ a {
   }
 }
 
-// Features --------------------------
-// line 159, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/github_package.scss
-.features {
-  position: relative;
-  margin: 4em 0;
-}
-
-// line 164, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/github_package.scss
-video {
-  border-radius: 4px;
-  background-image: url(/assets/images/github-atom.png);
-  background-repeat: no-repeat;
-  box-shadow: 0 30px 20px -20px rgba(0, 0, 0, 0.15);
-}
-
-// Hide play button on iOS
-// line 172, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/github_package.scss
-video::-webkit-media-controls-start-playback-button {
-  -webkit-appearance: none;
-  display: none;
-}
-
-// line 177, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/github_package.scss
-.features-description {
-  padding: 0 4em;
-  margin-top: 2em;
-  text-align: left;
-  font-size: 1.25em;
-}
-
-// line 185, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/github_package.scss
-.features-description strong {
-  padding: 0em .2em;
-  background-color: rgba(120, 140, 237, 0.15);
-}
-
-// line 190, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/github_package.scss
-.features-button {
-  color: #91a3fd;
-  font-weight: bold;
-  text-decoration: underline;
-}
-
-// line 195, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/github_package.scss
-.features-button:hover {
-  color: #a5b4fd;
-}
-
-// line 198, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/github_package.scss
-.features-button:active {
-  color: #738afc;
-}
-
 // footer --------------------------
-// line 206, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/github_package.scss
 .footer {
   position: relative;
 }
 
-// line 210, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/github_package.scss
 .love {
-  text-decoration: none;
   text-align: center;
-}
+  text-decoration: none;
 
-// line 215, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/github_package.scss
-.love .octicon-logo-github {
-  position: relative;
-  top: 0.11em;
+  .octicon-logo-github {
+    position: relative;
+    top: 0.11em;
+  }
 }
 
 // Responsive --------------------------
 // Background
-// line 224, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/github_package.scss
-.bg-item {
-  display: none;
-}
-
-@media (min-width: 701px) {
+@media (width >= 701px) {
   // Wide
-  // line 227, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/github_package.scss
   .hero .bg {
-    background-image: url(/assets/images/github-stars.svg);
-    background-repeat: no-repeat;
+    background-image: url("/assets/images/github-stars.svg");
     background-position: center;
+    background-repeat: no-repeat;
     background-size: auto 84%;
   }
 }
-@media (max-width: 700px) {
+
+@media (width <= 700px) {
   // Narrow
-  // line 235, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/github_package.scss
   .hero .bg {
-    background-image: url(/assets/images/github-stars-narrow.svg);
-    background-repeat: no-repeat;
+    background-image: url("/assets/images/github-stars-narrow.svg");
     background-position: center;
+    background-repeat: no-repeat;
   }
 }
-@media (min-width: 1400px) {
+
+@media (width >= 1400px) {
   // Wide
-  // line 243, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/github_package.scss
   .hero {
     padding-top: 100px;
   }
 
-  // line 244, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/github_package.scss
   .footer {
     padding-bottom: 100px;
   }
 
-  // line 245, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/github_package.scss
   .bg-item {
     display: block;
   }
 
-  // line 246, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/github_package.scss
   .bg-item--planet-3 {
-    top: 780px;
     left: 10vw;
+    top: 780px;
   }
 
-  // line 247, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/github_package.scss
   .bg-item--planet-2 {
-    top: 400px;
     left: 2vw;
+    top: 400px;
   }
 
-  // line 248, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/github_package.scss
   .bg-item--planet-1 {
-    top: -240px;
     left: 75vw;
+    top: -240px;
   }
 
-  // line 249, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/github_package.scss
   .bg-item--octonaut {
-    top: 460px;
     right: -5vw;
+    top: 460px;
   }
 
-  // line 250, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/github_package.scss
   .bg-item--rocket {
-    top: 80px;
     right: 66vw;
+    top: 80px;
   }
 }
-@media (min-width: 980px) and (max-width: 1399px) {
+
+@media (width >= 980px) and (width <= 1399px) {
   // Medium
-  // line 254, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/github_package.scss
   .hero {
     padding-top: 150px;
   }
 
-  // line 255, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/github_package.scss
   .bg-item {
     display: block;
   }
 
-  // line 256, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/github_package.scss
   .bg-item--planet-3 {
     bottom: 60px;
     right: 80vw;
   }
 
-  // line 257, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/github_package.scss
   .bg-item--planet-2 {
     bottom: 740px;
     right: 85vw;
   }
 
-  // line 258, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/github_package.scss
   .bg-item--planet-1 {
-    top: -300px;
     left: 72vw;
+    top: -300px;
   }
 
-  // line 259, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/github_package.scss
   .bg-item--octonaut {
     bottom: 40px;
     left: 78vw;
   }
 
-  // line 260, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/github_package.scss
   .bg-item--rocket {
-    top: 70px;
     right: 55vw;
+    top: 70px;
   }
 }
-@media (min-width: 701px) and (max-width: 979px) {
+
+@media (width >= 701px) and (width <= 979px) {
   // Medium
-  // line 264, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/github_package.scss
   .hero {
-    padding-top: 150px;
     padding-bottom: 100px;
+    padding-top: 150px;
   }
 
-  // line 265, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/github_package.scss
   .footer {
     padding-bottom: 100px;
   }
 
-  // line 266, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/github_package.scss
   .bg-item--planet-3 {
-    display: block;
     bottom: -30px;
+    display: block;
     left: 40vw;
   }
 
-  // line 267, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/github_package.scss
   .bg-item--planet-2 {
-    display: block;
     bottom: 40px;
+    display: block;
     right: 75vw;
   }
 
-  // line 268, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/github_package.scss
   .bg-item--planet-1 {
     display: block;
-    top: -160px;
     left: 75vw;
+    top: -160px;
     width: 430px;
   }
 
-  // line 269, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/github_package.scss
   .bg-item--octonaut {
-    display: block;
     bottom: 40px;
+    display: block;
     left: 70vw;
   }
 
-  // line 270, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/github_package.scss
   .bg-item--rocket {
-    display: block;
-    top: 20px;
-    right: 52vw;
-    width: 500px;
-    transform: rotate(5deg);
     clip-path: inset(0 0 700px 0);
+    display: block;
+    right: 52vw;
+    top: 20px;
+    transform: rotate(5deg);
+    width: 500px;
   }
 }
-@media (max-width: 700px) {
+
+@media (width <= 700px) {
   // Narrow
-  // line 274, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/github_package.scss
   .hero {
     padding-top: 150px;
   }
 
-  // line 275, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/github_package.scss
   .footer {
     padding-bottom: 100px;
   }
 
-  // line 276, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/github_package.scss
   .bg-item--planet-3 {
-    display: block;
     bottom: 90px;
+    display: block;
     right: 75vw;
   }
 
-  // line 277, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/github_package.scss
   .bg-item--planet-1 {
     display: block;
-    top: -90px;
     left: 75vw;
+    top: -90px;
     width: 300px;
   }
 
-  // line 278, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/github_package.scss
   .bg-item--octonaut {
-    display: block;
     bottom: 140px;
+    display: block;
     left: 70vw;
   }
 
-  // line 279, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/github_package.scss
   .bg-item--rocket {
-    display: block;
-    top: 40px;
-    right: 46vw;
-    width: 430px;
-    transform: rotate(5deg);
     clip-path: inset(0 0 500px 0);
+    display: block;
+    right: 46vw;
+    top: 40px;
+    transform: rotate(5deg);
+    width: 430px;
   }
 }
 
 // Footer
-@media (min-width: 1400px) {
-  // line 284, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/github_package.scss
+@media (width >= 1400px) {
   .footer {
     padding-bottom: 100px;
   }
 
-  // line 285, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/github_package.scss
   .bg-item--bottom {
     bottom: 0;
     left: 50%;
     margin-left: -680px;
   }
 
-  // line 286, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/github_package.scss
   .bg-item--bottom-stars {
-    display: block;
     bottom: 150px;
+    display: block;
     left: 50%;
     margin-left: -650px;
   }
 }
-@media (max-width: 1399px) {
-  // line 289, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/github_package.scss
+
+@media (width <= 1399px) {
   .footer {
     padding-bottom: 100px;
   }
 
-  // line 290, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/github_package.scss
   .bg-item--bottom {
-    display: block;
     bottom: 0;
+    display: block;
     right: -11%;
     width: 120%;
   }
 
-  // line 291, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/github_package.scss
   .bg-item--bottom-stars {
-    display: block;
     bottom: 12vw;
+    display: block;
     left: 6%;
     width: 88%;
   }
 }
 
 // Swoosh
-@media (min-width: 1400px) {
-  // line 296, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/github_package.scss
+@media (width >= 1400px) {
   .bg-item--swoosh {
-    display: block;
     bottom: 100px;
-    right: 50%;
-    margin-right: -490px;
+    display: block;
     height: 620px;
+    margin-right: -490px;
+    right: 50%;
   }
 }
-@media (min-width: 900px) and (max-width: 1399px) {
-  // line 299, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/github_package.scss
+
+@media (width >= 900px) and (width <= 1399px) {
   .bg-item--swoosh {
-    display: block;
     bottom: 8vw;
-    right: 8vw;
+    display: block;
     height: 800px;
+    right: 8vw;
   }
 }
-@media (max-width: 899px) {
-  // line 302, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/github_package.scss
+
+@media (width <= 899px) {
   .bg-item--swoosh {
-    display: block;
     bottom: 8vw;
-    right: 10vw;
+    display: block;
     height: 60vw;
+    right: 10vw;
   }
 }
 
 // Desktop
-@media (min-width: 900px) {
-  // line 309, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/github_package.scss
+@media (width >= 900px) {
   .hero .section-content {
     max-width: 780px;
   }
 
-  // line 313, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/github_package.scss
   video {
-    width: 780px;
-    height: 560px;
     background-size: 780px 560px;
+    height: 560px;
+    width: 780px;
   }
 
-  // line 319, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/github_package.scss
   .columns {
-    columns: 2;
     column-gap: 4em;
+    columns: 2;
   }
 
-  // line 323, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/github_package.scss
   .column {
-    -webkit-column-break-inside: avoid;
-    column-break-inside: avoid;
+    break-inside: avoid;
   }
 }
 
 // Mobile last :)
-@media (max-width: 899px) {
-  // line 332, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/github_package.scss
+@media (width <= 899px) {
   .video-container {
+    padding-top: 71.7949%;
     position: relative;
     width: 100%;
-    padding-top: 71.7948717949%;
   }
 
-  // line 337, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/github_package.scss
   .video {
+    background-size: cover;
+    height: 100%;
+    left: 0;
     position: absolute;
     top: 0;
-    left: 0;
     width: 100%;
-    height: 100%;
-    background-size: cover;
   }
 
-  // line 345, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/github_package.scss
   .column + .column {
     margin-top: 4em;
   }
 }
-@media (max-width: 700px) {
-  // line 350, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/github_package.scss
+
+@media (width <= 700px) {
   html {
     font-size: 14px;
   }
 
-  // line 353, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/github_package.scss
   h2 {
     margin-bottom: 1em;
   }
 
-  // line 356, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/github_package.scss
   .section-content {
     padding: 2em;
   }
 
-  // line 359, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/github_package.scss
   .features {
     margin: 2em 0;
   }
 
-  // line 362, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/github_package.scss
   .features-description {
     padding: 0;
   }
 
-  // line 365, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/github_package.scss
   .column + .column {
     margin-top: 2em;
   }
 }
-
-@import "octicons/octicons/sprockets-octicons";
