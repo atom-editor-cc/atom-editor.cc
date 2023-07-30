@@ -7,20 +7,20 @@ html {
 }
 
 body {
-  height: 100%;
-  min-width: 1060px;
-  margin: 0;
   color: #574c4f;
   font: 16px/1.7 normal normal;
   font-family: "Helvetica Neue", Helvetica, arial, freesans, clean, sans-serif;
+  height: 100%;
+  margin: 0;
+  min-width: 1060px;
 }
 
 .wrapper {
-  width: 860px;
   margin: 0 auto;
+  overflow: hidden;
   padding-left: 40px;
   padding-right: 40px;
-  overflow: hidden;
+  width: 860px;
 
   &.wide {
     width: 1060px;
@@ -33,15 +33,15 @@ body {
 }
 
 .content-push {
-  margin-top: 40px;
   height: 100%;
+  margin-top: 40px;
 }
 
 .footer-push {
-  min-height: 100%;
-  height: auto !important;
   height: 100%;
+  height: auto !important;
   margin-bottom: -55px;
+  min-height: 100%;
 }
 
 .footer-pad {
@@ -71,25 +71,34 @@ h6 {
 }
 
 hr {
-  border: 0;
-  height: 1px;
   background-color: #efeae1;
-  display: block;
-  width: 100%;
+  border: 0;
   clear: both;
+  display: block;
+  height: 1px;
+  width: 100%;
+}
+
+.octicon:hover {
+  text-decoration: none;
+}
+
+.gravatar {
+  border: 0;
+  border-radius: 3px;
 }
 
 .top-bar {
-  text-align: left;
-  padding: 5px 0;
   background-color: #584b4f;
   color: #efeae1;
   font-size: 14px;
   height: 43px;
+  padding: 5px 0;
+  text-align: left;
 
   h1 {
-    font-size: inherit;
     display: inline-block;
+    font-size: inherit;
     line-height: 0;
     margin: 0;
   }
@@ -116,21 +125,21 @@ hr {
     line-height: 33px;
 
     .octicon {
+      padding: 5px;
       position: relative;
       top: 1px;
-      padding: 5px;
     }
 
     .tooltipped {
-      padding-bottom: 2px;
       margin-left: 10px;
+      padding-bottom: 2px;
     }
 
     .gravatar {
       height: 22px;
-      width: 22px;
-      vertical-align: -7px;
       margin-right: 5px;
+      vertical-align: -7px;
+      width: 22px;
     }
   }
 
@@ -140,56 +149,56 @@ hr {
 }
 
 .logo-small {
-  width: 114px;
+  background-image: url("/assets/images/logo-small.png");
   height: 24px;
   margin: 4px 8px 4px 0;
-  background-image: url(/assets/images/logo-small.png);
+  width: 114px;
 
   @media only screen and (resolution >= 2dppx) {
-    background-image: url(/assets/images/logo-small@2x.png);
+    background-image: url("/assets/images/logo-small@2x.png");
     background-size: 114px 24px;
   }
 }
 
 .header {
-  width: 100%;
   text-align: center;
+  width: 100%;
 
   .wrapper {
+    line-height: 0;
     overflow: hidden;
     padding: 50px 0 40px;
-    line-height: 0;
   }
 
   h1 {
-    margin: 0;
     display: inline-block;
+    margin: 0;
   }
 
   .logo {
+    background-image: url("/assets/images/logo.png");
+    color: #574c4f;
     display: block;
-    width: 290px;
     height: 60px;
     line-height: 0;
-    color: #574c4f;
+    overflow: hidden;
     text-decoration: none;
     text-indent: 230px;
     white-space: nowrap;
-    overflow: hidden;
-    background-image: url(/assets/images/logo.png);
+    width: 290px;
 
     @media only screen and (resolution >= 2dppx) {
-      background-image: url(/assets/images/logo@2x.png);
+      background-image: url("/assets/images/logo@2x.png");
       background-size: 290px 60px;
     }
   }
 
   .github-log-in-button {
     float: right;
-    margin-top: 18px;
-    margin-left: 20px;
-    padding: 5px 10px;
     font-size: 14px;
+    margin-left: 20px;
+    margin-top: 18px;
+    padding: 5px 10px;
   }
 }
 
@@ -200,8 +209,8 @@ hr {
 
   li {
     display: inline-block;
-    padding-right: 5px;
     height: 33px;
+    padding-right: 5px;
     vertical-align: top;
 
     &:last-child {
@@ -210,12 +219,9 @@ hr {
   }
 
   a {
-    padding: 5px;
     display: inline-block;
+    padding: 5px;
     transition: color 0.2s;
-    -o-transform: color 0.2s;
-    -moz-transform: color 0.2s;
-    -webkit-transition: color 0.2s;
 
     &:hover {
       text-decoration: none;
@@ -257,8 +263,8 @@ hr {
   }
 
   .octicon {
-    position: relative;
     font-size: 20px;
+    position: relative;
     top: 1px;
   }
 
@@ -272,8 +278,8 @@ hr {
 
   ul {
     display: table;
-    padding: 0;
     margin: 0;
+    padding: 0;
   }
 
   li {
@@ -282,9 +288,9 @@ hr {
   }
 
   .button {
-    width: 100%;
-    padding: 10px 16px;
     font-size: 18px;
+    padding: 10px 16px;
+    width: 100%;
   }
 }
 
@@ -326,8 +332,8 @@ hr {
     vertical-align: middle;
 
     h2 {
-      font-weight: 300;
       font-size: 36px;
+      font-weight: 300;
     }
   }
 }
@@ -338,12 +344,12 @@ hr {
   }
 
   .search-results-header {
-    margin-top: 3px;
-    margin-bottom: 2px;
-    font-size: 18px;
-    font-weight: normal;
     color: #999;
     display: inline-block;
+    font-size: 18px;
+    font-weight: normal;
+    margin-bottom: 2px;
+    margin-top: 3px;
 
     em {
       color: #66595c;
@@ -362,9 +368,9 @@ hr {
     h4,
     h5,
     h6 {
+      border-bottom: 0;
       font-size: 16px;
       font-weight: bold;
-      border-bottom: 0;
     }
 
     .anchor {
@@ -379,13 +385,13 @@ hr {
 
 .docs-search-results {
   h3 {
-    margin: 0;
     font-size: 18px;
+    margin: 0;
   }
 
   li {
-    list-style-type: none;
     border-top: 1px solid #eee;
+    list-style-type: none;
     padding: 20px 0;
 
     &:first-child {
@@ -395,47 +401,38 @@ hr {
 }
 
 .docs-search-results-header {
-  margin: 0;
   line-height: 18px;
+  margin: 0;
 }
 
 .sidebar-search-field {
-  width: 100%;
   font-size: 14px;
   padding: 5px;
-}
-
-.octicon:hover {
-  text-decoration: none;
+  width: 100%;
 }
 
 .flash {
-  text-align: left;
   padding: 5px;
+  text-align: left;
 
   .flash-inner {
-    width: 1060px;
     margin: 0 auto;
     padding-left: 40px;
     padding-right: 40px;
+    width: 1060px;
   }
 
   &.notice {
-    color: #3b9b6d;
-    border-top: 1px solid #c8e3cc;
     background-color: #d8f5dd;
+    border-top: 1px solid #c8e3cc;
+    color: #3b9b6d;
   }
 
   &.alert {
-    color: #bf8f80;
-    border-top: 1px solid #edddd8;
     background-color: #ffede7;
+    border-top: 1px solid #edddd8;
+    color: #bf8f80;
   }
-}
-
-.gravatar {
-  border-radius: 3px;
-  border: 0;
 }
 
 .hero,
@@ -448,9 +445,9 @@ hr {
 }
 
 .card {
-  list-style-type: none;
   border: 1px solid #ddd;
   border-radius: 3px;
+  list-style-type: none;
   margin: 0 20px 20px 0;
   width: 480px;
 
@@ -460,9 +457,9 @@ hr {
   }
 
   .meta {
-    padding: 13px;
     background-color: #fafafa;
     line-height: 1;
+    padding: 13px;
   }
 }
 
@@ -473,8 +470,8 @@ hr {
 
 .thirds,
 .halves {
-  overflow: hidden;
   margin-right: -20px;
+  overflow: hidden;
 
   .grid-cell {
     float: left;
@@ -491,18 +488,18 @@ hr {
 }
 
 .nope {
-  position: absolute;
-  width: 256px;
+  background-image: url("/assets/images/soon.gif");
   height: 86px;
-  background-image: url(/assets/images/soon.gif);
-  top: 50%;
   left: 50%;
-  margin-top: -85px;
-  margin-left: -128px;
   line-height: 0;
+  margin-left: -128px;
+  margin-top: -85px;
+  position: absolute;
+  top: 50%;
+  width: 256px;
 
   @media only screen and (resolution >= 2dppx) {
-    background-image: url(/assets/images/soon@2x.gif);
+    background-image: url("/assets/images/soon@2x.gif");
     background-size: 256px 86px;
   }
 }
@@ -512,6 +509,6 @@ hr {
 }
 
 .sunset-banner {
-  padding: 10px;
   font-style: bold !important;
+  padding: 10px;
 }
