@@ -6,6 +6,7 @@ module.exports = {
       {
         ignoreFontFamilies: ['octicons']
       }
-    ]
+    ],
+    'no-descending-specificity': null
   }
 };
