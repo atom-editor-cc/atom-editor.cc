@@ -1,14 +1,1 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="385px" height="647px" viewBox="0 0 385 647" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 43.2 (39069) - http://www.bohemiancoding.com/sketch -->
-    <title>Path</title>
-    <desc>Created with Sketch.</desc>
-    <defs></defs>
-    <g id="Illu" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="BG" transform="translate(-906.000000, -2245.000000)" fill="#2E6974">
-            <g id="Bottom" transform="translate(118.000000, 2245.000000)">
-                <path d="M842.558594,16.1679688 C825.320312,11.0478516 788.578125,0.379882812 788.578125,0.379882812 C788.578125,0.379882812 819.337891,3.58300781 858.609375,16.1679688 C1208.14453,144.941406 1151.38384,624.813733 1172.59596,646.921114 L1130.17172,646.921114 C1147.72658,626.127583 1189.27344,131.964844 842.558594,16.1679688 Z" id="Path"></path>
-            </g>
-        </g>
-    </g>
-</svg>
+<svg height="647" viewBox="0 0 385 647" width="385" xmlns="http://www.w3.org/2000/svg"><path d="m842.558594 16.1679688c-17.238282-5.1201172-53.980469-15.78808599-53.980469-15.78808599s30.759766 3.203125 70.03125 15.78808599c349.535155 128.7734372 292.774465 608.6457642 313.986585 630.7531452h-42.42424c17.55486-20.793531 59.10172-514.95627-287.613126-630.7531452z" fill="#2e6974" fill-rule="evenodd" transform="translate(-788)"/></svg>
