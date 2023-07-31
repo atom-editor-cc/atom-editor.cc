@@ -1,39 +1,40 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en" prefix="og: http://ogp.me/ns#">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <title>GitHub for Atom</title>
-  <link rel="shortcut icon" href="/favicon.ico">
 
   <link rel="stylesheet" media="all" href="/assets/stylesheets/github_package.css">
+
+  <link rel="shortcut icon" href="/favicon.ico">
 </head>
 <body>
 
   <section class="section hero">
     <div class="bg" aria-hidden="true">
-      <img class="bg-item bg-item--rocket" src="/assets/images/github-rocket.svg">
-      <img class="bg-item bg-item--planet-3" src="/assets/images/github-planet-3.svg">
-      <img class="bg-item bg-item--planet-2" src="/assets/images/github-planet-2.svg">
-      <img class="bg-item bg-item--octonaut" src="/assets/images/github-octonaut.svg">
-      <img class="bg-item bg-item--planet-1" src="/assets/images/github-planet-1.svg">
+      <img src="/assets/images/github-rocket.svg" class="bg-item bg-item--rocket">
+      <img src="/assets/images/github-planet-3.svg" class="bg-item bg-item--planet-3">
+      <img src="/assets/images/github-planet-2.svg" class="bg-item bg-item--planet-2">
+      <img src="/assets/images/github-octonaut.svg" class="bg-item bg-item--octonaut">
+      <img src="/assets/images/github-planet-1.svg" class="bg-item bg-item--planet-1">
     </div>
     <div class="section-content">
       <header class="header">
         <div class="logos">
-          <!-- Inline SVG so the icon can be styled with CSS -->
-          <svg class="icon-svg icon-atom" viewbox="0 0 64 64" aria-label="Atom">
-            <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+          <svg aria-label="Atom" class="icon-svg icon-atom" viewbox="0 0 64 64">
+            <g fill="none" fill-rule="evenodd" stroke="none" stroke-width="1">
               <g transform="translate(1.640625, 4.170573)">
-                <path stroke="currentColor" stroke-width="3" stroke-linecap="round" d="M41.1546628,24.0016159 C48.1314158,38.3143746 49.5709562,51.8023702 44.283365,54.4984514 C38.8313273,57.2797075 28.2924076,47.5351914 20.7438863,32.7341528 C13.195365,17.9331141 11.4960833,3.6802309 16.9481211,0.899818142 C19.3220556,-0.311183594 22.6607435,0.853435764 26.2962786,3.77468229"></path>
-                <path stroke="currentColor" stroke-width="3" stroke-linecap="round" d="M6.63099349,33.1397878 C2.5552474,31.0222214 0.181312934,28.4720339 0.317930122,25.8366714 C0.635860243,19.7243173 14.3448047,15.4697882 30.9370464,16.3325004 C47.5292882,17.196056 60.7221233,22.8504896 60.4041931,28.9628438 C60.2667326,31.5982062 57.6406467,33.887809 53.3675647,35.5710677"></path>
-                <path stroke="currentColor" stroke-width="3" stroke-linecap="round" d="M24.4991723,49.9251489 C20.043934,53.141556 16.0786623,54.3162951 13.5984701,52.7064049 C8.46436241,49.3753069 11.6335438,35.3762617 20.6772643,21.4379353 C29.7209848,7.50045226 41.2145382,-1.0979974 46.3486458,2.23394401 C48.73523,3.78227214 49.3272378,7.63538281 48.3692309,12.7155182"></path>
+                <path stroke="currentColor" stroke-linecap="round" stroke-width="3" d="M41.1546628,24.0016159 C48.1314158,38.3143746 49.5709562,51.8023702 44.283365,54.4984514 C38.8313273,57.2797075 28.2924076,47.5351914 20.7438863,32.7341528 C13.195365,17.9331141 11.4960833,3.6802309 16.9481211,0.899818142 C19.3220556,-0.311183594 22.6607435,0.853435764 26.2962786,3.77468229"></path>
+                <path stroke="currentColor" stroke-linecap="round" stroke-width="3" d="M6.63099349,33.1397878 C2.5552474,31.0222214 0.181312934,28.4720339 0.317930122,25.8366714 C0.635860243,19.7243173 14.3448047,15.4697882 30.9370464,16.3325004 C47.5292882,17.196056 60.7221233,22.8504896 60.4041931,28.9628438 C60.2667326,31.5982062 57.6406467,33.887809 53.3675647,35.5710677"></path>
+                <path stroke="currentColor" stroke-linecap="round" stroke-width="3" d="M24.4991723,49.9251489 C20.043934,53.141556 16.0786623,54.3162951 13.5984701,52.7064049 C8.46436241,49.3753069 11.6335438,35.3762617 20.6772643,21.4379353 C29.7209848,7.50045226 41.2145382,-1.0979974 46.3486458,2.23394401 C48.73523,3.78227214 49.3272378,7.63538281 48.3692309,12.7155182"></path>
                 <path fill="currentColor" d="M34.226822,26.9194891 C34.6577565,28.9139314 33.3902526,30.879701 31.3958103,31.3106354 C29.4013681,31.7415699 27.4355985,30.474066 27.0046641,28.4796237 C26.5745729,26.4851814 27.8412335,24.5194119 29.8356758,24.0884774 C31.8292747,23.657543 33.7950443,24.9250469 34.226822,26.9194891"></path>
               </g>
             </g>
           </svg>
           <span class="logos-plus">+</span>
-          <span class="octicon octicon-mark-github" aria-label="GitHub"></span>
+          <span  aria-label="GitHub" class="octicon octicon-mark-github"></span>
         </div>
 
         <h1 class="tagline">GitHub for Atom</h1>
@@ -48,29 +49,8 @@
         </div>
 
         <div class="features-description">
-          <p>
-            The GitHub package brings Git and GitHub integration right inside your editor! Now you can switch or create
-            <strong>branches</strong>
-            ,
-            <strong>stage</strong>
-            changes,
-            <strong>commit</strong>
-            ,
-            <strong>pull</strong>
-            and
-            <strong>push</strong>
-            ,
-            <strong>resolve merge conflicts</strong>
-            , view and checkout
-            <strong>pull requests</strong>
-            and more.
-          </p>
-
-          <p>
-            Visit the 🚀
-            <a class="features-button" href="https://flight-manual.atom-editor.cc/using-atom/sections/github-package/">documentation</a>
-            to learn how to use all the features.
-          </p>
+          <p>The GitHub package brings Git and GitHub integration right inside your editor! Now you can switch or create <strong>branches</strong>, <strong>stage</strong> changes, <strong>commit</strong>, <strong>pull</strong> and <strong>push</strong>, <strong>resolve merge conflicts</strong>, view and checkout <strong>pull requests</strong> and more.</p>
+          <p>Visit the 🚀 <a class="features-button" href="https://flight-manual.atom-editor.cc/using-atom/sections/github-package/">documentation</a> to learn how to use all the features.</p>
         </div>
       </main>
 
@@ -81,71 +61,42 @@
     <div class="section-content columns">
       <div class="column">
         <h2>Install</h2>
-        <p>
-          The GitHub package comes already bundled with
-          <a href="/">Atom</a>
-          , so there is nothing extra to install.&nbsp;🎉
-        </p>
+
+        <p>The GitHub package comes already bundled with <a href="/">Atom</a>, so there is nothing extra to install. 🎉</p>
       </div>
 
       <div class="column">
         <h2>Feedback</h2>
-        <p>
-          We would love to hear your
-          <a href="https://github.com/atom/atom/discussions">feedback</a>
-          . If you run into any problems, please
-          <a href="https://github.com/atom/github/issues">open an issue</a>
-          . For contributions, take a look at the
-          <a href="https://github.com/atom/github/blob/master/CONTRIBUTING.md">contribution guide</a>
-          .
-        </p>
+
+        <p>We would love to hear your <a href="https://github.com/atom/atom/discussions">feedback</a>. If you run into any problems, please <a href="https://github.com/atom/github/issues">open an issue</a>. For contributions, take a look at the <a href="https://github.com/atom/github/blob/master/CONTRIBUTING.md">contribution guide</a>.</p>
       </div>
     </div>
   </section>
 
   <footer class="section footer">
     <div class="bg" aria-hidden="true">
-      <img class="bg-item bg-item--bottom-stars" src="/assets/images/github-bottom-stars.svg">
-      <img class="bg-item bg-item--swoosh" src="/assets/images/github-swoosh.svg">
-      <img class="bg-item bg-item--bottom" src="/assets/images/github-bottom.svg">
+      <img src="/assets/images/github-bottom-stars.svg" class="bg-item bg-item--bottom-stars">
+      <img src="/assets/images/github-swoosh.svg" class="bg-item bg-item--swoosh">
+      <img src="/assets/images/github-bottom.svg" class="bg-item bg-item--bottom">
     </div>
     <div class="section-content community columns">
       <div class="column">
         <h2>Community packages</h2>
-        <p>
-          We also would like to point out all the
-          <a href="https://atom.io/packages/search?utf8=%E2%9C%93&amp;q=keyword:git">amazing packages</a>
-          the Atom community has already created.
-        </p>
-        <p>Give them a try to further improve your Git workflows.&nbsp;🙌</p>
+
+        <p>We also would like to point out all the <a href="https://atom.io/packages/search?utf8=%E2%9C%93&amp;q=keyword:git">amazing packages</a> the Atom community has already created.</p>
+        <p>Give them a try to further improve your Git workflows. 🙌</p>
       </div>
       <div class="column">
         <p>Here just a few to check out:</p>
         <ul>
-          <li>
-            <a href="https://atom.io/packages/git-plus">git-plus</a>
-          </li>
-          <li>
-            <a href="https://atom.io/packages/git-control">git-control</a>
-          </li>
-          <li>
-            <a href="https://atom.io/packages/git-time-machine">git-time-machine</a>
-          </li>
-          <li>
-            <a href="https://atom.io/packages/git-history">git-history</a>
-          </li>
-          <li>
-            <a href="https://atom.io/packages/git-blame">git-blame</a>
-          </li>
-          <li>
-            <a href="https://atom.io/packages/context-git">context-git</a>
-          </li>
-          <li>
-            <a href="https://atom.io/packages/simple-git">simple-git</a>
-          </li>
-          <li>
-            <a href="https://atom.io/packages/split-diff">split-diff</a>
-          </li>
+          <li><a href="https://atom.io/packages/git-plus">git-plus</a></li>
+          <li><a href="https://atom.io/packages/git-control">git-control</a></li>
+          <li><a href="https://atom.io/packages/git-time-machine">git-time-machine</a></li>
+          <li><a href="https://atom.io/packages/git-history">git-history</a></li>
+          <li><a href="https://atom.io/packages/git-blame">git-blame</a></li>
+          <li><a href="https://atom.io/packages/context-git">context-git</a></li>
+          <li><a href="https://atom.io/packages/simple-git">simple-git</a></li>
+          <li><a href="https://atom.io/packages/split-diff">split-diff</a></li>
         </ul>
       </div>
     </div>
