@@ -3,15 +3,14 @@
 @import "primer/mixins/clearfix";
 @import "primer/mixins/gradient";
 
-
 // Base form controls
-//
+
 // Styleguide 2.0
 
 fieldset {
-  padding: 0;
-  margin: 0;
   border: 0;
+  margin: 0;
+  padding: 0;
 }
 
 label {
@@ -28,24 +27,24 @@ input[type="tel"],
 input[type="url"],
 input[type="search"],
 textarea {
-  min-height: 34px;
-  padding: 7px 8px;
-  font-size: 13px;
-  color: #333;
-  vertical-align: middle;
   background-color: #fff;
-  background-repeat: no-repeat; // Repeat and position set for form states (success, error, etc)
   background-position: right center;
+  background-repeat: no-repeat; // Repeat and position set for form states (success, error, etc)
   border: 1px solid #ccc;
   border-radius: 3px;
+  box-shadow: inset 0 1px 2px rgb(0 0 0 7.5%);
+  color: #333;
+  font-size: 13px;
+  min-height: 34px;
   outline: none;
-  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.075);
+  padding: 7px 8px;
+  vertical-align: middle;
 
   %input-focus,
   &.focus,
   &:focus {
     border-color: #51a7e8;
-    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.075), 0 0 5px rgba(81, 167, 232, 0.5);
+    box-shadow: inset 0 1px 2px rgb(0 0 0 7.5%), 0 0 5px rgb(81 167 232 50%);
   }
 }
 
@@ -59,18 +58,17 @@ input.input-contrast,
 }
 
 // Custom styling for HTML5 validation bubbles (WebKit only)
-::-webkit-input-placeholder,
-:-moz-placeholder {
+::placeholder {
   color: #aaa;
 }
 
 ::-webkit-validation-bubble-message {
-  font-size: 12px;
-  color: #fff;
   background: #9c2400;
   border: 0;
   border-radius: 3px;
-  -webkit-box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+  box-shadow: 1px 1px 1px rgb(0 0 0 10%);
+  color: #fff;
+  font-size: 12px;
 }
 
 input::-webkit-validation-bubble-icon {
@@ -80,21 +78,21 @@ input::-webkit-validation-bubble-icon {
 ::-webkit-validation-bubble-arrow {
   background-color: #9c2400;
   border: solid 1px #9c2400;
-  -webkit-box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+  box-shadow: 1px 1px 1px rgb(0 0 0 10%);
 }
 
 // Mini inputs, to match .minibutton
 input.input-mini {
-  min-height: 26px;
-  padding-top: 4px;
-  padding-bottom: 4px;
   font-size: 12px;
+  min-height: 26px;
+  padding-bottom: 4px;
+  padding-top: 4px;
 }
 
 // Large inputs
 input.input-large {
-  padding: 6px 10px;
   font-size: 16px;
+  padding: 6px 10px;
 }
 
 // Full-width inputs
@@ -110,9 +108,9 @@ input.input-large {
 
 // Typical form groups - `<dl.form>` with a `<dt>` containing the label and
 // `<dd> containing the form elements.
-//
+
 // .required - This group is required to submit the form.
-//
+
 // Styleguide 2.1
 dl.form {
   margin: 15px 0;
@@ -139,33 +137,30 @@ dl.form {
 
   &.flattened > dt {
     float: left;
-    margin: 0;
     line-height: 32px;
+    margin: 0;
   }
 
   &.flattened > dd {
     line-height: 32px;
   }
 
-  //
   // Form Elements
-  //
-
   > dd {
     // For entering in text.
-    //
+
     // .short   - A bit shorter now.
     // .shorter - A little bit shorter now.
     // .long    - A bit longer now
-    //
+
     // Styleguide 2.1.1
     input[type="text"],
     input[type="password"],
     input[type="email"] {
-      width: 440px;
-      max-width: 100%;
-      margin-right: 5px;
       background-position-x: 98%;
+      margin-right: 5px;
+      max-width: 100%;
+      width: 440px;
 
       &.short {
         width: 250px;
@@ -194,14 +189,14 @@ dl.form {
     }
 
     // For longer entries.
-    //
+
     // .short - A bit shorter now
-    //
+
     // Styleguide 2.1.2
     textarea {
-      width: 100%;
       height: 200px;
       min-height: 200px;
+      width: 100%;
 
       &.short {
         height: 50px;
@@ -210,10 +205,10 @@ dl.form {
     }
 
     p.note {
-      min-height: 17px;
-      margin: 4px 0 2px;
-      font-size: 12px;
       color: #777;
+      font-size: 12px;
+      margin: 4px 0 2px;
+      min-height: 17px;
 
       .spinner {
         margin-right: 3px;
@@ -232,77 +227,71 @@ dl.form {
     h4 + p.note {
       margin-top: 0;
     }
-
   }
 
-  //
   // Variants
-  //
-
   &.required {
-    > dt > label:after {
-      padding-left: 5px;
+    > dt > label::after {
       color: #9f1006;
       content: "*";
+      padding-left: 5px;
     }
   }
 }
 
-
 // For checkboxes and radio button selections.
-//
+
 // Styleguide 2.1.3
 .form-checkbox {
-  padding-left: 20px;
   margin: 15px 0;
+  padding-left: 20px;
   vertical-align: middle;
 
   label {
-
     em.highlight {
-      position: relative;
-      left: -4px;
-      padding: 2px 4px;
-      font-style: normal;
       background: #fffbdc;
       border-radius: 3px;
+      font-style: normal;
+      left: -4px;
+      padding: 2px 4px;
+      position: relative;
     }
   }
 
-  input[type=checkbox],
-  input[type=radio] {
+  input[type="checkbox"],
+  input[type="radio"] {
     float: left;
     margin: 2px 0 0 -20px;
     vertical-align: middle;
   }
 
   .note {
+    color: #666;
     display: block;
-    margin: 0;
     font-size: 12px;
     font-weight: normal;
-    color: #666;
+    margin: 0;
   }
 }
 
 // A selector for credit cards. Shows all credit cards we have available and
 // dims the non-selected ones.
-//
+
 // .disabled - Add to a `<.card>` to use the disabled look.
-//
+
 // Styleguide 2.1.4
 .form-cards {
   height: 31px;
   margin: 0 0 15px;
 
   .card {
-    float: left;
-    width: 47px;
-    height: 31px;
-    text-indent: -9999px;
     background-image: url("/images/modules/pricing/credit-cards-@1x.png");
     background-position: 0 0;
+    float: left;
+    height: 31px;
     opacity: 0.6;
+    text-indent: -9999px;
+    width: 47px;
 
     &.visa { background-position: 0 0; }
 
@@ -326,38 +315,32 @@ dl.form {
 
     > li {
       float: left;
-      margin: 0 4px 0 0;
       list-style-type: none;
+      margin: 0 4px 0 0;
 
       &.text {
+        color: #999;
         font-size: 11px;
         line-height: 31px;
-        color: #999;
       }
     }
   }
 }
 
-@media
-only screen and (-webkit-min-device-pixel-ratio: 2),
-only screen and (min--moz-device-pixel-ratio: 2),
-only screen and (-o-min-device-pixel-ratio: 2/1),
-only screen and (min-device-pixel-ratio: 2),
-only screen and (min-resolution: 2dppx) {
+@media only screen and (resolution >= 2dppx) {
   .form-cards > .cards .card {
     background-image: url("/images/modules/pricing/credit-cards-@2x.png");
     background-size: 300px 31px;
   }
 }
 
-
 // Form fields that need feedback for AJAX loading, success
 // states and errored states.
-//
+
 // .loading - Sending a request, awaiting feedback.
 // .successful - :D
 // .errored - Everything is falling apart.
-//
+
 // Styleguide 2.1.5
 dl.form {
   .success,
@@ -383,8 +366,8 @@ dl.form {
 
   &.successful {
     .success {
-      display: inline;
       color: #390;
+      display: inline;
     }
   }
 
@@ -395,77 +378,77 @@ dl.form {
 
     // General text next to the field
     .error {
-      display: inline;
       color: #900;
+      display: inline;
     }
 
     // Specific error explanations from the server
     dd.error,
     dd.warning {
-      display: inline-block;
-      padding: 5px;
-      font-size: 11px;
-      color: #494620;
       background: #f7ea57;
       border: 1px solid #c0b536;
-      border-top-color: #fff;
-      border-bottom-right-radius: 3px;
       border-bottom-left-radius: 3px;
+      border-bottom-right-radius: 3px;
+      border-top-color: #fff;
+      color: #494620;
+      display: inline-block;
+      font-size: 11px;
+      padding: 5px;
     }
   }
 
   &.warn {
     // General text next to the field
     .warning {
-      display: inline;
       color: #900;
+      display: inline;
     }
 
     // Specific warning explanations from the server
     dd.warning {
-      display: inline-block;
-      padding: 5px;
-      font-size: 11px;
-      color: #494620;
       background: #f7ea57;
       border: 1px solid #c0b536;
-      border-top-color: #fff;
-      border-bottom-right-radius: 3px;
       border-bottom-left-radius: 3px;
+      border-bottom-right-radius: 3px;
+      border-top-color: #fff;
+      color: #494620;
+      display: inline-block;
+      font-size: 11px;
+      padding: 5px;
     }
   }
 
   .form-note {
-    display: inline-block;
-    padding: 5px;
-    margin-top: -1px;
-    font-size: 11px;
-    color: #494620;
     background: #f7ea57;
     border: 1px solid #c0b536;
-    border-top-color: #fff;
-    border-bottom-right-radius: 3px;
     border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    border-top-color: #fff;
+    color: #494620;
+    display: inline-block;
+    font-size: 11px;
+    margin-top: -1px;
+    padding: 5px;
   }
 }
 
-
 // Wrap field groups in `<div.hfields>` to lay them out horizontally - great for
 // the top of pages with autosave.
-//
+
 // Styleguide 2.2
 .hfields {
   margin: 15px 0;
+
   @include clearfix;
 
   dl.form {
     float: left;
     margin: 0 30px 0 0;
 
-    & > dt label {
+    > dt label {
+      color: #666;
       display: inline-block;
       margin: 5px 0 0;
-      color: #666;
 
       img {
         position: relative;
@@ -498,16 +481,16 @@ html.no-dnd-uploads {
 }
 
 .drag-and-drop {
-  padding: 7px 10px;
-  margin: 0;
-  font-size: 13px;
-  line-height: 16px;
-  color: #aaa;
   background-color: #fafafa;
   border: 1px solid #ccc;
-  border-top: 0;
-  border-bottom-right-radius: 3px;
   border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  border-top: 0;
+  color: #aaa;
+  font-size: 13px;
+  line-height: 16px;
+  margin: 0;
+  padding: 7px 10px;
 
   .default,
   .loading,
@@ -546,8 +529,8 @@ html.no-dnd-uploads {
 }
 
 .drag-and-drop-error-info {
-  font-weight: normal;
   color: #aaa;
+  font-weight: normal;
 
   a {
     color: $brand-linkBlue;
@@ -559,12 +542,12 @@ html.no-dnd-uploads {
 }
 
 .manual-file-chooser {
+  cursor: pointer;
+  margin-left: -80px;
+  opacity: 0.0001;
+  padding: 5px;
   position: absolute;
   width: 240px;
-  padding: 5px;
-  margin-left: -80px;
-  cursor: pointer;
-  opacity: 0.0001;
 }
 
 .manual-file-chooser:hover + .manual-file-chooser-text {
@@ -574,23 +557,24 @@ html.no-dnd-uploads {
 .button {
   // align manual-file-chooser inside a button
   .manual-file-chooser {
-    top: 0;
-    padding: 0;
     line-height: 34px;
+    padding: 0;
+    top: 0;
   }
 }
 
 // Focused Textarea styles
 .upload-enabled textarea {
-  display: block;
   border-bottom: 1px dashed #ddd;
-  border-bottom-right-radius: 0;
   border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  display: block;
 }
 
 .focused .drag-and-drop {
   // @extend input[type="text"]:focus;
   @extend %input-focus;
+
   box-shadow: rgba(#51a7e8, 0.5) 0 0 3px;
 }
 
@@ -600,16 +584,15 @@ html.no-dnd-uploads {
   box-shadow: rgba(#c9ff00, 1) 0 0 3px;
 }
 
-
 // Form style with a write and a preview tab
-//
+
 // No styleguide reference
 .previewable-comment-form {
   position: relative;
 
   .tabnav {
-    position: relative;
     padding: 10px 10px 0;
+    position: relative;
   }
 
   .comment {
@@ -633,11 +616,11 @@ html.no-dnd-uploads {
 
   textarea {
     display: block;
-    width: 100%;
-    min-height: 100px;
     max-height: 500px;
+    min-height: 100px;
     padding: 10px;
     resize: vertical;
+    width: 100%;
 
     &.fullscreen-contents:focus {
       border: 0;
@@ -647,14 +630,14 @@ html.no-dnd-uploads {
 }
 
 // A two column form, with a .main and a .sidebar column
-//
+
 // No styleguide reference
 
 // Override some `.timeline-comment-wrapper` defaults.
 // The `div` is needed to be more specific than the other class.
 div.composer {
-  margin-top: 0;
   border: 0;
+  margin-top: 0;
 }
 
 // Override the previewable comment form defaults
@@ -664,19 +647,18 @@ div.composer {
 }
 
 .composer-infobar {
-  height: 35px;
-  padding: 0 10px;
-  margin-bottom: 10px;
   border-bottom: 1px solid #eee;
+  height: 35px;
+  margin-bottom: 10px;
+  padding: 0 10px;
 }
 
 .composer .tabnav { margin: 0 0 10px; }
 
 .infobar-widget {
-
   &.milestone {
-    position: relative; // requires so that the `right: 0;` below works
     float: right;
+    position: relative; // requires so that the `right: 0;` below works
 
     .select-menu-modal-holder { right: 0; }
   }
@@ -700,18 +682,17 @@ div.composer {
     margin-top: 3px;
 
     a {
-      font-weight: bold;
       color: #333;
+      font-weight: bold;
     }
   }
 
   .progress-bar {
-    width: 200px;
-    overflow: hidden; // round the corners if 100%
     line-height: 18px;
+    overflow: hidden; // round the corners if 100%
+    width: 200px;
   }
 }
-
 
 // advanced search page label
 #adv_code_search .search-page-label {
@@ -719,20 +700,17 @@ div.composer {
   @extend %input;
 }
 
-
 // Hide the up/down buttons in <input type="number"> in the login form, the
 // input is used for two-factor auth codes, type="number" makes it more usable
 // on phones
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
-  margin: 0;
   -webkit-appearance: none;
+  margin: 0;
 }
 
-
-
 // Input groups
-//
+
 // Styleguide 2.3
 .input-group {
   display: table;
@@ -762,15 +740,15 @@ input::-webkit-inner-spin-button {
 }
 
 .input-group-button {
-  width: 1%;
   vertical-align: middle; // Match the inputs
+  width: 1%;
 }
 
 .input-group input:first-child,
 .input-group-button:first-child .button,
 .input-group-button:first-child .minibutton {
-  border-top-right-radius: 0;
   border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
 }
 
 .input-group-button:first-child .button,
@@ -781,8 +759,8 @@ input::-webkit-inner-spin-button {
 .input-group input:last-child,
 .input-group-button:last-child .button,
 .input-group-button:last-child .minibutton {
-  border-top-left-radius: 0;
   border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
 }
 
 .input-group-button:last-child .button,
@@ -791,36 +769,36 @@ input::-webkit-inner-spin-button {
 }
 
 h2.account {
-  margin: 15px 0 0;
+  color: #666;
   font-size: 18px;
   font-weight: normal;
-  color: #666;
+  margin: 15px 0 0;
 }
 
 p.explain {
-  position: relative;
-  font-size: 12px;
   color: #666;
+  font-size: 12px;
+  position: relative;
 
   strong {
     color: #333;
   }
 
   .octicon {
-    margin-right: 5px;
     color: #bbb;
+    margin-right: 5px;
   }
 
   .minibutton {
-    top: -4px;
     float: right;
+    top: -4px;
   }
 }
 
 .options-content p.explain {
-  padding: 10px 10px 0;
-  margin-top: 0;
   border-top: 1px solid #ddd;
+  margin-top: 0;
+  padding: 10px 10px 0;
 }
 
 .form-actions {
@@ -833,8 +811,8 @@ p.explain {
   }
 
   .button.cancel {
-    margin-top: 0;
     margin-left: 2px;
+    margin-top: 0;
   }
 
   .minibutton.cancel {
@@ -843,8 +821,8 @@ p.explain {
 
   .optional {
     float: left;
-    padding-top: 8px;
     margin-right: 15px;
+    padding-top: 8px;
 
     span.text {
       padding: 0 3px;
@@ -858,17 +836,17 @@ p.explain {
 }
 
 .form-warning {
-  padding: 8px 10px;
-  margin: 10px 0;
-  font-size: 14px;
-  color: #333;
   background: #ffffe2;
   border: 1px solid #e7e4c2;
   border-radius: 4px;
+  color: #333;
+  font-size: 14px;
+  margin: 10px 0;
+  padding: 8px 10px;
 
   p {
-    margin: 0;
     line-height: 1.5;
+    margin: 0;
   }
 
   strong { color: #000; }
@@ -878,28 +856,28 @@ p.explain {
 
 // Inline verification
 // Used for example when autosaving checkboxes in settings
-
 .status-indicator {
   @include icon-bootstrap(16px);
+
   margin-left: 5px;
 }
 
 .status-indicator-loading {
+  background: url("/images/spinners/octocat-spinner-32-EAF2F5.gif") 0 0 no-repeat;
+  background-size: 16px;
+  height: 16px;
+  margin-top: -4px;
   position: relative;
   top: 3px;
   width: 16px;
-  height: 16px;
-  margin-top: -4px;
-  background: url("/images/spinners/octocat-spinner-32-EAF2F5.gif") 0 0 no-repeat;
-  background-size: 16px;
 }
 
-.status-indicator-success:before {
+.status-indicator-success::before {
   color: $brand-green;
   content: "\f03a"; // octicon-check
 }
 
-.status-indicator-failed:before {
+.status-indicator-failed::before {
   color: $brand-red;
   content: "\f02d"; // octicon-x
 }

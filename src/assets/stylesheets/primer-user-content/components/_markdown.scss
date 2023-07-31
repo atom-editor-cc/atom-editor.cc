@@ -18,15 +18,15 @@
     }
 
     &.anchor {
-      display: block;
-      padding-right: 6px;
-      padding-left: 30px;
-      margin-left: -30px;
+      bottom: 0;
       cursor: pointer;
+      display: block;
+      left: 0;
+      margin-left: -30px;
+      padding-left: 30px;
+      padding-right: 6px;
       position: absolute;
       top: 0;
-      left: 0;
-      bottom: 0;
 
       &:focus {
         outline: none;
@@ -40,23 +40,23 @@
   h4,
   h5,
   h6 {
-    margin: 1em 0 15px;
-    padding: 0;
+    cursor: text;
     font-weight: bold;
     line-height: 1.7;
-    cursor: text;
+    margin: 1em 0 15px;
+    padding: 0;
     position: relative;
 
     .octicon-link {
-      display: none;
       color: #000;
+      display: none;
     }
 
     &:hover a.anchor {
-      text-decoration: none;
       line-height: 1;
-      padding-left: 8px;
       margin-left: -30px;
+      padding-left: 8px;
+      text-decoration: none;
       top: 15%;
 
       .octicon-link {
@@ -71,13 +71,13 @@
   }
 
   h1 {
-    font-size: 2.5em;
     border-bottom: 1px solid #ddd;
+    font-size: 2.5em;
   }
 
   h2 {
-    font-size: 2em;
     border-bottom: 1px solid #eee;
+    font-size: 2em;
   }
 
   h3 {
@@ -112,8 +112,8 @@
     border: 0 none;
     color: #ccc;
     height: 4px;
-    padding: 0;
     margin: 15px 0;
+    padding: 0;
   }
 
   ul,
@@ -127,8 +127,8 @@
 
     ul,
     ol {
-      margin-top: 0;
       margin-bottom: 0;
+      margin-top: 0;
     }
   }
 
@@ -137,10 +137,10 @@
 
     dt {
       font-size: 14px;
-      font-weight: bold;
       font-style: italic;
-      padding: 0;
+      font-weight: bold;
       margin-top: 15px;
+      padding: 0;
     }
 
     dd {
@@ -150,9 +150,9 @@
   }
 
   blockquote {
-    border-left: 4px solid #DDD;
-    padding: 0 15px;
+    border-left: 4px solid #ddd;
     color: #777;
+    padding: 0 15px;
 
     > :first-child {
       margin-top: 0;
@@ -164,9 +164,9 @@
   }
 
   table {
-    width: 100%;
-    overflow: auto;
     display: block;
+    overflow: auto;
+    width: 100%;
 
     th {
       font-weight: bold;
@@ -179,8 +179,8 @@
     }
 
     tr {
-      border-top: 1px solid #ccc;
       background-color: #fff;
+      border-top: 1px solid #ccc;
 
       &:nth-child(2n) {
         background-color: #f8f8f8;
@@ -189,8 +189,8 @@
   }
 
   img {
-    max-width: 100%;
     box-sizing: border-box;
+    max-width: 100%;
   }
 
   span.frame {
@@ -201,8 +201,8 @@
       border: 1px solid #ddd;
       display: block;
       float: left;
-      overflow: hidden;
       margin: 13px 0 0;
+      overflow: hidden;
       padding: 7px;
       width: auto;
     }
@@ -223,14 +223,14 @@
   }
 
   span.align-center {
+    clear: both;
     display: block;
     overflow: hidden;
-    clear: both;
 
     > span {
       display: block;
-      overflow: hidden;
       margin: 13px auto 0;
+      overflow: hidden;
       text-align: center;
     }
 
@@ -241,14 +241,14 @@
   }
 
   span.align-right {
+    clear: both;
     display: block;
     overflow: hidden;
-    clear: both;
 
     > span {
       display: block;
-      overflow: hidden;
       margin: 13px 0 0;
+      overflow: hidden;
       text-align: right;
     }
 
@@ -260,9 +260,9 @@
 
   span.float-left {
     display: block;
+    float: left;
     margin-right: 13px;
     overflow: hidden;
-    float: left;
 
     span {
       margin: 13px 0 0;
@@ -271,28 +271,28 @@
 
   span.float-right {
     display: block;
+    float: right;
     margin-left: 13px;
     overflow: hidden;
-    float: right;
 
     > span {
       display: block;
-      overflow: hidden;
       margin: 13px auto 0;
+      overflow: hidden;
       text-align: right;
     }
   }
 
   code,
   tt {
-    margin: 0;
-    border: 1px solid #ddd;
     background-color: #f8f8f8;
+    border: 1px solid #ddd;
     border-radius: 3px;
+    margin: 0;
     padding: 0;
 
-    &:before,
-    &:after {
+    &::before,
+    &::after {
       content: "\00a0";
       letter-spacing: -0.2em;
     }
@@ -307,44 +307,41 @@
     vertical-align: text-top;
   }
 
-  pre > code {
-    margin: 0;
-    padding: 0;
-    white-space: pre;
-    border: none;
-    background: transparent;
+  pre {
+    word-wrap: normal;
+
+    code,
+    tt {
+      background-color: transparent;
+      border: none;
+      display: inline;
+      line-height: inherit;
+      margin: 0;
+      max-width: initial;
+      overflow: initial;
+      padding: 0;
+      word-wrap: normal;
+
+      &::before,
+      &::after {
+        content: normal;
+      }
+    }
+
+    > code {
+      background: transparent;
+      white-space: pre;
+    }
   }
 
-  .highlight pre,
-  pre {
+  pre,
+  .highlight pre {
     background-color: #f8f8f8;
     border: 1px solid #ddd;
+    border-radius: 3px;
     font-size: 13px;
     line-height: 19px;
     overflow: auto;
     padding: 6px 10px;
-    border-radius: 3px;
-  }
-
-  pre {
-    word-wrap: normal;
-  }
-
-  pre code,
-  pre tt {
-    margin: 0;
-    padding: 0;
-    background-color: transparent;
-    border: none;
-    word-wrap: normal;
-    max-width: initial;
-    display: inline;
-    overflow: initial;
-    line-height: inherit;
-
-    &:before,
-    &:after {
-      content: normal;
-    }
   }
 }

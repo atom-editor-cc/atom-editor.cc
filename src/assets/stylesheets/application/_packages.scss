@@ -1,20 +1,239 @@
 .stats-footnote {
-  font-size: 80%;
   color: #9e9b95;
+  font-size: 80%;
+}
+
+.card {
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  list-style-type: none;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+
+  img {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  .meta {
+    background-color: #fafafa;
+    line-height: 1;
+    padding: 13px;
+    position: relative;
+
+    .author {
+      color: #999;
+      font-size: 15px;
+    }
+
+    .stat {
+      display: inline-block;
+      height: 26px;
+      line-height: 24px;
+      margin-right: 5px;
+      padding-right: 5px;
+      vertical-align: top;
+
+      .octicon {
+        color: #999;
+      }
+    }
+
+    .action {
+      border-radius: 3px;
+      padding: 3px 6px;
+
+      &:hover {
+        background-color: #eaeaea;
+      }
+    }
+
+    .value {
+      color: #999;
+      font-size: 13px;
+    }
+
+    a.linked-octicon {
+      text-decoration: none;
+
+      &:hover {
+        .octicon {
+          color: #3b9b6d;
+        }
+
+        .value {
+          color: #3b9b6d;
+        }
+      }
+    }
+  }
+
+  .meta-right {
+    background-color: inherit;
+    padding-left: 10px;
+    position: absolute;
+    right: 13px;
+    top: 11px;
+  }
+
+  &.blank-slate {
+    color: #a29f99;
+    height: 132px;
+    line-height: 132px;
+    text-align: center;
+  }
+}
+
+.package-header {
+  margin-bottom: 40px;
+
+  .columns .column {
+    vertical-align: middle;
+  }
+
+  h2 {
+    margin: 0;
+  }
+
+  h4 {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0 0 5px;
+  }
+}
+
+.package-card,
+.project-card {
+  .card-name {
+    font-size: 28px;
+    font-weight: 300;
+    line-height: 1.4;
+    margin: 0;
+
+    .css-truncate-target {
+      color: #3b9b6d;
+    }
+  }
+
+  .keywords {
+    font-size: 12px;
+    line-height: 20px;
+    margin: 0;
+    min-height: 20px;
+    overflow: hidden;
+    padding: 0;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+
+    li {
+      background-color: #f8f6f2;
+      border: 1px solid #efeae1;
+      border-radius: 3px;
+      display: inline;
+      list-style-type: none;
+      padding: 2px 4px;
+    }
+
+    a {
+      color: #9e9b95;
+    }
+  }
+
+  .card-description {
+    font-size: 15px;
+  }
+
+  .card-install-button {
+    font-weight: 500;
+    margin-left: 9px;
+  }
+
+  .card-install-button-close {
+    border: none;
+    color: #9e9b95;
+    cursor: pointer;
+    height: 30px;
+    outline: none;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 30px;
+
+    &:hover,
+    &:focus {
+      color: #574c4f;
+    }
+
+    &:active {
+      color: #9e9b95;
+    }
+  }
+
+  .modal-download-atom {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    bottom: 37px;
+    box-shadow: 0 3px 8px rgb(0 0 0 / 10%);
+    font-size: 15px;
+    line-height: 1.3;
+    padding: 12px 16px;
+    position: absolute;
+    right: 0;
+    width: 280px;
+    z-index: 1;
+
+    &::before {
+      background-color: inherit;
+      border: inherit;
+      border-left: none;
+      border-top: none;
+      bottom: -6px;
+      content: "";
+      height: 10px;
+      pointer-events: none;
+      position: absolute;
+      right: 32px;
+      transform: rotate(45deg);
+      width: 10px;
+    }
+
+    h4 {
+      margin: 0 0 5px;
+    }
+  }
+
+  .body {
+    padding: 7px 13px;
+
+    .css-truncate-target {
+      max-width: 100%;
+    }
+  }
+
+  p {
+    margin: 0;
+  }
+
+  img {
+    height: 24px;
+    width: 24px;
+  }
 }
 
 .package-list {
   margin-bottom: 20px;
 
   .loading-overlay {
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: rgb(255 255 255 / 70%);
+    background-image: url("/assets/images/octocat-spinner-64.gif");
+    background-position: center;
+    background-repeat: no-repeat;
+    display: none;
+    height: 456px;
     position: absolute;
     width: 980px;
-    height: 456px;
-    background-image: url("/assets/images/octocat-spinner-64.gif");
-    background-repeat: no-repeat;
-    background-position: center;
-    display: none;
 
     @media only screen and (resolution >= 2dppx) {
       background-image: url("/assets/images/octocat-spinner-64@2x.gif");
@@ -46,8 +265,8 @@
   }
 
   .package-list-see-all {
-    float: right;
     display: inline-block;
+    float: right;
     font-size: 15px;
     font-weight: normal;
     margin-top: 19px;
@@ -90,210 +309,9 @@
     display: inline-block;
 
     .octicon-triangle-down {
-      vertical-align: middle;
       margin-left: 5px;
+      vertical-align: middle;
     }
-  }
-}
-
-.card {
-  position: relative;
-  list-style-type: none;
-  border: 1px solid #ddd;
-  border-radius: 3px;
-  width: 100%;
-  overflow: hidden;
-
-  img {
-    display: inline-block;
-    vertical-align: middle;
-  }
-
-  .meta {
-    position: relative;
-    padding: 13px;
-    background-color: #fafafa;
-    line-height: 1;
-
-    .author {
-      color: #999;
-      font-size: 15px;
-    }
-
-    a.linked-octicon {
-      text-decoration: none;
-
-      &:hover {
-        .octicon {
-          color: #3b9b6d;
-        }
-
-        .value {
-          color: #3b9b6d;
-        }
-      }
-    }
-
-    .stat {
-      height: 26px;
-      display: inline-block;
-      line-height: 24px;
-      margin-right: 5px;
-      padding-right: 5px;
-      vertical-align: top;
-
-      .octicon {
-        color: #999;
-      }
-    }
-
-    .action {
-      border-radius: 3px;
-      padding: 3px 6px;
-
-      &:hover {
-        background-color: #eaeaea;
-      }
-    }
-
-    .value {
-      color: #999;
-      font-size: 13px;
-    }
-  }
-
-  .meta-right {
-    position: absolute;
-    right: 13px;
-    top: 11px;
-    background-color: inherit;
-    padding-left: 10px;
-  }
-
-  &.blank-slate {
-    text-align: center;
-    color: #a29f99;
-    height: 132px;
-    line-height: 132px;
-  }
-}
-
-.package-card,
-.project-card {
-  .card-name {
-    font-weight: 300;
-    font-size: 28px;
-    margin: 0;
-    line-height: 1.4;
-
-    .css-truncate-target {
-      color: #3b9b6d;
-    }
-  }
-
-  .keywords {
-    min-height: 20px;
-    font-size: 12px;
-    line-height: 20px;
-    padding: 0;
-    margin: 0;
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-
-    li {
-      padding: 2px 4px;
-      list-style-type: none;
-      display: inline;
-      border-radius: 3px;
-      border: 1px solid #efeae1;
-      background-color: #f8f6f2;
-    }
-
-    a {
-      color: #9e9b95;
-    }
-  }
-
-  .card-description {
-    font-size: 15px;
-  }
-
-  .card-install-button {
-    margin-left: 9px;
-    font-weight: 500;
-  }
-
-  .card-install-button-close {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 30px;
-    height: 30px;
-    color: #9e9b95;
-    cursor: pointer;
-    border: none;
-    outline: none;
-
-    &:hover,
-    &:focus {
-      color: #574c4f;
-    }
-
-    &:active {
-      color: #9e9b95;
-    }
-  }
-
-  .modal-download-atom {
-    position: absolute;
-    z-index: 1;
-    width: 280px;
-    right: 0;
-    bottom: 37px;
-    padding: 12px 16px;
-    font-size: 15px;
-    line-height: 1.3;
-    border: 1px solid #ddd;
-    border-radius: 3px;
-    background-color: white;
-    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
-
-    &:before {
-      content: "";
-      position: absolute;
-      bottom: -6px;
-      right: 32px;
-      width: 10px;
-      height: 10px;
-      border: inherit;
-      border-top: none;
-      border-left: none;
-      background-color: inherit;
-      transform: rotate(45deg);
-      pointer-events: none;
-    }
-
-    h4 {
-      margin: 0 0 5px 0;
-    }
-  }
-
-  .body {
-    padding: 7px 13px;
-
-    .css-truncate-target {
-      max-width: 100%;
-    }
-  }
-
-  p {
-    margin: 0;
-  }
-
-  img {
-    height: 24px;
-    width: 24px;
   }
 }
 
@@ -303,50 +321,32 @@
 }
 
 input.search-input {
+  -webkit-appearance: none;
   flex: 1;
   font-size: 18px;
-  -webkit-appearance: none;
 }
 
 .search-button {
+  line-height: 21px;
   margin-left: 7px;
   padding: 7px 14px;
-  line-height: 21px;
-}
-
-.package-header {
-  margin-bottom: 40px;
-
-  .columns .column {
-    vertical-align: middle;
-  }
-
-  h2 {
-    margin: 0;
-  }
-
-  h4 {
-    margin: 0 0 5px;
-    font-weight: bold;
-    font-size: 16px;
-  }
 }
 
 .manual-install {
+  background-color: #efeae1;
+  border: 1px solid #a29f99;
+  border-radius: 3px;
+  display: block;
+  font-size: 14px;
   margin-top: 2px;
   padding: 0 5px 2px 18px;
-  border: 1px solid #a29f99;
-  background-color: #efeae1;
-  border-radius: 3px;
-  font-size: 14px;
-  display: block;
   position: relative;
   white-space: nowrap;
 
-  &:before {
-    content: '$';
-    position: absolute;
+  &::before {
+    content: "$";
     left: 5px;
+    position: absolute;
   }
 }
 
@@ -375,21 +375,21 @@ input.search-input {
   }
 
   .card-name {
-    margin-right: 20px;
-    font-size: 16px;
     float: left;
+    font-size: 16px;
+    margin-right: 20px;
   }
 
   h3 {
-    margin: 0;
     font-size: 22px;
+    margin: 0;
   }
 
   h4 {
-    margin: 10px 0 0;
-    font-weight: bold;
-    font-size: 16px;
     clear: both;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 10px 0 0;
 
     &:first-child {
       margin-top: 0;
@@ -397,32 +397,29 @@ input.search-input {
   }
 
   ul {
-    display: table;
-    width: 100%;
     border: 1px solid #ddd;
-    padding-left: 0;
-    margin-top: 0;
     border-radius: 3px;
+    display: table;
+    margin-top: 0;
+    padding-left: 0;
+    width: 100%;
 
     li {
+      border-right: 1px solid #ddd;
       display: table-cell;
       list-style-type: none;
-      width: 1%;
-      text-align: center;
-      border-right: 1px solid #ddd;
       padding: 0;
+      text-align: center;
       white-space: nowrap;
+      width: 1%;
 
       a {
         color: #574c4f;
-        height: 100%;
-        width: 100%;
-        padding: 5px;
         display: block;
+        height: 100%;
+        padding: 5px;
         transition: color 0.2s;
-        -o-transform: color 0.2s;
-        -moz-transform: color 0.2s;
-        -webkit-transition: color 0.2s;
+        width: 100%;
       }
 
       a.disabled {
@@ -434,8 +431,8 @@ input.search-input {
       }
 
       a:hover {
-        text-decoration: none;
         color: #3b9b6d;
+        text-decoration: none;
       }
 
       a .octicon {
@@ -449,36 +446,33 @@ input.search-input {
   }
 
   .show-flag {
-    float: right;
     color: #999;
+    float: right;
     transition: color 0.2s;
-    -o-transform: color 0.2s;
-    -moz-transform: color 0.2s;
-    -webkit-transition: color 0.2s;
 
     &:hover {
-      text-decoration: none;
       color: #3b9b6d;
+      text-decoration: none;
     }
   }
 
   table {
-    width: 100%;
     border: 1px solid #ddd;
     border-collapse: collapse;
+    width: 100%;
 
     td {
       border: 1px solid #ddd;
-      text-align: center;
       padding: 0;
+      text-align: center;
     }
 
     a {
       color: #574c4f;
-      height: 100%;
-      width: 100%;
-      padding: 5px;
       display: block;
+      height: 100%;
+      padding: 5px;
+      width: 100%;
     }
   }
 
@@ -487,21 +481,21 @@ input.search-input {
 
     img {
       display: inline-block;
-      vertical-align: top;
       height: 20px;
+      vertical-align: top;
       width: 20px;
     }
   }
 
   .package-card {
     .card-name {
-      margin-bottom: 5px;
       font-size: 24px;
+      margin-bottom: 5px;
     }
 
     .card-description {
-      white-space: normal;
       line-height: 1.4;
+      white-space: normal;
     }
   }
 
@@ -524,17 +518,17 @@ input.search-input {
 }
 
 .version-callout {
-  font-size: 16px;
   color: #9e9b95;
+  font-size: 16px;
 }
 
 .official-package {
-  font-size: 16px;
   color: #3b9b6d;
-  font-weight: bold;
-  margin: 20px 0;
   display: block;
+  font-size: 16px;
+  font-weight: bold;
   height: 50px;
+  margin: 20px 0;
 }
 
 .readme {
@@ -542,28 +536,28 @@ input.search-input {
 }
 
 .malicious-package-warning {
-  position: relative;
-  font-weight: bold;
-  vertical-align: middle;
-  margin-bottom: 40px;
-  padding: 15px 15px 15px 57px;
   background-color: #ffa2a2;
   background-image: linear-gradient(#ffb8b8, #ffa2a2);
   background-repeat: repeat-x;
-  border-radius: 5px;
   border: 1px solid #e08f90;
+  border-radius: 5px;
   color: #7b3131;
+  font-weight: bold;
+  margin-bottom: 40px;
+  padding: 15px 15px 15px 57px;
+  position: relative;
+  vertical-align: middle;
 
   .mega-octicon {
+    left: 15px;
     position: absolute;
     top: 14px;
-    left: 15px;
   }
 
   .minibutton {
     position: absolute;
-    top: 16px;
     right: 14px;
+    top: 16px;
   }
 }
 
@@ -588,20 +582,20 @@ input.search-input {
   }
 
   iframe {
-    border: 0;
-    width: 100%;
     background-color: #aaa;
+    border: 0;
     display: block;
     height: 169px;
+    width: 100%;
   }
 
   .theme-name {
-    font-weight: normal;
-    width: 100%;
-    font-size: 15px;
     float: left;
-    margin: 0;
+    font-size: 15px;
+    font-weight: normal;
     line-height: 1.3;
+    margin: 0;
+    width: 100%;
 
     a,
     span {
@@ -613,9 +607,9 @@ input.search-input {
 
   .author {
     display: block;
-    width: 100%;
     float: left;
     line-height: 1.3;
+    width: 100%;
   }
 
   .meta {
@@ -627,11 +621,11 @@ input.search-input {
     position: relative;
 
     .click-shield {
-      position: absolute;
       height: 100%;
-      width: 100%;
-      top: 0;
       left: 0;
+      position: absolute;
+      top: 0;
+      width: 100%;
     }
   }
 }
@@ -652,20 +646,20 @@ input.search-input {
 
 #crop-modal {
   background: #efeae1;
-  padding: 20px 10px;
   border-radius: 3px;
+  padding: 20px 10px;
 
   .spinner {
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: rgb(255 255 255 / 70%);
     background-image: url("/assets/images/octocat-spinner-64.gif");
-    position: absolute;
-    background-repeat: no-repeat;
     background-position: center;
+    background-repeat: no-repeat;
     display: none;
-    width: 100%;
     height: 100%;
     margin-left: -24px;
     margin-top: -24px;
+    position: absolute;
+    width: 100%;
     z-index: 9999999;
 
     @media only screen and (resolution >= 2dppx) {
@@ -687,14 +681,14 @@ input.search-input {
   }
 
   .preview-column {
-    width: 306px;
     padding-left: 0;
+    width: 306px;
   }
 
   .crop-viewer {
-    width: 100%;
     max-height: 600px;
     overflow: hidden;
+    width: 100%;
   }
 
   .theme-card {
@@ -712,7 +706,7 @@ input.search-input {
 
 .package-show .css-truncate-target {
   max-width: auto;
-  white-space: normal;
   overflow: auto;
   text-overflow: inherit;
+  white-space: normal;
 }
