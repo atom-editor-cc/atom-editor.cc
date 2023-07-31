@@ -1,0 +1,82 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background: #faf6ec;
+  height: 100%;
+}
+
+body {
+  color: #949189;
+  font-family: Verdana, "Verdana Ref", sans-serif;
+  height: 100%;
+  margin: 0;
+  min-height: 660px;
+  position: relative;
+  text-align: center;
+}
+
+p,
+span,
+h1 {
+  display: block;
+  margin: 0 auto;
+  width: 300px;
+}
+
+.dialog {
+  background-image: url("/assets/images/planets.svg");
+  height: 660px;
+  left: 50%;
+  margin-left: -330px;
+  margin-top: -330px;
+  position: absolute;
+  top: 50%;
+  width: 660px;
+}
+
+.number,
+.wrapper-top,
+.wrapper-bottom {
+  left: 0;
+  position: absolute;
+  right: 0;
+}
+
+.wrapper-top {
+  bottom: 410px;
+}
+
+.wrapper-bottom {
+  top: 410px;
+}
+
+.warning {
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.message {
+  color: #66595c;
+  font-size: 24px;
+  text-transform: uppercase;
+}
+
+.number {
+  background: url("/assets/images/404.svg") no-repeat center;
+  bottom: 0;
+  overflow: hidden;
+  text-indent: 100%;
+  top: 0;
+}
+
+.footer {
+  background: url("/assets/images/footer.svg") no-repeat center bottom;
+  bottom: 0;
+  height: 180px;
+  left: 0;
+  position: fixed;
+  right: 0;
+}
