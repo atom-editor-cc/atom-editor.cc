@@ -696,6 +696,7 @@ div.composer {
 }
 
 // advanced search page label
+// stylelint-disable-next-line selector-id-pattern
 #adv_code_search .search-page-label {
   // @extend input[type="text"];
   @extend %input;
@@ -706,7 +707,7 @@ div.composer {
 // on phones
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
+  appearance: none;
   margin: 0;
 }
 

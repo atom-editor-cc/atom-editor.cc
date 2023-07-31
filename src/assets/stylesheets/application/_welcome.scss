@@ -1,3 +1,4 @@
+// stylelint-disable selector-class-pattern
 .welcome {
   background-color: #343233;
   color: #efdab9;
@@ -221,6 +222,7 @@
   background-repeat: no-repeat;
   flex: 0 0 500px;
   height: 366px;
+  // stylelint-disable-next-line property-no-vendor-prefix
   -webkit-user-select: none;
   user-select: none;
 }
@@ -374,6 +376,7 @@
   left: calc(50% - 380px);
   position: absolute;
   top: 100px;
+  // stylelint-disable-next-line property-no-vendor-prefix
   -webkit-user-select: none;
   user-select: none;
   will-change: transform;
@@ -716,6 +719,7 @@
   }
 }
 
+// stylelint-disable-next-line keyframes-name-pattern
 @keyframes hero-logo-circle--reverse {
   100% {
     transform: rotate(-1turn);

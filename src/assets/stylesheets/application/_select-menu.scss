@@ -522,12 +522,14 @@ form.select-menu-item {
 }
 
 .modal-backdrop {
+  // stylelint-disable property-no-vendor-prefix
   display: none;
   -webkit-touch-callout: none;
   -moz-user-select: none;
   -ms-user-select: none;
   -webkit-user-select: none;
   user-select: none;
+  // stylelint-enable property-no-vendor-prefix
 
   body.menu-active & {
     display: block;
