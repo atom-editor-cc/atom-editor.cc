@@ -342,6 +342,7 @@ dl.form {
 // .errored - Everything is falling apart.
 
 // Styleguide 2.1.5
+// stylelint-disable-next-line no-duplicate-selectors
 dl.form {
   .success,
   .error,

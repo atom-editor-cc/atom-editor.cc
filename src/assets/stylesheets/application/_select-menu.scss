@@ -359,17 +359,11 @@
   &.select-menu-action,
   &.selected {
     color: #333;
-  }
 
-  &.select-menu-action,
-  &.selected {
     .description {
       color: #666;
     }
-  }
 
-  &.select-menu-action,
-  &.selected {
     > .octicon {
       color: #333;
     }
