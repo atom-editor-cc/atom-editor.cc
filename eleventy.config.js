@@ -1,4 +1,29 @@
 module.exports = function(eleventyConfig) {
+  // Collections
+  eleventyConfig.addCollection('allPostsByYear', collection => {
+    const allPostsByYear = {};
+
+    collection
+      .getFilteredByGlob('./src/_posts/**/*.md')
+      .forEach(post => {
+        const year = post.date.getFullYear();
+
+        if (!allPostsByYear[year]) {
+          allPostsByYear[year] = [];
+        };
+
+        allPostsByYear[year].push(post);
+      });
+
+    return allPostsByYear;
+  });
+
+  // Data
+  eleventyConfig.setFrontMatterParsingOptions({
+    excerpt: true,
+    excerpt_separator: '<!--more-->'
+  });
+
   // Passthrough File Copy
   eleventyConfig
     .addPassthroughCopy('./src/*.{ico,txt}')
@@ -8,12 +33,6 @@ module.exports = function(eleventyConfig) {
     .addPassthroughCopy({
       './node_modules/octicons/octicons/octicons.{eot,svg,ttf,woff}': 'assets/fonts'
     });
-
-  // Data
-  eleventyConfig.setFrontMatterParsingOptions({
-    excerpt: true,
-    excerpt_separator: '<!--more-->'
-  });
 
   // Libraries
   eleventyConfig.setLibrary('md', require('./lib/libraries/markdown.js'));
