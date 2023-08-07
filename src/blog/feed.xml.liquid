@@ -1,0 +1,31 @@
+---
+permalink: "/blog/feed.xml"
+---
+<feed>
+  <generator uri="https://11ty.dev">Eleventy</generator>
+  <link href="https://atom-editor.cc/blog/feed.xml" rel="self" type="application/atom+xml"/>
+  <link href="https://atom-editor.cc/blog" rel="alternate" type="text/html"/>
+  {% assign post = collections.post | last -%}
+  <updated>{{ post.date | date }}</updated>
+  <id>https://atom-editor.cc/blog/feed.xml</id>
+  <title type="html">Atom Blog</title>
+  <subtitle>A hackable text editor for the 21st Century</subtitle>
+  {% for post in collections.post reversed limit: 10 -%}
+  <entry>
+    <title type="html">{{ post.data.title }}</title>
+    <link href="https://atom-editor.cc{{ post.url }}" rel="alternate" title="{{ post.data.title }}" type="text/html" />
+    <published>{{ post.date | date }}</published>
+    <updated>{{ post.date | date }}</updated>
+    <id>https://atom-editor.cc{{ post.url }}</id>
+    <content type="html" xml:base="https://atom-editor.cc{{ post.url }}">
+      <![CDATA[{{ post.content }}]]>
+    </content>
+    <author>
+      <name>{{ post.data.author }}</name>
+    </author>
+    <summary type="html">
+      <![CDATA[{{ post.data.page.excerpt | markdown }}]]>
+    </summary>
+  </entry>
+  {% endfor -%}
+</feed>

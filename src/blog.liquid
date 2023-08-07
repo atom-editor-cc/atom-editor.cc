@@ -1,0 +1,43 @@
+---
+layout: "layouts/blog.liquid"
+---
+<div id="home">
+  <ul class="posts">
+    {% for post in collections.post reversed -%}
+      <li class="post">
+        <h2 class="post-name">
+          <a href="{{ post.url }}">{{ post.data.title }}</a>
+        </h2>
+
+        <p class="who-when">
+          <span class="octicon octicon-calendar"></span>
+          {{ post.date | date: "%B %d, %Y" }}
+          <a href="https://github.com/{{ post.data.author }}" class="author-link">
+            <img class="avatar avatar-small" alt="{{ post.data.author }}" width="18" height="18" src="https://avatars1.githubusercontent.com/{{ post.data.author }}?v=3&amp;s=18" srcset="https://avatars1.githubusercontent.com/{{ post.data.author }}?v=3&amp;s=18 1x, https://avatars1.githubusercontent.com/{{ post.data.author }}?v=3&amp;s=36 2x, https://avatars1.githubusercontent.com/{{ post.data.author }}?v=3&amp;s=54 3x, https://avatars1.githubusercontent.com/{{ post.data.author }}?v=3&amp;s=72 4x">
+            {{ post.data.author }}
+          </a>
+        </p>
+
+        <div class="post markdown">
+          {{ post.data.page.excerpt | markdown }}
+
+          <a href="{{ post.url }}">
+            Read more
+            <span class="octicon octicon-chevron-right"></span>
+          </a>
+        </div>
+      </li>
+    {% endfor -%}
+  </ul>
+
+  <div class="pagination">
+    <span>← Previous</span>
+
+    <em>1</em>
+
+    <a class="pagination-archive" href="/blog/archive">
+      <span class="octicon octicon-calendar"></span>
+      Archive
+    </a>
+  </div>
+</div>

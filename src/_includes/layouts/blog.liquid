@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en" prefix="og: http://ogp.me/ns#">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  {% capture page_title -%}
+    {%- if page.title -%}
+      {{ page.title }} | Atom Blog
+    {%- else -%}
+      Atom Blog | A hackable text editor for the 21st Century
+    {%- endif -%}
+  {% endcapture -%}
+
+  <title>{{ page_title }}</title>
+
+  <link rel="stylesheet" href="/assets/stylesheets/blog.css">
+
+  <link rel="preload" href="/assets/stylesheets/blog.css" as="style">
+
+  <link rel="alternate" href="/blog/feed.xml" title="Atom Blog" type="application/atom+xml">
+  <link rel="shortcut icon" href="/favicon.ico">
+
+  <meta name="author" content="{{ author }}">
+  <meta name="description" content="A hackable text editor for the 21st Century">
+
+  <meta property="og:url" content="https://atom-editor.cc/blog{{ page.url }}">
+  <meta property="og:site_name" content="Atom Blog">
+  <meta property="og:title" content="{{ page_title }}">
+  <meta property="og:description" content="A hackable text editor for the 21st Century">
+  <meta property="og:type" content="article">
+  <meta property="og:locale" content="en_US">
+</head>
+<body>
+
+  <div class="footer-push">
+    <nav aria-label="Primary" class="top-bar">
+      <div class="wrapper">
+        {% include "navigation.liquid", page: page %}
+
+        <div class="top-bar-right">
+          <a href="/blog/feed.xml" class="rss-link">
+            <span class="octicon octicon-rss"></span>
+            Subscribe
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <div class="wrapper content-push">
+      {{ content }}
+    </div>
+
+    <div class="footer-pad"></div>
+  </div>
+
+  {% include "footer.liquid" %}
+
+</body>
+</html>

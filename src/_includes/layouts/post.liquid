@@ -1,0 +1,24 @@
+---
+layout: "layouts/blog.liquid"
+---
+
+<div class="post">
+  <h2 class="post-name">{{ title }}</h2>
+
+  <p class="who-when">
+    <span class="octicon octicon-calendar"></span>
+    {{ page.date | date: "%B %d, %Y" }}
+    <a href="https://github.com/{{ author }}" class="author-link">
+      <img class="avatar avatar-small" alt="{{ author }}" width="18" height="18" src="https://avatars1.githubusercontent.com/{{ author }}?v=3&amp;s=18" srcset="https://avatars1.githubusercontent.com/{{ author }}?v=3&amp;s=18 1x, https://avatars1.githubusercontent.com/{{ author }}?v=3&amp;s=36 2x, https://avatars1.githubusercontent.com/{{ author }}?v=3&amp;s=54 3x, https://avatars1.githubusercontent.com/{{ author }}?v=3&amp;s=72 4x">
+      {{ author }}
+    </a>
+  </p>
+
+  <div class="post markdown">
+    {{ content }}
+  </div>
+</div>
+<div class="feedback">
+  <p>Have feedback on this post? Let <a class="twitter-handle" href="https://twitter.com/intent/tweet?text=@AtomEditor%20&amp;related=atomeditor&amp;url={{ page.url }}">@AtomEditor</a> know on Twitter.</p>
+  <p>Need help or found a bug? <a href="/contact">Contact us.</a></p>
+</div>
