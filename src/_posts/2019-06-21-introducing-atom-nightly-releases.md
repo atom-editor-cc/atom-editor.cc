@@ -39,4 +39,4 @@ You should be aware of a few limitations that impact the new nightly channel:
 
 We hope you'll consider trying the [Atom Nightly](/nightly) channel. Any time you spend using Nightly releases will be greatly beneficial to Atom's continued improvement. Since this is a bleeding-edge release it's likely that you will hit the occasional bug, so please [file an issue](https://github.com/atom/atom/blob/master/CONTRIBUTING.md#reporting-bugs) for anything that you come across.
 
-Thanks again for all of your support of Atom <img src="https://github.githubassets.com/images/icons/emoji/unicode/2764.png" alt=":heart:" class="emoji" height="20" title=":heart:"  width="20">
+Thanks again for all of your support of Atom ![:heart:](https://github.githubassets.com/images/icons/emoji/unicode/2764.png){.emjoi width="20" height="20" title=":heart:"}

@@ -11,9 +11,7 @@ The web is not without its faults, but two decades of development has forged it 
 
 Web browsers are great for browsing web pages, but writing code is a specialized activity that warrants dedicated tools. More importantly, the browser severely restricts access to the local system for security reasons, and for us, a text editor that couldn't write files or run local subprocesses was a non-starter.
 
-<div style="float: right; padding: 0 30px 30px 50px;">
-  <img src="/assets/images/posts/under-the-hood.gif" width="99" height="187" style="display: block;"/>
-</div>
+![](/assets/images/posts/under-the-hood.gif){width="179" height="217" style="display: block; float: right; padding: 0 30px 30px 50px;"}
 
 For this reason, we didn't build Atom as a traditional web application. Instead, Atom is a specialized variant of Chromium designed to be a text editor rather than a web browser. Every Atom window is essentially a locally-rendered web page.
 
