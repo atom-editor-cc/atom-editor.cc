@@ -1,9 +1,15 @@
 ---
 layout: "layouts/blog.liquid"
+pagination:
+  alias: posts
+  data: collections.post
+  reverse: true
+  size: 10
+permalink: "/blog/{% if pagination.pageNumber > 0 %}page{{ pagination.pageNumber | plus: 1 }}/{% endif %}index.html"
 ---
 <div id="home">
   <ul class="posts">
-    {% for post in collections.post reversed -%}
+    {% for post in posts -%}
       <li class="post">
         <h2 class="post-name">
           <a href="{{ post.url }}">{{ post.data.title }}</a>
@@ -31,9 +37,25 @@ layout: "layouts/blog.liquid"
   </ul>
 
   <div class="pagination">
-    <span>← Previous</span>
+    {% if pagination.href.previous -%}
+      <a href="{{ pagination.href.previous }}">← Previous</a>
+    {% else -%}
+      <span>← Previous</span>
+    {% endif -%}
 
-    <em>1</em>
+    {% for pageEntry in pagination.pages -%}
+      {% if page.url == pagination.hrefs[forloop.index0] -%}
+        <em>{{ forloop.index }}</em>
+      {% else -%}
+        <a href="{{ pagination.hrefs[forloop.index0] }}">{{ forloop.index }}</a>
+      {% endif -%}
+    {% endfor -%}
+
+    {% if pagination.href.next -%}
+      <a href="{{ pagination.href.next }}">Next →</a>
+    {% else -%}
+      <span>Next →</span>
+    {% endif -%}
 
     <a class="pagination-archive" href="/blog/archive">
       <span class="octicon octicon-calendar"></span>
