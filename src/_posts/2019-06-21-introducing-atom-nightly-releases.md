@@ -3,7 +3,7 @@ author: "rafeca"
 title: "Introducing Atom Nightly Releases"
 ---
 
-[![Atom Nightly](/assets/images/posts/atom-nightly-heading.png)](/nightly)
+[![Atom Nightly](/assets/images/blog.atom.io/img/posts/atom-nightly-heading.png)](/nightly)
 
 Today we're excited to introduce [Atom Nightly releases](/nightly)! This new release channel gives you access to Atom's latest feature improvements and bugfixes each day as they are merged into our `master` branch. If you want to have an influence on the future of Atom, this release channel is for you.
 
@@ -13,11 +13,11 @@ Today we're excited to introduce [Atom Nightly releases](/nightly)! This new rel
 
  Atom has been producing [stable and beta releases](/blog/2015/10/21/introducing-the-atom-beta-channel) at a monthly cadence since late 2015, enabling the team to introduce new features to the beta channel without disrupting users of the stable channel. Each month we ship the latest changes in Atom's `master` branch into our new beta release and then roll the previous beta changes into the new stable release:
 
-![Diagram 1](/assets/images/posts/atom-nightly-1.png)
+![Diagram 1](/assets/images/blog.atom.io/img/posts/atom-nightly-1.png)
 
 We've found that while this release model certainly helps protect Atom Stable users from regressions, it slows down the pace at which we're able to get feedback on new features and bug fixes as they're being implemented. Thus, we created the [Atom Nightly channel](/nightly) to enable a much tighter feedback loop with our most intrepid early adopters.
 
-![Diagram 2](/assets/images/posts/atom-nightly-2.png)
+![Diagram 2](/assets/images/blog.atom.io/img/posts/atom-nightly-2.png)
 
 ## Why Use Atom Nightly?
 

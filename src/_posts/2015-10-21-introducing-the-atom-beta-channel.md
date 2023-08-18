@@ -3,7 +3,7 @@ author: "nathansobo"
 title: "Introducing the Atom Beta Channel"
 ---
 
-![Beta Hero](/assets/images/posts/atom-beta-heading.jpg)
+![Beta Hero](/assets/images/blog.atom.io/img/posts/atom-beta-heading.jpg)
 
 This week, we're introducing a [beta release channel for Atom](/beta) and making some changes to our development workflow to improve productivity and the stabilit of releases. Instead of cutting releases directly from the master branch as we've done in th past, all changes will now spend time being tested in a beta phase, giving us more time t catch any regressions that slip through our automated test suite before releasing them to th world. If you like to live on the bleeding edge, using Atom Beta as your main editor is great way to help us improve Atom. In exchange for encountering and reporting on occasiona bugs, you'll gain faster access to new features and performance improvements.
 
@@ -23,7 +23,7 @@ Finally, in the old system, new code only spent a very short amount of time in f
 
 If you've read about how the [Chrome](https://docs.google.com/presentation/d/1uv_dNkPVlDFG1kaImq7dW-6PasJQU1Yzpj5IKG_2coA/present?slide=id.i0) and [Rust](http://blog.rust-lang.org/2014/10/30/Stability.html teams handle their releases, our new strategy should sound familiar. We're introducing two new branches, `beta`, corresponding to the new Atom Beta release channel, and `stable`, from which all general Atom releases will be built.
 
-![Diagram](/assets/images/posts/release-pipeline-diagram.png)
+![Diagram](/assets/images/blog.atom.io/img/posts/release-pipeline-diagram.png)
 
 At a regular cadence, we'll merge the latest changes from `master` into `beta` and cut a new release on the beta channel with a pre-release version number. For example, ou first beta release was `1.1.0-beta0`. New development will continue on `master`, but if we get reports of any regressions on the beta channel, we can fix them directly on `beta` and cut a new release with an incremented version number, such as `1.1.0-beta1`, `1.1.0-beta2`, etc.
 

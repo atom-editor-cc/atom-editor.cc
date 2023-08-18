@@ -3,7 +3,7 @@ author: "nathansobo"
 title: "Introducing Atom"
 ---
 
-![](/assets/images/posts/welcome-rockets.gif){width="200" height="243" style="display: block; float: right; padding: 0 30px 30px 50px;"}
+![](/assets/images/blog.atom.io/img/welcome-rockets.gif){width="200" height="243" style="display: block; float: right; padding: 0 30px 30px 50px;"}
 
 Today, we are excited to launch the public beta of Atom, a new text editor that's deeply programmable but also easy to use.
 

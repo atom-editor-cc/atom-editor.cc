@@ -7,7 +7,7 @@ The journey to completely customizing Atom starts with a single step. Today, I'l
 
 <!--more-->
 
-![](/assets/images/posts/2333bf3e-a328-11e3-8457-5bc8fae0883a.png)
+![](/assets/images/f.cloud.github.com/assets/671378/2315759/2333bf3e-a328-11e3-8457-5bc8fae0883a.png)
 
 Atom comes with the [language-hyperlink](https://github.com/atom/language-hyperlink) package that tokenizes links found in strings and comments. These link tokens have a `.markup.underline.link.hyperlink` CSS class that can be styled in your `~/.atom/styles.less` file.
 

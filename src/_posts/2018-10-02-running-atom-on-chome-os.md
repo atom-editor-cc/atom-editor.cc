@@ -5,7 +5,7 @@ title: "Running Atom on Chrome OS"
 
 Google [recently announced beta support for Linux apps on Chrome OS](https://chromeunboxed.com/news/chrome-os-beta-channel-linux-apps-update) as part of its "Crostini" project. If you have [one of the supported Chromebooks](https://www.xda-developers.com/chromebooks-linux-app-support/) getting Atom running takes just a few clicks.
 
-![Screenshot of Atom on Chrome OS](/assets/images/posts/45442889-3de91a00-b691-11e8-8446-b5340d2f9bd5.png)
+![Screenshot of Atom on Chrome OS](/assets/images/user-images.githubusercontent.com/282759/45442889-3de91a00-b691-11e8-8446-b5340d2f9bd5.png)
 
 <!--more-->
 
