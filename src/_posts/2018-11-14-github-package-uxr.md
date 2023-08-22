@@ -3,7 +3,7 @@ author: "sguthals"
 title: "Usability Interviews for Atom"
 ---
 
-We want to make Atom better, and we need your help.  We've started conducting usability interviews where we can get direct feedback from humans about how they work and how what we build affects that workflow.
+We want to make Atom better, and we need your help. We've started conducting usability interviews where we can get direct feedback from humans about how they work and how what we build affects that workflow.
 
 <!--more-->
 
@@ -30,8 +30,8 @@ Afterwards, we will follow up with an email thanking you and asking if you'd lik
 
 If you're interested in giving us feedback to improve Atom, there are three ways you can help.
 
-We're doing some research to learn where Atom could provide a more helpful experience for people that are just getting started. If you are new to coding, we'd love to hear from you.  Sign up for an interview [here](https://bit.ly/2Qrx6rB).
+We're doing some research to learn where Atom could provide a more helpful experience for people that are just getting started. If you are new to coding, we'd love to hear from you. Sign up for an interview [here](https://bit.ly/2Qrx6rB).
 
 We are also conducting interviews focused on the Git / GitHub Atom integration. Our primary goal is to provide developers with an effective workflow from writing code in their editor to merging their pull request on GitHub.com. Participants of all experience levels are welcome - [sign up today](https://goo.gl/sZgieF).
 
-Usability interviews aren't the only way we are learning from our users. Atom team is also running a separate initiative to improve our application's performance.  We're conducting a survey, so we can focus our efforts on the biggest pain points the community is experiencing.  You can fill it out [here](https://docs.google.com/forms/d/e/1FAIpQLSfQ6-1Pm3-1FMrfDaPwWl67AHK5aBeUFbdB5H7jXCTJnt-Zaw/viewform).
+Usability interviews aren't the only way we are learning from our users. Atom team is also running a separate initiative to improve our application's performance. We're conducting a survey, so we can focus our efforts on the biggest pain points the community is experiencing. You can fill it out [here](https://docs.google.com/forms/d/e/1FAIpQLSfQ6-1Pm3-1FMrfDaPwWl67AHK5aBeUFbdB5H7jXCTJnt-Zaw/viewform).
