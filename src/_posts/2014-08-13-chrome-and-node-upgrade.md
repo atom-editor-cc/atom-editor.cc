@@ -15,7 +15,7 @@ This upgrades brings Atom up to date with the latest features and bug fixes from
 
 This upgrade may require your Atom packages to upgrade their dependencies to versions compatible with Node 0.11.13. This will only impact dependencies with native code that need to be upgraded and rebuilt against the new version of [v8](https://code.google.com/p/v8) that now ships with Atom. For most native modules this should be as simple as upgrading to [nan](https://github.com/rvagg/nan) 1.2.0 or above.
 
-In order to make this transition as smooth as possible, Atom now ships with a new package that notifies you of any incompatible packages and tells you which modules they use that need to be upgraded. Shown below is the new [incompatible-packages](https://atom.io/packages/incompatible-packages) package which displays which packages failed to load and which native modules need to be upgraded.
+In order to make this transition as smooth as possible, Atom now ships with a new package that notifies you of any incompatible packages and tells you which modules they use that need to be upgraded. Shown below is the new [incompatible-packages](/packages/incompatible-packages) package which displays which packages failed to load and which native modules need to be upgraded.
 
 ![incompatible packages status bar indicator](/assets/images/blog.atom.io/img/posts/incompatible-packages-status-bar.png)
 

@@ -62,7 +62,7 @@ The scope name is shown in the settings view for each language. Search for the l
 
 ## Using in your own packages
 
-You can use scoped settings in your own packages. [Config::get](https://atom.io/docs/api/latest/Config#instance-get) now accepts a `scopeDescriptor` and [Config::set](https://atom.io/docs/api/latest/Config#instance-set) accepts a `scopeSelector`. See the [the scopes docs](https://flight-manual.atom.io/behind-atom/sections/scoped-settings-scopes-and-scope-descriptors/) to learn more about scopes.
+You can use scoped settings in your own packages. [Config::get](https://flight-manual.atom-editor.cc/api/latest/Config#instance-get) now accepts a `scopeDescriptor` and [Config::set](https://flight-manual.atom-editor.cc/api/latest/Config#instance-set) accepts a `scopeSelector`. See the [the scopes docs](https://flight-manual.atom.io/behind-atom/sections/scoped-settings-scopes-and-scope-descriptors/) to learn more about scopes.
 
 The simplest way to implement language specific settings is to `get` your setting with the language scope descriptor — the editor's root scope descriptor.
 
@@ -71,7 +71,7 @@ The simplest way to implement language specific settings is to `get` your settin
 atom.config.get(editor.getRootScopeDescriptor(), 'my-package.my-setting')
 ```
 
-You can watch for changes on a given keyPath for a scope with [Config::observe](https://atom.io/docs/api/latest/Config#instance-observe).
+You can watch for changes on a given keyPath for a scope with [Config::observe](https://flight-manual.atom-editor.cc/api/latest/Config#instance-observe).
 
 ```coffee
 atom.config.observe editor.getRootScopeDescriptor(), 'my-package.my-setting', (value) ->
@@ -101,4 +101,4 @@ We hope this improves the editing experience to all of you who regularly use a v
 ## References
 
 - [Docs on scopes and scope descriptors](https://flight-manual.atom.io/behind-atom/sections/scoped-settings-scopes-and-scope-descriptors/)
-- [Config class API docs](https://atom.io/docs/api/latest/Config)
+- [Config class API docs](https://flight-manual.atom-editor.cc/api/latest/Config)

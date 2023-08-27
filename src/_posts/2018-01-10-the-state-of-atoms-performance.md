@@ -3,7 +3,7 @@ author: "maxbrunsfeld"
 title: "The State of Atom's Performance"
 ---
 
-Our original goal in building Atom was to create the most hackable text editor that we could imagine. This overarching goal shaped Atom's architecture and our team's early priorities. Since Atom launched, its extensibility has been validated by numerous ambitious projects that have been built on top of it, like [Facebook's Nuclide](https://nuclide.io/), [the Juno IDE for Julia](http://junolab.org/), and [the Learn.co IDE](https://learn.co/lessons/learn-environment-setup), as well as by the thousands of community packages and themes published to [atom.io](https://atom.io/packages).
+Our original goal in building Atom was to create the most hackable text editor that we could imagine. This overarching goal shaped Atom's architecture and our team's early priorities. Since Atom launched, its extensibility has been validated by numerous ambitious projects that have been built on top of it, like [Facebook's Nuclide](https://nuclide.io/), [the Juno IDE for Julia](http://junolab.org/), and [the Learn.co IDE](https://learn.co/lessons/learn-environment-setup), as well as by the thousands of community packages and themes published to [atom.io](/packages).
 
 Atom has proven to be as extensible as we had hoped, and our focus over the last two years has shifted from building out an extensible system to achieving excellent performance. Now that 2017 has come to an end, we're taking a moment to reflect on the performance improvements that we've made in the past year and the next improvements we'll be tackling in 2018.
 

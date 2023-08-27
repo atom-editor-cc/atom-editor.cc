@@ -55,7 +55,7 @@ In our rewrite, we used `contain: strict` on as many elements as possible, basic
 
 ## New decoration APIs
 
-Soon after getting the rewritten editor into a usable state, we learned that our changes ran afoul of some monkey-patching being performed in the [vim-mode-plus](https://atom.io/packages/vim-mode-plus) and [pigments](https://atom.io/packages/pigments) packages. Rather than having them port their monkey-patches to the new rendering system, we decided to add support for what they were trying to achieve via official decoration APIs.
+Soon after getting the rewritten editor into a usable state, we learned that our changes ran afoul of some monkey-patching being performed in the [vim-mode-plus](/packages/vim-mode-plus) and [pigments](/packages/pigments) packages. Rather than having them port their monkey-patches to the new rendering system, we decided to add support for what they were trying to achieve via official decoration APIs.
 
 ![Text decorations in action](/assets/images/blog.atom.io/img/posts/text-decorations-in-1-19.gif)
 

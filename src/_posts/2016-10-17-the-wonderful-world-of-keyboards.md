@@ -3,7 +3,7 @@ author: "nathansobo"
 title: "The Wonderful World of Keyboards"
 ---
 
-With the beta release of Atom 1.12, we're rolling out some long-awaited improvements to Atom's support for international keyboard layouts. Before 1.12, users on many layouts needed to install a community-maintained package called [`keyboard-localization`](https://atom.io/packages/keyboard-localization) to enable full support for their keyboards, but now users from all locales should experience hassle free keyboarding in Atom's default configuration. In this post, we'll discuss the challenges we faced recognizing keybindings and how we arrived at a solution.
+With the beta release of Atom 1.12, we're rolling out some long-awaited improvements to Atom's support for international keyboard layouts. Before 1.12, users on many layouts needed to install a community-maintained package called [`keyboard-localization`](/packages/keyboard-localization) to enable full support for their keyboards, but now users from all locales should experience hassle free keyboarding in Atom's default configuration. In this post, we'll discuss the challenges we faced recognizing keybindings and how we arrived at a solution.
 
 ![Keybord Graphic](/assets/images/blog.atom.io/img/posts/world-of-keyboards.png)
 
@@ -70,7 +70,7 @@ One additional wrinkle is non-Latin keyboard layouts. What does a Greek user exp
 
 ### Conclusion
 
-So there you have it. At last, every keyboard should work in Atom in an unsurprising way. We still have [some issues on Linux](https://github.com/atom/atom/issues/12951) that we're in the process of [ironing out](https://github.com/atom/atom/pull/12985) before this lands on stable, but if you're a Mac or Windows user, please give the new bindings implementation a spin on [the beta channel](https://atom.io/beta) and let us know if we missed anything. These improvements will be available on Linux as soon as Travis [whitelists a package we need](https://github.com/travis-ci/apt-package-whitelist/issues/3434).
+So there you have it. At last, every keyboard should work in Atom in an unsurprising way. We still have [some issues on Linux](https://github.com/atom/atom/issues/12951) that we're in the process of [ironing out](https://github.com/atom/atom/pull/12985) before this lands on stable, but if you're a Mac or Windows user, please give the new bindings implementation a spin on [the beta channel](/beta) and let us know if we missed anything. These improvements will be available on Linux as soon as Travis [whitelists a package we need](https://github.com/travis-ci/apt-package-whitelist/issues/3434).
 
 ## Join Us!
 

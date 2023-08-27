@@ -45,13 +45,13 @@ Atom now displays suggestions for the `atom` global. As with the HTML and CSS su
 
 ## Extensibility
 
-Overall, the part of `autocomplete-plus` that has the core team most excited is its extensibility. `autocomplete-plus` is able to consume other Atom packages that define an autocomplete **provider**. Each provider can provide suggestions for a specific language, e.g. [haskell](https://atom.io/packages/autocomplete-haskell), or a specific context, such as completing [system paths](https://atom.io/packages/autocomplete-paths) when importing a module. All of the intelligent behavior for HTML, CSS, Atom API, and Snippets now bundled with the official Atom release were written as providers: [`autocomplete-html`](https://atom.io/packages/autocomplete-html),
-[`autocomplete-css`](https://atom.io/packages/autocomplete-css),
-[`autocomplete-atom-api`](https://atom.io/packages/autocomplete-atom-api), and
-[`autocomplete-snippets`](https://atom.io/packages/autocomplete-snippets).
+Overall, the part of `autocomplete-plus` that has the core team most excited is its extensibility. `autocomplete-plus` is able to consume other Atom packages that define an autocomplete **provider**. Each provider can provide suggestions for a specific language, e.g. [haskell](/packages/autocomplete-haskell), or a specific context, such as completing [system paths](/packages/autocomplete-paths) when importing a module. All of the intelligent behavior for HTML, CSS, Atom API, and Snippets now bundled with the official Atom release were written as providers: [`autocomplete-html`](/packages/autocomplete-html),
+[`autocomplete-css`](/packages/autocomplete-css),
+[`autocomplete-atom-api`](/packages/autocomplete-atom-api), and
+[`autocomplete-snippets`](/packages/autocomplete-snippets).
 
-In addition to the bundled providers, one of the many community-built provider packages can bring greater intelligence to your favorite language: [JavaScript](https://atom.io/packages/atom-ternjs), [TypeScript](https://atom.io/packages/atom-typescript), [python](https://atom.io/packages/autocomplete-plus-python-jedi), [go lang](https://atom.io/packages/go-plus),
-[C#](https://atom.io/packages/omnisharp-atom), and others. See the full listing of available providers on the [autocomplete-plus wiki](https://github.com/atom/autocomplete-plus/wiki/Autocomplete-Providers).
+In addition to the bundled providers, one of the many community-built provider packages can bring greater intelligence to your favorite language: [JavaScript](/packages/atom-ternjs), [TypeScript](/packages/atom-typescript), [python](/packages/autocomplete-plus-python-jedi), [go lang](/packages/go-plus),
+[C#](/packages/omnisharp-atom), and others. See the full listing of available providers on the [autocomplete-plus wiki](https://github.com/atom/autocomplete-plus/wiki/Autocomplete-Providers).
 
 The `atom-ternjs` provider:
 

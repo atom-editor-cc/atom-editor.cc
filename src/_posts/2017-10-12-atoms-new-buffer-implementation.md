@@ -132,7 +132,7 @@ Prior to Atom 1.22, we implemented this feature by maintaining a unique word lis
 
 Thanks to the new buffer implementation, we're rolling out a new autocomplete provider behind a feature flag with Atom 1.22 that leverages snapshots to do the same job with no memory overhead and no threat to Atom's responsiveness. Most of the heavy lifting is now performed in a new `TextBuffer.findWordsWithSubsequence` method in core that performs [matching, scoring, and sorting](https://github.com/atom/superstring/blob/a8f727614e056bb4511084a8e483161b9691a33b/src/core/text-buffer.cc#L407) in a background thread. This means we can start searching for suggestions immediately after each keystroke while other work proceeds on the main thread. By the time the next frame paints, the suggestions are usually available, but we'll never delay a frame while we search for them. In the rare scenario that suggestions take longer than a frame to compute, we'll simply render them in a subsequent frame.
 
-To give this new provider a try today, [download 1.22 beta](https://atom.io/beta), navigate to `autocomplete-plus` in settings view, and switch the `Default Provider` option to `Subsequence`.
+To give this new provider a try today, [download 1.22 beta](/beta), navigate to `autocomplete-plus` in settings view, and switch the `Default Provider` option to `Subsequence`.
 
 ![Subsequence provider setting](/assets/images/blog.atom.io/img/posts/subsequence-provider-setting.png)
 

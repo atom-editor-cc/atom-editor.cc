@@ -25,4 +25,4 @@ Please check that your package or theme works with the new React editor. We have
 
 In the coming weeks, we will remove the old editor completely and deprecate old editor methods on the React editor.
 
-We will be rolling out new [APIs](https://atom.io/docs/api/latest/api/classes/Decoration) soon to compensate for the deprecated methods. Additionally we will have a blog post or two with concrete steps you can take to make your packages the best they can be.
+We will be rolling out new [APIs](https://flight-manual.atom-editor.cc/api/latest/api/classes/Decoration) soon to compensate for the deprecated methods. Additionally we will have a blog post or two with concrete steps you can take to make your packages the best they can be.

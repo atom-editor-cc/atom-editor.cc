@@ -79,7 +79,7 @@ atom.config.observe 'my-package.myInteger', (value) ->
 
 `atom.config.getInt` and friends are _gone_ (deprecated). Now you can rely on `atom.config.get` returning a correct type all the time.
 
-We also support other keys allowing you to specify minimum, maximum, or a list of acceptable values for your setting. Check out an [example](https://github.com/atom/atom/blob/master/src/config-schema.coffee) and the [Config API docs](https://atom.io/docs/api/latest/Config) for more info.
+We also support other keys allowing you to specify minimum, maximum, or a list of acceptable values for your setting. Check out an [example](https://github.com/atom/atom/blob/master/src/config-schema.coffee) and the [Config API docs](https://flight-manual.atom-editor.cc/api/latest/Config) for more info.
 
 ## Improved Settings View
 
@@ -140,5 +140,5 @@ Hopefully you'll find using the new Config system straightforward and robust!
 
 ## Resources
 
-- [Config API docs](https://atom.io/docs/api/latest/Config)
+- [Config API docs](https://flight-manual.atom-editor.cc/api/latest/Config)
 - [Core config schema](https://github.com/atom/atom/blob/master/src/config-schema.coffee)

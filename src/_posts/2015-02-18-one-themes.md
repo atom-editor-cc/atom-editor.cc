@@ -44,6 +44,6 @@ The One themes are already bundled with Atom. If you want to try them out, they 
 
 ## Community themes
 
-It's worth noting that other themes have been doing similar things. For example, the newly released [polymorph-ui](https://atom.io/themes/polymorph-ui) automatically switches between dark and light. Or in contrast, the [graphite-ui](https://atom.io/themes/graphite-ui) theme overrides the Syntax background and gutter. A little different but not less interesting route goes [isotope-ui](https://atom.io/themes/isotope-ui) by adding syntax color to active tabs, but letting you choose the UI background color in the theme's settings. Or even use an image instead.
+It's worth noting that other themes have been doing similar things. For example, the newly released [polymorph-ui](/themes/polymorph-ui) automatically switches between dark and light. Or in contrast, the [graphite-ui](/themes/graphite-ui) theme overrides the Syntax background and gutter. A little different but not less interesting route goes [isotope-ui](/themes/isotope-ui) by adding syntax color to active tabs, but letting you choose the UI background color in the theme's settings. Or even use an image instead.
 
 We love how the Atom community experiments in new ways and hope these examples gave you some new ideas for your next theme.

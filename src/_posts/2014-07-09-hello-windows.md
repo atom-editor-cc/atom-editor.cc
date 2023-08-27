@@ -27,6 +27,6 @@ If you haven't used chocolatey before, this is the perfect chance to start. It i
 
 If you have any problems installing Atom using chocolatey, please open up an issue on the [atom/chocolatey](https://github.com/atom/chocolatey) repository. A special thanks goes out to [@bradgearon](http://github.com/bradgearon) who started the initial [Atom Chocolatey package](https://chocolatey.org/packages/Atom).
 
-If you just want to download a `.zip` of the latest Atom release, that is now available from [atom.io](https://atom.io/) and the [Atom releases](https://github.com/atom/atom/releases) page. Atom on Windows does not currently auto-update so you will need to download new versions manually. Going forward we plan on adding an auto-updater that works the same as the Mac version.
+If you just want to download a `.zip` of the latest Atom release, that is now available from [atom.io](/) and the [Atom releases](https://github.com/atom/atom/releases) page. Atom on Windows does not currently auto-update so you will need to download new versions manually. Going forward we plan on adding an auto-updater that works the same as the Mac version.
 
 We would love to hear what you think about Atom on Windows. We want it to feel like a true Windows app so please let us know about anything that feels out of place such as themes, fonts, keybindings, performance issues, or any missing native integrations. Please don't hesitate to open up issues on [atom/atom](https://github.com/atom/atom) with your feedback.

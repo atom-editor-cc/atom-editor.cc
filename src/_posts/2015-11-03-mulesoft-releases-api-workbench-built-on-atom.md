@@ -22,7 +22,7 @@ MuleSoft has built a ton of intelligence and automation around creating and cons
 - Live RAML debugging
 - RAML autocomplete support
 - RAML refactoring tools
-- Integration with the community-built [linter](https://atom.io/packages/linter) for RAML
+- Integration with the community-built [linter](/packages/linter) for RAML
 
 ![apiworkbenchcrop](https://cloud.githubusercontent.com/assets/69169/10899323/80668db8-8188-11e5-81be-cdb6569841fd.png)
 

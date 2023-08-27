@@ -22,8 +22,8 @@ We strongly recommended you use **Atom Beta 1.21** as it includes the necessary 
 You'll need to install at least two packages - the user interface for Atom IDE and a package that support the language you wish to use:
 
 1. Bring up Atom's _Install Packages_ dialog (Settings View: Install Packages and Themes)
-2. Search for and install the [atom-ide-ui](https://atom.io/packages/atom-ide-ui) package to bring in the IDE user interface
-3. Install the IDE language support you need (e.g. [ide-typescript](https://atom.io/packages/ide-typescript)) - a summary of the ones available at launch include:
+2. Search for and install the [atom-ide-ui](/packages/atom-ide-ui) package to bring in the IDE user interface
+3. Install the IDE language support you need (e.g. [ide-typescript](/packages/ide-typescript)) - a summary of the ones available at launch include:
 
 ### TypeScript & JavaScript (ide-typescript)
 

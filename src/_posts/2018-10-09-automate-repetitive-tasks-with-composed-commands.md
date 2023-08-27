@@ -44,7 +44,7 @@ For the purposes of this example, there are two important items to note in this 
 - On line 1, the second argument specifies the name of the new command. In this case, it's `me:personalize-whitespace`.
 - Line 3 invokes, the first command (`whitespace:convert-all-tabs-to-spaces`). Once that command completes, line 4 invokes the second command (`whitespace:remove-trailing-whitespace`). And once that command completes, line 5 invokes the final command (`line-ending-selector:convert-to-LF`).
 
-As you venture into defining your own composed commands, [Atom's API docs](https://atom.io/docs/api) can guide you in understanding the details of each function used above as well as the many other functions available to help you customize Atom.
+As you venture into defining your own composed commands, [Atom's API docs](https://flight-manual.atom-editor.cc/api) can guide you in understanding the details of each function used above as well as the many other functions available to help you customize Atom.
 
 #### 3. Reload Atom to pick up your new command
 
@@ -68,7 +68,7 @@ If you see that a command isn't functioning as expected, it can be helpful to lo
 
 With just the few simple steps shown above, you're ready to combine any repetitive sequence of commands into a single composed command:
 
-- Check out the [command palette](https://flight-manual.atom.io/getting-started/sections/atom-basics/#command-palette) to see the hundreds of commands available to you, including commands from the community [packages](https://atom.io/packages) you've installed.
+- Check out the [command palette](https://flight-manual.atom.io/getting-started/sections/atom-basics/#command-palette) to see the hundreds of commands available to you, including commands from the community [packages](/packages) you've installed.
 - Want to get things done even faster? You can also [define a keyboard shortcut](https://flight-manual.atom.io/behind-atom/sections/keymaps-in-depth/#composed-commands) for your new command.
 - Explore public init scripts to [see how other people combine commands to improve their workflows](https://github.com/search?q=filename%3Ainit.coffee+filename%3Ainit.js+atom.commands.dispatch&type=Code). You might just find inspiration for your own composed commands.
 - Need help? Hop into the [Atom Slack](https://atom-slack.herokuapp.com/) or ask for help [on the forum](https://discuss.atom.io/).

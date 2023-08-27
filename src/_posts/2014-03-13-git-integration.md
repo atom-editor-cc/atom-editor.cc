@@ -15,7 +15,7 @@ Today, I'd like to walk you through some of my favorite Git features in Atom and
 
 First off, the packages and features mentioned in this post are all built around Atom's core Git API.
 
-The `atom.project` global has a `getRepo()` method that will return a [Git](https://atom.io/docs/api/v0.71.0/api/classes/Git.html) repository for the current project. This object can be used to access information about the state of the repository and details about a file's status and changes.
+The `atom.project` global has a `getRepo()` method that will return a [Git](https://flight-manual.atom-editor.cc/api/v0.71.0/api/classes/Git.html) repository for the current project. This object can be used to access information about the state of the repository and details about a file's status and changes.
 
 This class uses the [git-utils](https://github.com/atom/git-utils) library which uses native bindings to the [libgit2](https://github.com/libgit2/libgit2) library.
 

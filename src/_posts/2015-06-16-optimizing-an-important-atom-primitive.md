@@ -3,7 +3,7 @@ author: "nathansobo"
 title: "Optimizing An Important Atom Primitive"
 ---
 
-As we've focused on improving Atom's performance over the past few months, one interesting optimization challenge has been a construct called _[markers](https://atom.io/docs/api/latest/Marker)_. Markers allow a logical region in a buffer to be tracked, even as the contents of the buffer change. For example, the marker represented by the green highlight below continues to cover the same region, even as the text is edited:
+As we've focused on improving Atom's performance over the past few months, one interesting optimization challenge has been a construct called _[markers](https://flight-manual.atom-editor.cc/api/latest/Marker)_. Markers allow a logical region in a buffer to be tracked, even as the contents of the buffer change. For example, the marker represented by the green highlight below continues to cover the same region, even as the text is edited:
 
 <!--more-->
 

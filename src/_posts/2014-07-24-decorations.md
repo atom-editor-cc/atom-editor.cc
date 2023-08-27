@@ -7,7 +7,7 @@ One very common pattern we've seen in packages is highlighting bits of the edito
 
 <!--more-->
 
-Other than the gutter, there was no API for highlighting things. There are [markers](https://atom.io/docs/api/latest/api/classes/Marker.html), but markers offered no visual representation. So each package had to implement its own version of [marker views](https://github.com/atom/find-and-replace/blob/master/lib/marker-view.coffee) and [line highlighting](https://atom.io/packages/merge-conflicts). Implementing these things is redundant and error prone. Some package authors may have even avoided writing neat features because they needed to do this work.
+Other than the gutter, there was no API for highlighting things. There are [markers](https://flight-manual.atom-editor.cc/api/latest/api/classes/Marker.html), but markers offered no visual representation. So each package had to implement its own version of [marker views](https://github.com/atom/find-and-replace/blob/master/lib/marker-view.coffee) and [line highlighting](/packages/merge-conflicts). Implementing these things is redundant and error prone. Some package authors may have even avoided writing neat features because they needed to do this work.
 
 With the Decoration API available in the [React editor](/blog/2014/07/22/default-to-react-editor), you no longer need to re-implement these things. It's as simple as this:
 
@@ -17,7 +17,7 @@ marker = editor.markBufferRange(range)
 decoration = editor.decorateMarker(marker, {type: 'line', class: 'my-line-class'})
 ```
 
-Decorations are based on [markers](https://atom.io/docs/api/latest/api/classes/Marker.html). Markers allow you to mark a range in an editor and follow the marked text around as changes are made to the buffer. eg. Add a marker on line 10, and a newline on line 1. Your marker will now point to line 11. A decoration is the visual representation of a marker.
+Decorations are based on [markers](https://flight-manual.atom-editor.cc/api/latest/api/classes/Marker.html). Markers allow you to mark a range in an editor and follow the marked text around as changes are made to the buffer. eg. Add a marker on line 10, and a newline on line 1. Your marker will now point to line 11. A decoration is the visual representation of a marker.
 
 Pulling decorations into Atom core gives us another advantage: performance. By controlling the decoration rendering, we can make sure they are fast. And each performance enhancement we make to decorations will speed up big chunks of the entire editor: selections, folds, find and replace, and even your packages.
 
@@ -29,7 +29,7 @@ Several of the built in packages use decorations as well: [git-diff](https://git
 
 ## Resources
 
-Check out [Editor::decorateMarker](https://atom.io/docs/api/latest/api/classes/Editor.html#decorateMarker-instance), the [Decoration API](https://atom.io/docs/api/latest/api/classes/Decoration.html) docs, [TextBuffer::markRange](https://atom.io/docs/api/latest/api/classes/TextBuffer.html#markRange-instance) and the [Marker](https://atom.io/docs/api/latest/api/classes/Marker.html) docs.
+Check out [Editor::decorateMarker](https://flight-manual.atom-editor.cc/api/latest/api/classes/Editor.html#decorateMarker-instance), the [Decoration API](https://flight-manual.atom-editor.cc/api/latest/api/classes/Decoration.html) docs, [TextBuffer::markRange](https://flight-manual.atom-editor.cc/api/latest/api/classes/TextBuffer.html#markRange-instance) and the [Marker](https://flight-manual.atom-editor.cc/api/latest/api/classes/Marker.html) docs.
 
 We've made a [decoration-example](https://github.com/atom/decoration-example) package demonstrating the capabilities of the Decoration API.
 

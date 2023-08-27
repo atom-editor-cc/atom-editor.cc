@@ -15,7 +15,7 @@ In 1.14 two architectures of Atom are now available for Windows. The existing 32
 
 The new version leaves the 32-bit resource limits behind and can take advantage of faster 64-bit instructions in lower layers such as node, v8 and native modules.
 
-In order to ensure compatibility current installations will not switch to a new architecture without intervention - you'll need to grab the 64-bit version yourself. Visitors to [Atom.io](https://atom.io/) will be offered x64 versions from 1.14 onwards if they are on an x64 system.
+In order to ensure compatibility current installations will not switch to a new architecture without intervention - you'll need to grab the 64-bit version yourself. Visitors to [Atom.io](/) will be offered x64 versions from 1.14 onwards if they are on an x64 system.
 
 Your settings and extensions will be preserved when switching although there may be a delay while apm rebuilds native modules for any packages you have installed. Let us know if you run into any issues!
 

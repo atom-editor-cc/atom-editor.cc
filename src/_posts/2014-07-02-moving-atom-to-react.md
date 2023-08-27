@@ -53,7 +53,7 @@ We also render the cursors and the hidden input field that receives keyboard eve
 
 Finally, we wanted to eliminate reflows from packages by providing performant, officially-supported alternatives to direct DOM manipulation. We noticed that most of the packages that manipulated the editor's DOM were either adding classes to lines and line numbers or rendering selection-like highlighted regions behind certain ranges of text.
 
-With the React editor, these kinds of changes can now be performed with the new [decorations API](https://atom.io/docs/api/v0.107.0/api/classes/Editor.html#addDecorationForMarker-instance). Decorations allow metadata to be associated with markers, instructing the editor to render classes on lines and line numbers, or draw highlight regions. Using decorations is faster and more convenient than manual DOM interactions, and we plan on introducing more APIs for common DOM interactions going forward.
+With the React editor, these kinds of changes can now be performed with the new [decorations API](https://flight-manual.atom-editor.cc/api/v0.107.0/api/classes/Editor.html#addDecorationForMarker-instance). Decorations allow metadata to be associated with markers, instructing the editor to render classes on lines and line numbers, or draw highlight regions. Using decorations is faster and more convenient than manual DOM interactions, and we plan on introducing more APIs for common DOM interactions going forward.
 
 ## Next Steps
 

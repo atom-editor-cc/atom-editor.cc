@@ -22,7 +22,7 @@ notifications:
 script: 'curl -s https://raw.githubusercontent.com/atom/ci/master/build-package.sh | sh'
 ```
 
-This will run your package's [Jasmine](http://jasmine.github.io/) specs against the latest [Atom release](https://atom.io/releases) using the [apm](https://github.com/atom/apm) `test` command.
+This will run your package's [Jasmine](http://jasmine.github.io/) specs against the latest [Atom release](/releases) using the [apm](https://github.com/atom/apm) `test` command.
 
 You can see it in action for the [wrap-guide](https://github.com/atom/wrap-guide) package [here](https://travis-ci.org/atom/wrap-guide/builds/23774579).
 

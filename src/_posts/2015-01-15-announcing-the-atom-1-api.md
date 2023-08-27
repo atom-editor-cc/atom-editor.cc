@@ -3,7 +3,7 @@ author: "nathansobo"
 title: "Announcing The Atom 1.0 API"
 ---
 
-Over the past several months, we've spent a lot of energy getting Atom's API into a condition that we're confident supporting over the long term. With the release of Atom 0.174.0, we're happy to announce a stable 1.0 pre-release of Atom's API. We will be adding a few features in the coming months, but we don't plan on breaking anything that is [documented as public](https://atom.io/docs/api/latest) today.
+Over the past several months, we've spent a lot of energy getting Atom's API into a condition that we're confident supporting over the long term. With the release of Atom 0.174.0, we're happy to announce a stable 1.0 pre-release of Atom's API. We will be adding a few features in the coming months, but we don't plan on breaking anything that is [documented as public](https://flight-manual.atom-editor.cc/api/latest) today.
 
 <!--more-->
 

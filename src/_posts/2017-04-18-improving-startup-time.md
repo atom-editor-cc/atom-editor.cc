@@ -3,7 +3,7 @@ author: "as-cii"
 title: "Improving Startup Time"
 ---
 
-Over the last months, the Atom team has been working hard on improving one of the aspects of the editor our users care about the most: startup time. We will first provide the reader with some background about why reducing startup time is a non-trivial task, then illustrate the optimizations we have shipped in Atom 1.17 (currently in [beta](https://atom.io/beta)) and, finally, describe what other improvements to expect in the future.
+Over the last months, the Atom team has been working hard on improving one of the aspects of the editor our users care about the most: startup time. We will first provide the reader with some background about why reducing startup time is a non-trivial task, then illustrate the optimizations we have shipped in Atom 1.17 (currently in [beta](/beta)) and, finally, describe what other improvements to expect in the future.
 
 ![Startup Time Illustration](/assets/images/blog.atom.io/img/posts/startup-time.png)
 
@@ -127,4 +127,4 @@ This marks the end of the first round of performance improvements to startup tim
 
 Performance continues to be one of the concerns the Atom team cares about the most. We believe there are still many things we can do to reduce startup time even further and, in the future, we would like to explore an approach where we take full advantage of Electron's multi-process architecture. Specifically, the main process (which was not affected by the improvements described in this blog post) and the renderer process could load almost in parallel, as opposed to the current situation where we fully load the main process first and only then spawn child renderer processes.
 
-As always, we will keep you posted as we make progress on these enhancements. In the meantime we hope you will enjoy opening your editor faster with [Atom 1.17 Beta](https://atom.io/beta)! ![:zap:](https://github.githubassets.com/images/icons/emoji/unicode/26a1.png){.emoji width="20" height="20" title=":zap:"}
+As always, we will keep you posted as we make progress on these enhancements. In the meantime we hope you will enjoy opening your editor faster with [Atom 1.17 Beta](/beta)! ![:zap:](https://github.githubassets.com/images/icons/emoji/unicode/26a1.png){.emoji width="20" height="20" title=":zap:"}

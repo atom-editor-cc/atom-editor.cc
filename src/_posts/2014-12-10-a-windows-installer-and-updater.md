@@ -3,13 +3,13 @@ author: "kevinsawicki"
 title: "Windows Installer and Auto Updater"
 ---
 
-Installing Atom on Windows just got a whole lot easier with the new Atom Windows installer that is now available from [atom.io](https://atom.io/).
+Installing Atom on Windows just got a whole lot easier with the new Atom Windows installer that is now available from [atom.io](/).
 
 <!--more-->
 
 Using the new Atom Windows installer also sets up Atom to automatically update whenever a new release is published just like the Mac version of Atom.
 
-If this is your first time using Atom on Windows, you can head on over to [atom.io](https://atom.io/) and click the **Download Windows Installer** button to get started.
+If this is your first time using Atom on Windows, you can head on over to [atom.io](/) and click the **Download Windows Installer** button to get started.
 
 If you've previously installed Atom on Windows using [Chocolatey](https://chocolatey.org/), you should follow the instructions below to migrate to the new Windows installer.
 
@@ -22,7 +22,7 @@ When Atom on Windows [first shipped](/blog/2014/07/09/hello-windows) the recomme
 
 ### ![:checkered_flag:](https://github.githubassets.com/images/icons/emoji/unicode/1f3c1.png){.emoji width="20" height="20" title=":checkered_flag:"} Using the New Atom Windows Installer
 
-- Go to [atom.io](https://atom.io/)
+- Go to [atom.io](/)
 - Click the **Download Windows Installer** button
 - Run the downloaded `AtomSetup.exe` file
 - Atom will launch once the installation completes

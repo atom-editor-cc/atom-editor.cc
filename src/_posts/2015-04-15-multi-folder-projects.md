@@ -29,10 +29,10 @@ All of Atom's built-in packages now support multiple project folders. For exampl
 
 ### Updating Your Packages
 
-If you maintain an Atom package that uses [`atom.project`](https://atom.io/docs/api/latest/Project), we encourage you to make sure that it handles multiple project paths gracefully. We have made some additions to the `Project` API:
+If you maintain an Atom package that uses [`atom.project`](https://flight-manual.atom-editor.cc/api/latest/Project), we encourage you to make sure that it handles multiple project paths gracefully. We have made some additions to the `Project` API:
 
-- If you have a file path and you need to know how it relates to the current project paths, you can use [`atom.project.relativizePath(filePath)`](https://atom.io/docs/api/latest/Project#instance-relativizePath), which returns both the path to the project directory that contains `filePath` and the relative path to `filePath` from that project directory. The [fuzzy-finder](https://github.com/atom/fuzzy-finder) package [uses this method](https://github.com/atom/fuzzy-finder/blob/5a9c0a4f26691f723571bc3b68f15e4938aa8cf0/lib/fuzzy-finder-view.coffee#L153) when abbreviating file paths.
-- To access the git repository for a given directory, use [`atom.project.repositoryForDirectory(directory)`](https://atom.io/docs/api/latest/Project#instance-repositoryForDirectory). Atom's [TextEditor](https://atom.io/docs/api/latest/TextEditor) class [uses this method](https://github.com/atom/atom/blob/74a627d41b41ce39e0a5ad43a08dbd4ce2a46fcc/src/text-editor.coffee#L593) for the `Editor: Checkout Head Revision` command.
+- If you have a file path and you need to know how it relates to the current project paths, you can use [`atom.project.relativizePath(filePath)`](https://flight-manual.atom-editor.cc/api/latest/Project#instance-relativizePath), which returns both the path to the project directory that contains `filePath` and the relative path to `filePath` from that project directory. The [fuzzy-finder](https://github.com/atom/fuzzy-finder) package [uses this method](https://github.com/atom/fuzzy-finder/blob/5a9c0a4f26691f723571bc3b68f15e4938aa8cf0/lib/fuzzy-finder-view.coffee#L153) when abbreviating file paths.
+- To access the git repository for a given directory, use [`atom.project.repositoryForDirectory(directory)`](https://flight-manual.atom-editor.cc/api/latest/Project#instance-repositoryForDirectory). Atom's [TextEditor](https://flight-manual.atom-editor.cc/api/latest/TextEditor) class [uses this method](https://github.com/atom/atom/blob/74a627d41b41ce39e0a5ad43a08dbd4ce2a46fcc/src/text-editor.coffee#L593) for the `Editor: Checkout Head Revision` command.
 
 ### Looking Ahead
 
