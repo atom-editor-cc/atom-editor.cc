@@ -15,9 +15,7 @@ jobs:
     permissions:
       contents: read
       deployments: write
-    needs:
-      - lint
-      - test
+    needs: ci
     runs-on: ubuntu-latest
     environment:
       name: atom-editor-cc (Production)
