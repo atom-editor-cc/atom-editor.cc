@@ -1,4 +1,6 @@
 ---
+eleventyComputed:
+  title: "{% if pagination.pageNumber > 0 %}Page {{ pagination.pageNumber | plus: 1 }} of {{ pagination.pages | size }}{% endif %}"
 layout: "layouts/blog.liquid"
 pagination:
   alias: posts

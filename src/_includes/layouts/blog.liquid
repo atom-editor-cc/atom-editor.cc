@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   {% capture page_title -%}
-    {%- if title -%}
+    {%- if title.size > 0 -%}
       {{ title }} | Atom Blog
     {%- else -%}
       Atom Blog | A hackable text editor for the 21st Century
