@@ -1,0 +1,264 @@
+// stylelint-disable selector-class-pattern
+@import "octicons/octicons/sprockets-octicons";
+
+html {
+  color: #24292e;
+  font: 14px/1.5 normal normal;
+  font-family:
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Helvetica,
+    Arial,
+    sans-serif,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol";
+}
+
+body {
+  margin: 0;
+}
+
+h1 {
+  font-size: 2em;
+  font-weight: 300;
+}
+
+h2 {
+  font-size: 1.75em;
+  font-weight: 500;
+  margin: 0 0 1em;
+}
+
+h3 {
+  font-size: 1.1em;
+  font-weight: 600;
+  margin: 0 0 1em;
+}
+
+a {
+  color: #b41fff;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+img {
+  max-width: 100%;
+}
+
+// Wrapper --------------------------
+.wrapper {
+  margin: 0 auto;
+  padding: 2rem;
+
+  & + & {
+    padding-top: 0;
+  }
+}
+
+.wrapper--full {
+  text-align: center;
+}
+
+.dark {
+  background-color: #2e1839;
+  background-image: radial-gradient(ellipse farthest-corner at 50% 20%, #4a2060, rgb(46 24 57 / 75%)), url("/assets/images/ide-bg.svg");
+  background-position: center, center;
+  background-repeat: no-repeat, repeat;
+  color: white;
+  -webkit-font-smoothing: antialiased;
+  position: relative;
+
+  a {
+    color: #de9bff;
+  }
+}
+
+// Video --------------------------
+.video-container {
+  // ~ 16:10 ratio
+  padding-top: 62.5641%;
+  position: relative;
+  width: 100%;
+}
+
+.video {
+  border-radius: 4px;
+  box-shadow: 0 30px 20px -20px rgb(0 0 0 / 15%);
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+
+  // Hide play button on iOS
+  &::-webkit-media-controls-start-playback-button {
+    appearance: none;
+    display: none;
+  }
+}
+
+// Content --------------------------
+.text-center {
+  text-align: center;
+}
+
+.notice-wrapper {
+  font-size: 14px;
+}
+
+.notice-title {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.logo {
+  font-size: 12em;
+  width: 1em;
+}
+
+.hero h2 {
+  text-align: center;
+}
+
+.intro {
+  font-size: 1.15em;
+  margin: 0;
+
+  strong {
+    background-color: #612480;
+    border-radius: 3px;
+    font-weight: 500;
+    padding-left: 0.2em;
+    padding-right: 0.2em;
+  }
+}
+
+.getting-started-step {
+  border: 1px solid #dbdbdb;
+  border-radius: 5px;
+  font-size: 1.15em;
+  margin-top: 2rem;
+  padding: 1.5rem 2rem;
+  position: relative;
+
+  p:first-of-type {
+    margin-top: 0;
+  }
+
+  *:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.getting-started-step-nr {
+  background-color: #b41fff;
+  border-radius: 1rem;
+  color: white;
+  font-size: 1.1em;
+  font-weight: 500;
+  left: -1rem;
+  line-height: 2rem;
+  position: absolute;
+  text-align: center;
+  top: 1.25rem;
+  width: 2rem;
+}
+
+.language-packages {
+  list-style: none;
+  padding: 0.5em 1em;
+
+  li {
+    border-bottom: 1px solid #e6e6e6;
+    margin-top: 0;
+    padding: 0.5rem 0;
+
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+
+  a {
+    margin: 0 0.4em;
+  }
+}
+
+.language-packages-note {
+  color: #999;
+  font-size: 0.75em;
+  font-weight: 400;
+}
+
+// footer --------------------------
+.footer {
+  position: relative;
+}
+
+.love {
+  text-align: center;
+  text-decoration: none;
+
+  .octicon-logo-github {
+    position: relative;
+    top: 0.11em;
+  }
+}
+
+.footer .love a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.love-plus {
+  -webkit-font-smoothing: subpixel-antialiased;
+  font-weight: 200;
+}
+
+.love-facebook {
+  vertical-align: -1px;
+  width: 66px;
+}
+
+// Responsive --------------------------
+@media (width >= 600px) {
+  .wrapper {
+    max-width: 500px;
+    padding: 4rem;
+  }
+}
+
+@media (width >= 900px) {
+  html {
+    font-size: 16px;
+  }
+
+  .wrapper {
+    max-width: 36rem;
+    padding: 6rem 0;
+  }
+
+  .notice-wrapper {
+    padding: 1.5rem 0;
+  }
+
+  .wrapper--full {
+    max-width: none;
+  }
+
+  .video-container {
+    padding-top: 0;
+  }
+
+  .video {
+    height: 560px;
+    left: initial;
+    position: relative;
+    top: initial;
+    width: 860px;
+  }
+}

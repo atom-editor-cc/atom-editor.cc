@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en" prefix="og: http://ogp.me/ns#">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Atom IDE</title>
+
+  <link rel="stylesheet" href="/assets/stylesheets/ide.css">
+
+  <link rel="preload" href="/assets/stylesheets/ide.css" as="style">
+
+  <link rel="shortcut icon" href="/favicon.ico">
+</head>
+<body>
+
+  <section class="wrapper notice-wrapper">
+    <h1 class="notice-title text-center">Community Powered</h1>
+
+    <p>A special thanks goes to Facebook's Nuclide team for providing the Atom IDE user interface package. Both Nuclide and Atom IDE are developed by Facebook and supported by an open source community. At this time, Facebook has decided to retire their open source efforts on Nuclide, the Atom IDE, and other associated repos. All of the source code will remain available in the Facebook Open Source Archives. If you’re interested, we encourage you to check it out and continue to build on top of it. More details on <a href="https://nuclide.io/">Nuclide.io</a>.</p>
+    <p>Also many thanks to Atom IDE language package authors. To get started with your own language integration, check out <a href="https://github.com/atom/atom-languageclient">atom-languageclient</a>. 🚀</p>
+  </section>
+
+  <section class="section hero dark">
+    <header class="header wrapper wrapper--full">
+      <svg aria-label="Atom IDE" class="icon-svg logo" viewbox="0 0 214 144">
+        <g fill="none" fill-rule="evenodd" stroke="none" stroke-width="1">
+          <g transform="translate(0.000000, 2.000000)">
+            <path fill="currentColor" d="M0.274,139.884 C0.274,139.668 0.31,139.416 0.454,139.128 L10.678,116.772 C11.038,115.98 11.578,115.512 12.478,115.512 L12.622,115.512 C13.486,115.512 14.062,115.98 14.386,116.772 L24.61,139.092 C24.718,139.344 24.79,139.596 24.79,139.812 C24.79,140.568 24.178,141.18 23.422,141.18 C22.738,141.18 22.27,140.712 22.018,140.136 L19.39,134.34 L5.566,134.34 L2.938,140.208 C2.686,140.82 2.218,141.18 1.57,141.18 C0.85,141.18 0.274,140.604 0.274,139.884 Z M6.682,131.748 L18.274,131.748 L12.478,118.86 L6.682,131.748 Z M38.9899985,139.74 C38.9899985,140.532 39.6379985,141.18 40.4299985,141.18 C41.2219985,141.18 41.8699985,140.532 41.8699985,139.74 L41.8699985,118.428 L49.1779985,118.428 C49.8979985,118.428 50.5099985,117.852 50.5099985,117.132 C50.5099985,116.412 49.8979985,115.8 49.1779985,115.8 L31.6819985,115.8 C30.9619985,115.8 30.3499985,116.412 30.3499985,117.132 C30.3499985,117.852 30.9619985,118.428 31.6819985,118.428 L38.9899985,118.428 L38.9899985,139.74 Z M70.43,141.432 C62.762,141.432 57.614,135.42 57.614,128.472 L57.614,128.4 C57.614,121.452 62.834,115.368 70.502,115.368 C78.17,115.368 83.318,121.38 83.318,128.328 L83.318,128.4 C83.318,135.348 78.098,141.432 70.43,141.432 Z M70.502,138.804 C76.262,138.804 80.366,134.196 80.366,128.472 L80.366,128.4 C80.366,122.676 76.19,117.996 70.43,117.996 C64.67,117.996 60.566,122.604 60.566,128.328 L60.566,128.4 C60.566,134.124 64.742,138.804 70.502,138.804 Z M94.0299997,139.776 C94.0299997,140.568 94.6419997,141.18 95.3979997,141.18 C96.1899997,141.18 96.8019997,140.568 96.8019997,139.776 L96.8019997,120.984 L104.83,132.792 C105.154,133.26 105.55,133.512 106.054,133.512 C106.558,133.512 106.918,133.26 107.242,132.792 L115.306,120.948 L115.306,139.74 C115.306,140.496 115.954,141.18 116.746,141.18 C117.502,141.18 118.15,140.532 118.15,139.74 L118.15,117.096 C118.15,116.34 117.502,115.692 116.746,115.692 L116.422,115.692 C115.846,115.692 115.378,115.98 115.09,116.448 L106.09,129.984 L97.0899997,116.448 C96.8019997,116.016 96.3699997,115.692 95.7579997,115.692 L95.4339997,115.692 C94.6779997,115.692 94.0299997,116.34 94.0299997,117.096 L94.0299997,139.776 Z M146,139.74 C146,140.532 146.648,141.18 147.404,141.18 C148.196,141.18 148.844,140.532 148.844,139.74 L148.844,117.06 C148.844,116.268 148.196,115.62 147.404,115.62 C146.648,115.62 146,116.268 146,117.06 L146,139.74 Z M161.950001,139.56 L161.950001,117.24 C161.950001,116.448 162.598001,115.8 163.354001,115.8 L170.698001,115.8 C178.618001,115.8 184.090001,121.236 184.090001,128.328 L184.090001,128.4 C184.090001,135.492 178.618001,141 170.698001,141 L163.354001,141 C162.598001,141 161.950001,140.352 161.950001,139.56 Z M164.698,138.372 L170.602,138.372 C176.974,138.372 181.042,134.052 181.042,128.472 L181.042,128.4 C181.042,122.82 176.974,118.428 170.602,118.428 L164.698,118.428 L164.698,138.372 Z M196.41,141 L212.25,141 C212.97,141 213.546,140.424 213.546,139.704 C213.546,138.984 212.97,138.408 212.25,138.408 L197.85,138.408 L197.85,129.588 L210.45,129.588 C211.17,129.588 211.746,129.012 211.746,128.292 C211.746,127.608 211.17,126.996 210.45,126.996 L197.85,126.996 L197.85,118.392 L212.07,118.392 C212.79,118.392 213.366,117.816 213.366,117.096 C213.366,116.376 212.79,115.8 212.07,115.8 L196.41,115.8 C195.654,115.8 195.006,116.448 195.006,117.24 L195.006,139.56 C195.006,140.352 195.654,141 196.41,141 Z"></path>
+            <g transform="translate(58.000000, 0.000000)">
+              <path stroke="currentColor" stroke-linecap="round" stroke-width="3" d="M65.8763595,38.0346516 C77.0483803,61.125521 79.3535465,82.8857946 70.8864159,87.2354004 C62.1559536,91.7224195 45.2797606,76.0015265 33.1921553,52.1229118 C21.10455,28.2442972 18.3834547,5.25002524 27.113917,0.764366727 C30.915348,-1.18935048 36.261659,0.689537726 42.0833176,5.4024043"></path>
+              <path stroke="currentColor" stroke-linecap="round" stroke-width="3" d="M10.19859,53.9792133 C3.62015517,50.4772379 -0.211480229,46.259805 0.00902596453,41.9015121 C0.522179267,31.793062 22.649023,24.757034 49.4296364,26.1837648 C76.2102497,27.6118902 97.50407,36.9630433 96.9909167,47.0714935 C96.7690494,51.4297863 92.5304303,55.2162712 85.6334866,58"></path>
+              <path stroke="currentColor" stroke-linecap="round" stroke-width="3" d="M39.2798248,80.3386024 C32.1828416,85.5436891 25.866352,87.4447604 21.9155234,84.8394876 C13.7371335,79.4487973 18.7854891,56.7942511 33.1917067,34.2379656 C47.5979243,11.6830448 65.9066095,-2.23175961 74.0849994,3.16029534 C77.8867147,5.66594274 78.8297551,11.9014019 77.3036955,20.1225456"></path>
+              <path fill="currentColor" d="M54.863433,42.733377 C55.5631804,45.971824 53.5050192,49.163714 50.2664621,49.8634376 C47.027905,50.5631613 43.8359064,48.50507 43.136159,45.266623 C42.4377809,42.028176 44.4945728,38.836286 47.7331299,38.1365624 C50.9703176,37.4368387 54.1623162,39.49493 54.863433,42.733377"></path>
+            </g>
+          </g>
+        </g>
+      </svg>
+    </header>
+
+    <div class="wrapper">
+      <h2>Improved language integration</h2>
+
+      <p class="intro">Get smarter context-aware <strong>auto-completion</strong>, code navigation features such as an <strong>outline view</strong>, <strong>go to</strong> definition and <strong>find all</strong> references. As well as <strong>hover-to-reveal</strong> information, <strong>diagnostics</strong> (errors and warnings) and document <strong>formatting</strong> .</p>
+    </div>
+
+    <div class="wrapper wrapper--full">
+      <div class="video-container">
+        <video class="video" poster="/assets/images/ide-atom.png" autoplay loop playsinline>
+          <source src="/assets/videos/ide.webm" type="video/webm">
+          <source src="/assets/videos/ide.mp4" type="video/mp4">
+        </video>
+      </div>
+    </div>
+  </section>
+
+  <section class="section details">
+    <div class="wrapper getting-started">
+      <h2>Getting started</h2>
+
+      <p>Start using IDE-like features in <a href="/">Atom</a> by following the steps below. If you need help, take a look at <a href="https://flight-manual.atom-editor.cc/using-atom/sections/atom-packages/">how to install Atom packages</a>.</p>
+
+      <div class="getting-started-step">
+        <span class="getting-started-step-nr">1</span>
+        <p>Install the <a href="/packages/atom-ide-ui">atom-ide-ui</a> package. This will add Atom IDE's user interface.</p>
+      </div>
+
+      <div class="getting-started-step">
+        <span class="getting-started-step-nr">2</span>
+        <p>Install an IDE language package that you like to use:</p>
+        <ul class="language-packages">
+          <li>
+            <strong>TypeScript & JavaScript</strong>
+            <a href="https://github.com/atom/ide-typescript/">ide-typescript</a>
+          </li>
+          <li>
+            <strong>Flow</strong>
+            <a href="https://github.com/flowtype/ide-flowtype">ide-flowtype</a>
+          </li>
+          <li>
+            <strong>C#</strong>
+            <a href="https://github.com/atom/ide-csharp/">ide-csharp</a>
+          </li>
+          <li>
+            <strong>Java</strong>
+            <a href="https://github.com/atom/ide-java/">ide-java</a>
+            <span class="language-packages-note">(Java 8 runtime required)</span>
+          </li>
+          <li>
+            <strong>PHP</strong>
+            <a href="https://github.com/atom/ide-php/">ide-php</a>
+            <span class="language-packages-note">(PHP 7 runtime required)</span>
+          </li>
+        </ul>
+      </div>
+
+      <p>
+        You can also <a href="/packages/search?q=IDE">search</a> for packages created by the Atom community.
+      </p>
+    </div>
+  </section>
+
+</body>
+</html>
