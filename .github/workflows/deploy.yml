@@ -1,0 +1,39 @@
+name: Deploy
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+    branches: [main]
+
+jobs:
+  ci:
+    name: CI
+    uses: ./.github/workflows/ci.yml
+  deploy:
+    name: Deploy to Cloudflare Pages
+    permissions:
+      contents: read
+      deployments: write
+    needs:
+      - lint
+      - test
+    runs-on: ubuntu-20.04
+    environment:
+      name: atom-editor-cc (Production)
+      url: https://atom-editor.cc
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version-file: ".nvmrc"
+          cache: npm
+      - run: npm ci
+      - run: npm run build
+      - uses: cloudflare/pages-action@v1
+        with:
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          directory: _site
+          gitHubToken: ${{ secrets.GITHUB_TOKEN }}
+          projectName: atom-editor-cc
