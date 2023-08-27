@@ -35,7 +35,7 @@ Getting trolled by regular expressions is one of the perks of writing software. 
 
 This package by [@nirix](https://github.com/nirix) adds support for per-language and per-file extension editor settings. Not all settings are supported, but more than enough to be useful. Also, [@nirix](https://github.com/nirix) already has plans to provide support for per-directory editor settings.
 
-There's a [feature request](https://github.com/atom/atom/issues/2593) to provide this ability in Atom core, but in the meantime - this package is a great way to get that. Also, check out [editorconfig](/packages/editorconfig), a similar package by [@sindresorhus](https://github.com/sindresorhus), and [this approach](https://github.com/atom/atom/issues/2593#issuecomment-45977234) by [@lee-dohm](https://github.com/lee-dohm) who uses the [init.coffee](https://flight-manual.atom.io/hacking-atom/sections/the-init-file/) script to achieve something similar.
+There's a [feature request](https://github.com/atom/atom/issues/2593) to provide this ability in Atom core, but in the meantime - this package is a great way to get that. Also, check out [editorconfig](/packages/editorconfig), a similar package by [@sindresorhus](https://github.com/sindresorhus), and [this approach](https://github.com/atom/atom/issues/2593#issuecomment-45977234) by [@lee-dohm](https://github.com/lee-dohm) who uses the [init.coffee](https://flight-manual.atom-editor.cc/hacking-atom/sections/the-init-file/) script to achieve something similar.
 
 ## [resize-panes](/packages/resize-panes)
 

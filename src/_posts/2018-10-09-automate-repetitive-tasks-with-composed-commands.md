@@ -9,7 +9,7 @@ When working with text, it's common to find yourself performing a certain set of
 
 ### Thinking in commands
 
-Many of the actions that you perform in Atom are accessible as [commands](https://flight-manual.atom.io/getting-started/sections/atom-basics/#command-palette). Whether you're moving the cursor to the right, saving the current file, closing a tab, or pushing code to a Git repository, each action is a named command. And while you may currently perform those actions using the menu, using the keyboard, or clicking with your mouse, they can also be triggered programatically.
+Many of the actions that you perform in Atom are accessible as [commands](https://flight-manual.atom-editor.cc/getting-started/sections/atom-basics/#command-palette). Whether you're moving the cursor to the right, saving the current file, closing a tab, or pushing code to a Git repository, each action is a named command. And while you may currently perform those actions using the menu, using the keyboard, or clicking with your mouse, they can also be triggered programatically.
 
 ### Composing a command to run other commands
 
@@ -19,11 +19,11 @@ Imagine you often encounter files where you want to change the use of whitespace
 - [Whitespace: Removing Trailing Whitespace](https://github.com/atom/whitespace/blob/v0.37.7/lib/whitespace.js#L15)
 - [Line Ending Selector: Convert to LF](https://github.com/atom/line-ending-selector/blob/v0.7.7/README.md#atom-commands)
 
-Or, you could combine them into a single ["composed" command](https://flight-manual.atom.io/behind-atom/sections/keymaps-in-depth/#composed-commands). Let's give that a shot.
+Or, you could combine them into a single ["composed" command](https://flight-manual.atom-editor.cc/behind-atom/sections/keymaps-in-depth/#composed-commands). Let's give that a shot.
 
 #### 1. Open your init script
 
-First, activate the [command palette](https://flight-manual.atom.io/getting-started/sections/atom-basics/#command-palette), and run the "Application: Open Your Init Script" command.
+First, activate the [command palette](https://flight-manual.atom-editor.cc/getting-started/sections/atom-basics/#command-palette), and run the "Application: Open Your Init Script" command.
 
 ![open init script via command palette](/assets/images/user-images.githubusercontent.com/2988/46099338-8249df00-c194-11e8-80ca-2d2c8af77ff9.png){width="776"}
 
@@ -48,7 +48,7 @@ As you venture into defining your own composed commands, [Atom's API docs](https
 
 #### 3. Reload Atom to pick up your new command
 
-Each time you open a new Atom window, Atom loads your [init script](https://flight-manual.atom.io/hacking-atom/sections/the-init-file/#the-init-file). You can reload Atom to pick up changes you've made to your init script. To do so, activate the command palette, and run the "Window: Reload" command.
+Each time you open a new Atom window, Atom loads your [init script](https://flight-manual.atom-editor.cc/hacking-atom/sections/the-init-file/#the-init-file). You can reload Atom to pick up changes you've made to your init script. To do so, activate the command palette, and run the "Window: Reload" command.
 
 ![reload atom via command palette](/assets/images/user-images.githubusercontent.com/2988/46098990-9e994c00-c193-11e8-87c3-01a42c6b18e4.png){width="775"}
 
@@ -68,8 +68,8 @@ If you see that a command isn't functioning as expected, it can be helpful to lo
 
 With just the few simple steps shown above, you're ready to combine any repetitive sequence of commands into a single composed command:
 
-- Check out the [command palette](https://flight-manual.atom.io/getting-started/sections/atom-basics/#command-palette) to see the hundreds of commands available to you, including commands from the community [packages](/packages) you've installed.
-- Want to get things done even faster? You can also [define a keyboard shortcut](https://flight-manual.atom.io/behind-atom/sections/keymaps-in-depth/#composed-commands) for your new command.
+- Check out the [command palette](https://flight-manual.atom-editor.cc/getting-started/sections/atom-basics/#command-palette) to see the hundreds of commands available to you, including commands from the community [packages](/packages) you've installed.
+- Want to get things done even faster? You can also [define a keyboard shortcut](https://flight-manual.atom-editor.cc/behind-atom/sections/keymaps-in-depth/#composed-commands) for your new command.
 - Explore public init scripts to [see how other people combine commands to improve their workflows](https://github.com/search?q=filename%3Ainit.coffee+filename%3Ainit.js+atom.commands.dispatch&type=Code). You might just find inspiration for your own composed commands.
 - Need help? Hop into the [Atom Slack](https://atom-slack.herokuapp.com/) or ask for help [on the forum](https://discuss.atom.io/).
 

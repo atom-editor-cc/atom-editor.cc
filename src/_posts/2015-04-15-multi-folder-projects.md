@@ -17,7 +17,7 @@ You can start Atom with multiple folders by specifying their paths as command-li
 atom ./first/folder ./second/folder
 ```
 
-You can also add a folder to an existing Atom window by running `Application: Add Project Folder` from the [Command Palette](https://flight-manual.atom.io/getting-started/sections/atom-basics/). The key-binding for this command is `cmd-shift-o` on Mac and `ctrl-alt-o` on Linux and Windows.
+You can also add a folder to an existing Atom window by running `Application: Add Project Folder` from the [Command Palette](https://flight-manual.atom-editor.cc/getting-started/sections/atom-basics/). The key-binding for this command is `cmd-shift-o` on Mac and `ctrl-alt-o` on Linux and Windows.
 
 To remove a folder from the project, right-click on it in the tree-view and select `Remove Project Folder` from the context menu. You can also add project folders by selecting `Add Project Folder` in this menu.
 

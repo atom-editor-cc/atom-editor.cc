@@ -66,4 +66,4 @@ However, for those occasions where you just can't handle giving up control, ther
 
 # Conclusion
 
-Docks have been an important addition to Nuclide. Not only have they made the experience more consistent, but they've also given developers here at Facebook more control over their editor's real estate. We're really excited to have been able to collaborate with the Atom team to bring this feature to everybody…and even more excited to see what you build with it! Why not get started now by checking out the [Active Editor Info tutorial](https://flight-manual.atom.io/hacking-atom/sections/package-active-editor-info/)?
+Docks have been an important addition to Nuclide. Not only have they made the experience more consistent, but they've also given developers here at Facebook more control over their editor's real estate. We're really excited to have been able to collaborate with the Atom team to bring this feature to everybody…and even more excited to see what you build with it! Why not get started now by checking out the [Active Editor Info tutorial](https://flight-manual.atom-editor.cc/hacking-atom/sections/package-active-editor-info/)?

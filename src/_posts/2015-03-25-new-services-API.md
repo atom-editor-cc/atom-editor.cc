@@ -15,7 +15,7 @@ Node's package manager, `npm`, solves a similar problem for static dependencies 
 
 ### Providing and Consuming Services
 
-Atom's solution is the new [Services API](https://flight-manual.atom.io/behind-atom/sections/interacting-with-other-packages-via-services/), which allows packages to provide semantically versioned APIs for other packages to consume. With services, the `status-bar` package can provide multiple versions of its API simultaneously, providing a smooth upgrade path for dependent packages when the `status-bar` package evolves its API.
+Atom's solution is the new [Services API](https://flight-manual.atom-editor.cc/behind-atom/sections/interacting-with-other-packages-via-services/), which allows packages to provide semantically versioned APIs for other packages to consume. With services, the `status-bar` package can provide multiple versions of its API simultaneously, providing a smooth upgrade path for dependent packages when the `status-bar` package evolves its API.
 
 Services will also provide flex-points in the package ecosystem by enabling any package to provide the same service. For example, if someone wanted to implement a `status-bar-plus` package with a new and improved status bar, they could still provide the original `status-bar`'s services in order to be compatible with packages such as `vim-mode`. This ensures that authors will enjoy a level playing field when competing against incumbent packages by preventing calcification of the dependency graph.
 
@@ -55,4 +55,4 @@ consumeStatusBar: (statusBar) ->
       @statusBarManager.detach()
 ```
 
-For more details on the Services API see [Interacting with Other Packages via Services](https://flight-manual.atom.io/behind-atom/sections/interacting-with-other-packages-via-services/) in the documentation.
+For more details on the Services API see [Interacting with Other Packages via Services](https://flight-manual.atom-editor.cc/behind-atom/sections/interacting-with-other-packages-via-services/) in the documentation.

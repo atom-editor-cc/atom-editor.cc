@@ -19,7 +19,7 @@ Today's changes focus largely on Atom's scripting interface, but we've also made
 
 ## Help Us Transition
 
-We're going to need help from the Atom community to finish the job and leave the technical debt of the old APIs behind us. Atom is now entering a deprecation period designed to transition the ecosystem off of the old APIs so they can be removed from the system. We've prepared a detailed [upgrade guide](https://flight-manual.atom.io/upgrading-to-1-0-apis/sections/upgrading-your-package/) to help you get your packages ready for 1.0, and we'll also be providing dynamic feedback directly in the application.
+We're going to need help from the Atom community to finish the job and leave the technical debt of the old APIs behind us. Atom is now entering a deprecation period designed to transition the ecosystem off of the old APIs so they can be removed from the system. We've prepared a detailed [upgrade guide](https://flight-manual.atom-editor.cc/upgrading-to-1-0-apis/sections/upgrading-your-package/) to help you get your packages ready for 1.0, and we'll also be providing dynamic feedback directly in the application.
 
 Starting with version 0.174.0, packages that use deprecated APIs will cause a warning indicator to appear in the status bar, which you can click to reveal the _deprecation cop_. This view will show you which deprecated facilities are being used by which packages, link you to the location where deprecated calls occur, and suggest non-deprecated alternatives. You'll see similar warnings in the spec runner when you run your package's spec suite.
 

@@ -39,7 +39,7 @@ Atom now displays suggestions for the `atom` global. As with the HTML and CSS su
 
 ### Snippets
 
-[Snippets](https://flight-manual.atom.io/using-atom/sections/snippets/) are useful shortcuts that generate common code like requires, functions, loops, etc. Without snippet suggestions, not even we on the Atom team would know about all the cool snippets available. Snippets are indicated by the right arrow tab-stop icon, and exist for many contexts. To get snippet suggestions, just type!
+[Snippets](https://flight-manual.atom-editor.cc/using-atom/sections/snippets/) are useful shortcuts that generate common code like requires, functions, loops, etc. Without snippet suggestions, not even we on the Atom team would know about all the cool snippets available. Snippets are indicated by the right arrow tab-stop icon, and exist for many contexts. To get snippet suggestions, just type!
 
 ![snip](https://cloud.githubusercontent.com/assets/69169/7638163/c1b52b28-fa27-11e4-82e9-73bcd68435cf.png)
 

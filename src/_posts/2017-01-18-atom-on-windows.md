@@ -35,7 +35,7 @@ We have improvements to help ensure Atom gets installed correctly on your system
 
 - Stronger code signing with sha256, timestamping and a new certificate
 - Extract-in-place to prevent on-access scanners interfering with files being moved
-- An [MSI installer](https://flight-manual.atom.io/getting-started/sections/installing-atom/#msi-installer-for-windows) that installs a personal copy of Atom for each user as they sign in
+- An [MSI installer](https://flight-manual.atom-editor.cc/getting-started/sections/installing-atom/#msi-installer-for-windows) that installs a personal copy of Atom for each user as they sign in
 - Better update reliability for pins and shortcuts via [Squirrel](https://github.com/Squirrel/Squirrel.Windows) (the install/update system we use)
 
 ## Contributing
@@ -46,13 +46,13 @@ The [Windows build instructions](https://github.com/atom/atom/blob/master/docs/b
 
 Atom's test suite now runs and passes on Windows 64-bit builds so just type `script\test` to ensure no regressions (or `atom --test` if contributing to an Atom package). Debugging inside Developer Tools you'll see the sources navigator is no longer jumbled (Windows backslashes in sourcemaps were confusing it).
 
-We also added a new section to the Atom Flight Manual called [Cross-Platform Compatibility](https://flight-manual.atom.io/hacking-atom/sections/cross-platform-compatibility/) that gives some guidance on how to make sure your code works well across platforms.
+We also added a new section to the Atom Flight Manual called [Cross-Platform Compatibility](https://flight-manual.atom-editor.cc/hacking-atom/sections/cross-platform-compatibility/) that gives some guidance on how to make sure your code works well across platforms.
 
 Finally AppVeyor is now running [CI builds of our core packages and important  libraries](https://github.com/atom/atom/blob/master/docs/build-instructions/build-status.md) for Windows.
 
 ## Portable mode
 
-The [portable mode](https://flight-manual.atom.io/getting-started/sections/installing-atom/#portable-mode) was finally documented and some important changes made in the forthcoming 1.14 release;
+The [portable mode](https://flight-manual.atom-editor.cc/getting-started/sections/installing-atom/#portable-mode) was finally documented and some important changes made in the forthcoming 1.14 release;
 
 - The `ATOM_HOME` environment variable no longer prevents portable mode
 - The `--portable` argument was removed as it caused confusion (it copied your .atom folder to be portable not actually forced portable mode)

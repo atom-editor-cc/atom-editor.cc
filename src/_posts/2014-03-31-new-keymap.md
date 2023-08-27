@@ -23,7 +23,7 @@ When a keyboard event occurs on the document, it bubbles upward through the DOM 
 
 For example, when the above keymap is loaded, pressing `enter` in the editor will normally cause a newline to be inserted. But if the editor is inside a select-list (such as the autocomplete or fuzzy finder), pressing `enter` will instead emit a `core:confirm` command event and confirm the current selection. Just like in CSS, the most _specific_ binding wins.
 
-For more information on keymaps, check out Atom's [documentation](https://flight-manual.atom.io/behind-atom/sections/keymaps-in-depth/).
+For more information on keymaps, check out Atom's [documentation](https://flight-manual.atom-editor.cc/behind-atom/sections/keymaps-in-depth/).
 
 ## Progress on Vim Mode
 

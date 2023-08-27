@@ -21,7 +21,7 @@ Invite coworkers or friends to collaborate by sending them a link to your portal
 
 Hosts can add files to their workspace to share those files with guests. To make a file available for collaboration, open a new tab containing that file. To stop sharing the file, simply close the tab.
 
-Collaborators can follow along with the host (or any other collaborator), or they can edit shared files independently. And with [Atom 1.26](/blog/2018/03/15/atom-1-25#atom-126-beta), collaborators can use the [fuzzy-finder](https://flight-manual.atom.io/getting-started/sections/atom-basics/#opening-a-file-in-a-project) to quickly open any file shared by the host.
+Collaborators can follow along with the host (or any other collaborator), or they can edit shared files independently. And with [Atom 1.26](/blog/2018/03/15/atom-1-25#atom-126-beta), collaborators can use the [fuzzy-finder](https://flight-manual.atom-editor.cc/getting-started/sections/atom-basics/#opening-a-file-in-a-project) to quickly open any file shared by the host.
 
 ![Collaborate on multiple files simultaneously](/assets/images/blog.atom.io/img/posts/teletype/0-11-multi-file-collaboration.gif)
 

@@ -19,7 +19,7 @@ Once on the latest version, you'll need to enable Linux app support. If you're o
 
 ### 3. Installing Atom
 
-Finally, with Linux apps natively supported, you'll need to install Atom. First, [download the `.deb` installer from Atom.io](https://atom.io/download/deb) (or [the beta installer](https://atom.io/download/deb?channel=beta) if you prefer). Next, in the "Files" app, find the download and drag it to the "Linux Files" folder that now appears in the left sidebar to copy it over to the linux VM. Finally, double click the `.deb` file (in the "Linux Files" folder) to install Atom. Once installed, Atom will appear in your app drawer, and can be added to the shelf like any other app. Plugins, themes, and configurations should work just like you'd expect on MacOS, Windows, or any other Linux platform.
+Finally, with Linux apps natively supported, you'll need to install Atom. First, [download the `.deb` installer from Atom.io](https://github.com/atom/atom/releases) (or [the beta installer](https://github.com/atom/atom/releases) if you prefer). Next, in the "Files" app, find the download and drag it to the "Linux Files" folder that now appears in the left sidebar to copy it over to the linux VM. Finally, double click the `.deb` file (in the "Linux Files" folder) to install Atom. Once installed, Atom will appear in your app drawer, and can be added to the shelf like any other app. Plugins, themes, and configurations should work just like you'd expect on MacOS, Windows, or any other Linux platform.
 
 ### Atom on Chrome OS
 

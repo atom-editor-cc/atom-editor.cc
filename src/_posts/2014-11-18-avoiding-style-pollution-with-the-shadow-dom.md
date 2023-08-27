@@ -25,7 +25,7 @@ In the screenshot above, note that the `#shadow-root` node is now the only child
 
 ## Updating Themes and Packages
 
-In order to give authors time to update themes and packages without disrupting users, the shadow DOM will be tied to a feature flag for the next few releases. This means that packages will need to support both modes during the transition phase. We've prepared upgrade guides for [UI themes](https://flight-manual.atom.io/upgrading-to-1-0-apis/sections/upgrading-your-ui-theme-or-package-selectors/) and [syntax themes](https://flight-manual.atom.io/upgrading-to-1-0-apis/sections/upgrading-your-syntax-theme/) to explain the required changes.
+In order to give authors time to update themes and packages without disrupting users, the shadow DOM will be tied to a feature flag for the next few releases. This means that packages will need to support both modes during the transition phase. We've prepared upgrade guides for [UI themes](https://flight-manual.atom-editor.cc/upgrading-to-1-0-apis/sections/upgrading-your-ui-theme-or-package-selectors/) and [syntax themes](https://flight-manual.atom-editor.cc/upgrading-to-1-0-apis/sections/upgrading-your-syntax-theme/) to explain the required changes.
 
 ![screenshot_2014-11-06_10_50_20](https://cloud.githubusercontent.com/assets/1789/4940756/80704000-65dd-11e4-979b-adf3aa8ea51e.png)
 
