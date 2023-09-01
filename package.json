@@ -24,7 +24,7 @@
     "@jgarber/eslint-config": "^1.1.0",
     "@jgarber/stylelint-config-scss": "^0.4.0",
     "bower": "^1.8.14",
-    "globals": "^13.20.0",
+    "globals": "^13.21.0",
     "markdown-it": "^13.0.1",
     "markdown-it-anchor": "^8.6.7",
     "markdown-it-attrs": "^4.1.6",
