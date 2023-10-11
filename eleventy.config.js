@@ -2,18 +2,17 @@ module.exports = function(eleventyConfig) {
   // Collections
   eleventyConfig.addCollection('allPostsByYear', collection => {
     const allPostsByYear = {};
+    const posts = collection.getFilteredByGlob('./src/_posts/**/*.md');
 
-    collection
-      .getFilteredByGlob('./src/_posts/**/*.md')
-      .forEach(post => {
-        const year = post.date.getFullYear();
+    for (const post of posts) {
+      const year = post.date.getFullYear();
 
-        if (!allPostsByYear[year]) {
-          allPostsByYear[year] = [];
-        };
+      if (!allPostsByYear[year]) {
+        allPostsByYear[year] = [];
+      }
 
-        allPostsByYear[year].push(post);
-      });
+      allPostsByYear[year].push(post);
+    }
 
     return allPostsByYear;
   });
