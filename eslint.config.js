@@ -1,10 +1,10 @@
 const config = require('@jgarber/eslint-config');
 
 module.exports = [
-  ...config,
   {
-    ignores: ['_site/*']
+    ignores: ['_site']
   },
+  ...config,
   {
     files: ['src/assets/javascripts/*.js'],
     languageOptions: {
