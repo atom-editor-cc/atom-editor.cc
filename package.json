@@ -20,10 +20,10 @@
   },
   "devDependencies": {
     "@11ty/eleventy": "^2.0.1",
+    "@jgarber/eleventy-plugin-markdown": "^0.1.2",
     "@jgarber/eslint-config": "^3.0.0",
     "@jgarber/stylelint-config-scss": "^2.0.0",
     "bower": "^1.8.14",
-    "markdown-it": "^14.0.0",
     "markdown-it-anchor": "^8.6.7",
     "markdown-it-attrs": "^4.1.6",
     "sass": "^1.69.7"
