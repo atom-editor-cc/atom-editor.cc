@@ -44,7 +44,22 @@ module.exports = function(eleventyConfig) {
     ]
   });
 
-  eleventyConfig.addPlugin(require('./lib/plugins/sass.js'));
+  eleventyConfig.addPlugin(require('@jgarber/eleventy-plugin-sass'), sass => {
+    return {
+      sassOptions: {
+        functions: {
+          'font-url($path)': arguments_ => {
+            const path = arguments_[0].assertString('path').text;
+
+            return new sass.SassString(`url("/assets/fonts/${path}")`, {
+              quotes: false
+            });
+          }
+        },
+        style: 'compressed'
+      }
+    };
+  });
 
   return {
     dir: {
