@@ -33,10 +33,9 @@ module.exports = function(eleventyConfig) {
       "./node_modules/octicons/octicons/octicons.{eot,svg,ttf,woff}": "assets/fonts",
     });
 
-  // Libraries
-  eleventyConfig.setLiquidOptions(require("./lib/libraries/liquid.js"));
-
   // Plugins
+  eleventyConfig.addPlugin(require("@jgarber/eleventy-plugin-liquid"));
+
   eleventyConfig.addPlugin(require("@jgarber/eleventy-plugin-markdown"), {
     plugins: [
       [require("markdown-it-anchor"), { tabIndex: false }],
@@ -48,8 +47,8 @@ module.exports = function(eleventyConfig) {
     return {
       sassOptions: {
         functions: {
-          "font-url($path)": (arguments_) => {
-            const path = arguments_[0].assertString("path").text;
+          "font-url($path)": (args) => {
+            const path = args[0].assertString("path").text;
 
             return new sass.SassString(`url("/assets/fonts/${path}")`, {
               quotes: false,
