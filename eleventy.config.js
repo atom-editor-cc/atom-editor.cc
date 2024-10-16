@@ -1,4 +1,11 @@
-module.exports = function(eleventyConfig) {
+import eleventyPluginLiquid from "@jgarber/eleventy-plugin-liquid";
+import eleventyPluginMarkdown from "@jgarber/eleventy-plugin-markdown";
+import eleventyPluginSass from "@jgarber/eleventy-plugin-sass";
+
+import markdownItAnchor from "markdown-it-anchor";
+import markdownItAttrs from "markdown-it-attrs";
+
+export default function(eleventyConfig) {
   // Collections
   eleventyConfig.addCollection("allPostsByYear", (collection) => {
     const allPostsByYear = {};
@@ -34,16 +41,16 @@ module.exports = function(eleventyConfig) {
     });
 
   // Plugins
-  eleventyConfig.addPlugin(require("@jgarber/eleventy-plugin-liquid"));
+  eleventyConfig.addPlugin(eleventyPluginLiquid);
 
-  eleventyConfig.addPlugin(require("@jgarber/eleventy-plugin-markdown"), {
+  eleventyConfig.addPlugin(eleventyPluginMarkdown, {
     plugins: [
-      [require("markdown-it-anchor"), { tabIndex: false }],
-      require("markdown-it-attrs"),
+      [markdownItAnchor, { tabIndex: false }],
+      markdownItAttrs,
     ],
   });
 
-  eleventyConfig.addPlugin(require("@jgarber/eleventy-plugin-sass"), (sass) => {
+  eleventyConfig.addPlugin(eleventyPluginSass, (sass) => {
     return {
       sassOptions: {
         functions: {
@@ -59,10 +66,10 @@ module.exports = function(eleventyConfig) {
       },
     };
   });
+}
 
-  return {
-    dir: {
-      input: "./src",
-    },
-  };
+export const config = {
+  dir: {
+    input: "./src",
+  },
 };

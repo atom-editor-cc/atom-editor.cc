@@ -1,4 +1,4 @@
-module.exports = {
+export default {
   extends: "@jgarber/stylelint-config-scss",
   rules: {
     "font-family-no-missing-generic-family-keyword": [

@@ -5,21 +5,21 @@
   "bugs": "https://github.com/atom-editor-cc/atom-editor.cc/issues",
   "license": "CC-BY-SA-4.0",
   "author": "Jason Garber <jason@sixtwothree.org> (https://sixtwothree.org)",
+  "type": "module",
   "repository": "github:atom-editor-cc/atom-editor.cc",
   "scripts": {
-    "build": "eleventy --quiet",
+    "build": "npx @11ty/eleventy",
     "clean": "rm -rf _site",
     "lint": "npm run lint:css && npm run lint:js",
-    "lint:css": "stylelint ./src/**/*.scss",
-    "lint:js": "eslint .",
-    "postinstall": "bower install --config.directory=node_modules",
+    "lint:css": "npx stylelint ./src/**/*.scss --quiet-deprecation-warnings",
+    "lint:js": "npx eslint .",
+    "postinstall": "npx bower install --config.directory=node_modules",
     "prebuild": "npm run clean",
     "pretest": "npm run build",
-    "start": "npm run build -- --serve",
-    "test": "test -f ./_site/index.html"
+    "start": "npm run build -- --serve"
   },
   "devDependencies": {
-    "@11ty/eleventy": "^2.0.1",
+    "@11ty/eleventy": "^3.0.0",
     "@jgarber/eleventy-plugin-liquid": "^1.0.0",
     "@jgarber/eleventy-plugin-markdown": "^1.0.0",
     "@jgarber/eleventy-plugin-sass": "^1.0.0",
