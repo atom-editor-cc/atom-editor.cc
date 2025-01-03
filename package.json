@@ -6,15 +6,13 @@
   "license": "CC-BY-SA-4.0",
   "author": "Jason Garber <jason@sixtwothree.org> (https://sixtwothree.org)",
   "type": "module",
-  "repository": "github:atom-editor-cc/atom-editor.cc",
+  "repository": "https://github.com/atom-editor-cc/atom-editor.cc",
   "scripts": {
     "build": "npx @11ty/eleventy",
-    "clean": "rm -rf _site",
     "lint": "npm run lint:css && npm run lint:js",
     "lint:css": "npx stylelint ./src/**/*.scss --quiet-deprecation-warnings",
     "lint:js": "npx eslint .",
     "postinstall": "npx bower install --config.directory=node_modules",
-    "prebuild": "npm run clean",
     "pretest": "npm run build",
     "start": "npm run build -- --serve"
   },
