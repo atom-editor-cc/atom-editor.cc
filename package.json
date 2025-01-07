@@ -21,8 +21,8 @@
     "@jgarber/eleventy-plugin-liquid": "^1.0.0",
     "@jgarber/eleventy-plugin-markdown": "^1.0.0",
     "@jgarber/eleventy-plugin-sass": "^1.0.0",
-    "@jgarber/eslint-config": "^6.1.0",
-    "@jgarber/stylelint-config-scss": "^3.0.0",
+    "@jgarber/eslint-config": "^8.0.1",
+    "@jgarber/stylelint-config-scss": "^4.0.0",
     "bower": "^1.8.14",
     "markdown-it-anchor": "^9.2.0",
     "markdown-it-attrs": "^4.3.1"
